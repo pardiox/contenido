@@ -1,5 +1,6 @@
 <?php
 //trae la conexion
+//trae la conexion
 include "conexion.php";
 // me permite trabajar con caracteres españoles
 $acentos = $con -> query("SET NAME 'UTF 8'");
