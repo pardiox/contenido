@@ -1,4 +1,5 @@
 <?php
+//puto el quelo lea
 include "conexion.php";
 session_start();
 if(isset($_SESSION["u"]['sesion'])){
