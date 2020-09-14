@@ -1,5 +1,5 @@
 <?php
-//trae la conexion
+//a
 //trae la conexion
 include "conexion.php";
 // me permite trabajar con caracteres españoles
