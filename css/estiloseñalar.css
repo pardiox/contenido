@@ -1,0 +1,61 @@
+header{
+    background-color:dimgray;
+    
+}
+header h1{
+    display: block;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color:whitesmoke;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+input{
+    margin-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    position: center;
+    display: inline-block;
+    border:2px solid;
+    border-color:dimgrey;
+    padding: 20px 80px;
+    color:dimgrey;
+    font-weight:700px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: gainsboro;
+    
+}
+.boton:hover {
+    transition: 0.3s;
+    color:white;
+    border-radius: 15px;
+    background-color: dimgrey;
+}
+div::after,
+.clearfix::after,
+.clear::after{
+    clear: both;
+    visibility: hidden;
+    content: "";
+    display: block;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.footer{
+    background-color: dimgray;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    color: #000;
+}
+    

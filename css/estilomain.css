@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300|Roboto:100');
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:500|Montserrat:300|Roboto:100');
+ 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:500&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+fuente: roboto
+
+font-family: 'Libre Franklin', sans-serif; 
+fuente: libre franklin
+*/
+
+:root{
+    --azul: #438EC8;
+    --negro: #222020;
+    --blanco: #FCFCFC;
+    --grisoscuro: #898888;
+    --gris: #BFBFBF;
+    --petroleo: #1F4C68;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+}
+
+header{
+    background-color:var(--negro);
+    
+}
+
+header h1{
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color:whitesmoke;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size:40px;
+    color:var(--petroleo);
+}
+
+.boton-container{
+    padding-top:70px;
+    margin-top: 70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.boton{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: inline-block;
+    border:2px solid;
+    border-color:var(--azul);
+    padding: 20px 80px;
+    color:var(--azul);
+    font-weight:700px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin:30px;
+    
+}
+.boton:hover{
+    transition: 0.7s;
+    color:white;
+    border-radius: 20px;
+    background-color:var(--azul);
+}
+
+.footer{
+    background-color:var(--negro);
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    color: #000;
+}

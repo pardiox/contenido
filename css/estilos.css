@@ -1,0 +1,217 @@
+
+:root{
+    --azul:#438EC8;
+    --negro:#222020;
+    --negroclaro:#3D3D3D;
+    --blanco:#FCFCFC;
+    --grisoscuro:#898888;
+    --grisclaro:#E5E5E5;
+    --gris:#BFBFBF;
+    --petroleo:#1F4C68;
+    --fondo:#FBFBFB;
+    --verde:#94D580;
+    --verde2:#83C071;
+    --verde3:#47512E;
+    --violeta:#B579BF;
+}
+
+/*
+
+Fuentes
+
+font-family: 'Dosis', sans-serif;
+font-family: 'Karla', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Karla&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+body {
+	background:var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.nav{
+    height:70px;
+    border-bottom:1px solid;
+    border-bottom-color:var(--gris);
+}
+
+.nav h1{
+    font-family: 'Karla', sans-serif;
+    font-size:30px;
+}
+
+.contenedor_registro{
+    height:70%;
+    margin-top:100px;
+    border:1px solid;
+    border-color:var(--gris);
+    border-radius:10px;
+    
+}
+
+.login{
+    height:auto;
+    display:block;
+    
+}
+.login p{
+    font-size:20px;
+    color:var(--negroclaro);
+    display: inline;
+}
+
+.login button{
+    border: 0;
+    background-color: var(--fondo);
+    color:var(--negro);
+    font-size:20px;
+    font-family: 'Dosis', sans-serif;
+    cursor:pointer;
+}
+
+.register{
+    height:auto;
+    display: block;
+    
+}
+.login h2, .register h2{
+    font-size:25px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.login input {
+    height:45px;
+    margin-bottom:25px;
+    display: block;
+    width:70%;
+    font-family: 'Be Vietnam', sans-serif;
+    border:1px solid;
+    border-radius:5px;
+    border-color:var(--gris);
+    font-size:20px;
+    color: var(--grisoscuro);
+    text-align: center;
+}
+.register input, select{
+    height:45px;
+    margin-bottom:25px;
+    display: block;
+    width:70%;
+    font-family: 'Be Vietnam', sans-serif;
+    border:1px solid;
+    border-radius:5px;
+    border-color:var(--gris);
+    font-size:20px;
+    color: var(--grisoscuro);
+    text-align: center;
+}
+
+
+option{
+    text-align: right;
+    margin: auto 0;
+}
+
+.login input[type=submit], .register input[type=submit] {
+    width:40%;
+    background-color:var(--verde);
+    transition: .4s linear;
+    color:white;
+    font-size:18px;
+}
+
+.login input[type=submit]:hover, .register input[type=submit]:hover{
+    cursor: pointer;
+    background-color:var(--verde2);
+}
+
+.fondo_ventana{
+    background-color: rgba(135,123,123, 0.5);
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.fondo_ventana.active{
+    visibility: visible;
+}
+
+.ventana{
+    height:auto;
+    background-color: white;
+    border:solid 1px;
+    border-color:grey;
+    border-radius:5px;
+    padding:20px;
+    width:700px; 
+    visibility:hidden;
+}
+
+.ventana.active{
+    visibility:visible;
+}
+
+.ventana .cerrar_ventana {
+    font-size:20px;
+    line-height:20px;
+    color:var(--grisoscuro);
+    text-align: right;
+    display: block;
+    margin-right:10px;
+    transition:0.4 linear;
+}
+
+.ventana .cerrar_ventana i:hover{
+    color:var(--negro);
+}
+
+.cerrar_ventana.active{
+    visibility: hidden;    
+}
+
+.ventana h3{
+    font-family: 'Karla', sans-serif;
+    font-size:30px;
+    margin-bottom:15px;  
+}
+
+.ventana input, select{
+    height:45px;
+    margin-bottom:25px;
+    display: block;
+    width:70%;
+    font-family: 'Be Vietnam', sans-serif;
+    border:1px solid;
+    border-radius:5px;
+    border-color:var(--gris);
+    font-size:20px;
+    color: var(--grisoscuro);
+    text-align: center;
+}
+.ventana input[type=submit]{
+    width:40%;
+    background-color:var(--verde);
+    transition: .4s linear;
+    color:white;
+    font-size:18px;
+}
+
+.ventana input[type=submit]:hover{
+    cursor: pointer;
+    background-color:var(--verde2);
+}

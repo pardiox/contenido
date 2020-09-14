@@ -1,0 +1,98 @@
+:root{
+    --azul: #438EC8;
+    --negro: #222020;
+    --blanco: #FCFCFC;
+    --grisoscuro: #898888;
+    --gris: #BFBFBF;
+    --petroleo: #1F4C68;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color:var(--negro);
+    
+}
+header h1{
+    display: block;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color:whitesmoke;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+input{
+    margin-top: 70px;
+    position: center;
+    display: inline-block;
+    border:1px solid;
+    border-color:#bababa;
+    border-radius: 5px;
+    padding: 20px 80px;
+    color:gray;
+    font-weight:700px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #efeded;
+    transition: 0.5s;
+    text-align: center;
+}
+.button {
+    transition: 0.3s;
+    border-radius: 15px;
+    background-color: #efeded;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 11rem;
+    margin: 100px;
+    line-height: 3;
+    border: 1px solid #007FFF;
+    color: #007FFF;
+    text-decoration:none;
+    font-size: 15px;
+    font-family: sans-serif;
+ 
+  
+
+
+}
+.button:hover{
+    color: #ffffff;
+    background-color: #0058ff;
+    text-decoration: none;
+    font-family: monospace;
+}
+.minusc{
+text-transform: lowercase;
+}
+
+div::after,
+.clearfix::after,
+.clear::after{
+    clear: both;
+    visibility: hidden;
+    content: "";
+    display: block;
+}
+
+.footer{
+    background-color:var(--negro);
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    color: #000;
+}
+    
+

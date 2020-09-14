@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    font-family: cursive;
+}
+
+header{
+    background-color:black;    
+}
+header  h1{
+    display: block;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color:whitesmoke;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+h2{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 240px;
+    margin-right: 1120px;
+    color: black;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+.mate{
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    margin-left: 100px;
+    background-color:beige ;
+}
+h3{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 126px;
+    margin-right: 240px;
+    color: black;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+.cur{
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    margin-left: 100px;
+    background-color:beige ;
+    display:inline-grid;
+}

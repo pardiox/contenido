@@ -1,0 +1,11 @@
+button {
+    color: #ffffff;
+    height: 45px;
+    width: 90px;
+    background-color: #52674f;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Libre Franklin', sans-serif;
+}
