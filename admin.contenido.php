@@ -49,18 +49,18 @@ echo "
          <td class='hi'>
             ".$titulo."
          </td>
-         <td>
+         <td class='hi'>
             ".$materia."</td>
-         <td>
+         <td class='hi'>
             ".$curso."
-         </td>
+         </td class='hi'>
          <td class='hi'>
            ".$Email."
          </td>
-         <td class='hi'>
+         <td class='hi__boton'>
 <a href='editar.php?cod_trabajo=$cod_trabajo'><button>editar </button></a></td>
 
-<td><a href='eliminar.php?Email=$Email & curso=$curso & materia=$materia'><button>eliminar </button></a></td>
+<td class='hi__boton'><a href='eliminar.php?Email=$Email & curso=$curso & materia=$materia'><button>eliminar </button></a></td>
           </tr>
       
  
