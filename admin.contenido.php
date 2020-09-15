@@ -8,21 +8,21 @@
 	  <link rel="stylesheet" type="text/css" href="css/estiloadmincontendio.css">
 	 </head>
 <body>
-  <header>
+  <header class="header">
       
       
       
         <center>
-          <h1>E.E.S.T.N°14</h1>
+          <h1 class="header__h1">E.E.S.T.N°14</h1>
    <a href="cerrar_sesion.php"><img src="img/logo.png" width="50px" height="auto"></a>
         </center>
    </header>
     
     <body>
-       <center><p>tabla del contendio subido por los profesores</p></center>
+       <center><p class="titulo">tabla del contendio subido por los profesores</p></center>
         <table>
         
-        <tr class="primera">
+        <tr class="tabla-arriba">
         <td>Titulo</td>
         <td>Curso</td>
         <td>Materia</td>
