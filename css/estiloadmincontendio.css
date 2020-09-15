@@ -19,11 +19,11 @@
 }
 body{
     font: 14px/1.4 Georgia, Serif; 
-    background-color: gainsboro;
+    background-color: #FBFBFB;
 }
 
 header{
-    background-color:var(--negro);
+    background-color:   B9BDBD;
     
 }
 header h1{
@@ -43,22 +43,34 @@ h2{
     box-sizing: border-box;
 }   
 
-table, thead, tbody, th, td, tr { 
-			display: block; 
-		}
-table {
-	border-collapse: collapse; 
-    width: 100%;
-    border-bottom:1px solid;
-    border-color: gray;
-}
 
-td {
+table { 
+    font-size:200%;
+    border-collapse: separate;
+      border-spacing: 10px 5px;
+}
+td, th { 
+    text-align: center;
+    border: solid 1px;
+    border-color: 33FFF9;
+}
+tr td { 
+    height:10%;
+    width:100%;
+    border-top-right-radius: 10%;               
+    border-top-left-radius: 10%; 
+    border-bottom-left-radius: 10%; 
+    border-bottom-right-radius: 10%;
     
-    text-align: left;
-    vertical-align: top;
-    border-bottom-color: blue;
-    width: 50%;
+}
+.cuerpo{
+    font-style:italic;
+    background-color: E9EEEE;
+    color: g;
+}
+.primera{
+    color: white;
+    background-color: B9BDBD;
 }
 
 p{
@@ -72,19 +84,21 @@ p{
 
 
 button{
-    color:#ffffff;
-    height:45px;
-    width:90px;
-    background-color:#52674f;
-    border:0;
-    border-radius:3px;
-    cursor: pointer;
-    font-size:15px;
-    font-family: 'Libre Franklin', sans-serif;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    background-color: 3FC6F1;
+    border-radius: 15px;
+    border: 3px double #006505;
 }
 button:hover{
     transition:0.3s linear;
-    background-color:#42523f;
+    background-color: gainsboro;
 }
 
 .noposible button{

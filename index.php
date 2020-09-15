@@ -1,5 +1,17 @@
 <?php
 include "conexion.php";
+session_start();
+if(isset($_SESSION["u"]['sesion'])){
+if( $_SESSION["u"]['sesion'] == "s.admin"){
+    header ("location: perfil_admin.php");
+}else
+if( $_SESSION["u"]['sesion'] == "s.a"){
+    header ("location: alumno.php");
+}else
+if( $_SESSION["u"]['sesion'] == "s.p"){
+    header ("location: perfil_profesor.php");
+}
+}
 ?>
 <!DOCTYPE html>  
 <html lang="en">

@@ -12,17 +12,16 @@ $sql="INSERT INTO materia (curso,Email,nombre_materia) VALUES ('$curso','$Email'
 	    echo "1";
 $sql =  "SELECT * FROM alumnos_verificados where curso='$curso'";
 if ($resultado = $con->query($sql)){
-
     while ($fila = mysqli_fetch_array($resultado)){
         echo "2";
-      $cod=$fila["cod"];
+      $id=$fila["id"];
       $Email=$fila["Email"];
       $curso=$fila["curso"];
       $materia=$fila["materia"];
         echo $materia;
       if ($materia=='0'){
         
-          $SQL="UPDATE alumnos_verificados SET materia='$nombre' where cod='$cod' and materia='0'";
+          $SQL="UPDATE alumnos_verificados SET materia='$nombre' where id='$id' and materia='0'";
            if(!$error= $con-> query($SQL)){
 		 echo $con->error;
        	}

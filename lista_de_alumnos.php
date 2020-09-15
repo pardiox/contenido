@@ -5,7 +5,7 @@
 	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
-	  <link rel="stylesheet" type="text/css" href="css/estiloperfil2.css">
+	  <link rel="stylesheet" type="text/css" href="css/estiloperfil.css">
 	 </head>
 
 <body>
@@ -26,38 +26,39 @@
     header ("location: login.php");
     }
 include "conexion.php";
-$sql =  "SELECT * FROM alumnos_verificados where verificaciones LIKE '0%'";
+    $Email=$_SESSION["u"]['Email'];
+    $sql =  "SELECT * FROM materia where Email='$Email' and verificado='1'";
+    if ($resultad = $con->query($sql)){
+    while ($fila = mysqli_fetch_array($resultad)){
+        
+    $materia=$fila["nombre_materia"];
+    $curso=$fila["curso"]; 
+        echo $materia;
+        echo $curso;
+    $sql =  "SELECT * FROM alumnos_verificados where curso='$curso' and materia='$materia' and verificacion='0'";
 if ($resultado = $con->query($sql)){
     while ($fila = mysqli_fetch_array($resultado)){
-
         $curso=$fila["curso"];
         $materia=$fila["materia"];
-         $Email=$fila["Email"];
-          $_SESSION["u"]['materia']=$materia;
-      if($materia !='0' ){
-echo "
+        $Email=$fila["Email"];
+        $_SESSION["u"]['materia']=$materia;
 
-
-
+        echo"
         <table>
            <tr>
-           
-              <td>
-             
+              <td>  
             ". $Email."
-</td>
-
-             
+              </td>  
+              <td>
             ".  $curso."
-</td>
-          <td>
-             
+              </td>
+              <td>  
             ".  $materia."
-</td> 
+              </td> 
 <td>
 <a href='verificado_denegado.php?Email=$Email & materia=$materia'> <button>denegar</button></a> </td>
 <td>
-<a href='verificado_alumno.php?Email=$Email'> <button>verificar</button></a> </td>
+<a href='verificado_alumno.php?Email=$Email & materia=$materia'> <button>verificar</button></a> </td>
           </tr>
       
         </table>
@@ -70,13 +71,9 @@ echo "
 }}
 
  
-}
+}}
+    
+    
 ?>
-<div class="footer">
-    facebook
-</div>
-    <script>
-                 alert("verifica a tus alumnos asi podran ver tu contenido subido"); 
-            </script>
 </body>
 </html>

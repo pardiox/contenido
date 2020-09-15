@@ -42,25 +42,18 @@ $cabeceras = 'From: tecnica14@gmail.com' . "\r\n" .
 
 mail($para, $titulo, $mensaje, $cabeceras);
 
-  $SQL="INSERT INTO alumnos_verificados (Email, curso) VALUES ('$Email', '$curso')";
-	
-if(!$error= $con-> query($SQL)){
-  echo $con->error;
-}
-else{
 
  
 $sql =  "SELECT distinct materia FROM alumnos_verificados where curso='$curso' and materia!='0'";
 if ($resultado = $con->query($sql)){
     while ($fila = mysqli_fetch_array($resultado)){
         $materia=$fila["materia"];
-        $SQL="INSERT INTO alumnos_verificados (Email, curso, materia) VALUES ('$Email', '$curso', '$materia)";
+        $SQL="INSERT INTO alumnos_verificados (curso, materia, Email) VALUES ('$curso', '$materia','$Email')";
         if(!$error= $con-> query($SQL)){
             $dada=$materia;
-        }    
-        
+        }        
     }
 include "sesion_alumno.php";	
-}}}}
+}}}
 ?>
 	

@@ -6,7 +6,7 @@
 	  charset=utf-8">
     <title>Perfil Administrador</title>
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" type="text/css" href="css/estilofooter.css">
+    <link rel="stylesheet" type="text/css" href="css/estilofooter.css" 
     <link rel="stylesheet" type="text/css" href="css/flex/flexboxgrid.min.css">
     <link rel="stylesheet" type="text/css" href="css/estiloadmin1.css">
 </head>
@@ -31,20 +31,31 @@ session_start();
    </header>
     
     
-    <div class="row around-xs">
-        <div class="col-xs-12 col-md-3  holis">
+    <div class="row">
+        <div class="col-md-offset-2 col-xs-12 col-md-4  holis">
+        <div class="row center-xs">
             <a class="button" href="admin.contenido.php"><center>Contenido</center></a>
         </div>
-        <div class="col-xs-12 col-md-3  holis">
+        </div>
+        
+        <div class="col-md-offset-1 col-xs-12 col-xs-7 col-md-4  holis">
+         <div class="row center-xs">
             <a class="button" href="admin.verificar.php"><center>Verificar</center></a>
         </div>
-        <div class="col-xs-12 col-md-3  holis">
+        </div>
+        
+        <div class="col-md-offset-1 col-xs-12 col-md-4  holis">
+        <div class="row center-xs">
             <a class="button" href="codigo.php"><center>Codigo</center></a>
         </div>
-         <div class="col-xs-12 col-md-3  holis">
+        </div>
+         <div class="col-md-offset-5 col-xs-12 col-md-4  holis">
+        <div class="row center-xs">
             <a class="button" href="admin_alumnos.php"> <center>alumnos</center></a>
         </div>
-    </div>
+        </div>
+        </div>
+    
      <footer>
        
        <div class="container-footer-all"> 

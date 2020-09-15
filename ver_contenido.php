@@ -28,6 +28,7 @@ $sql=  "SELECT * from contenido where  cod_trabajo='$cod_trabajo'";
     if ($resultado = $con->query($sql)){
 if ($resultado->num_rows > 0){
     $fila=$resultado->fetch_assoc();
+    $titulo=$fila['titulo'];
     $material=$fila['material'];
     $links=$fila['links'];
     $planes_estudio=$fila['planes_estudio'];

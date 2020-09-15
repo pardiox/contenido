@@ -1,6 +1,5 @@
 <?php 
 include "conexion.php";
-$codigo=$_REQUEST['codigo'];
 session_start();
 $codigo=$_SESSION["u"]['codigo'];
 $Email=$_SESSION["u"]['Email'];
@@ -21,4 +20,4 @@ header("Location: alumno.php");
     
     
 }
-       ?>
+?>
