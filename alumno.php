@@ -1,5 +1,6 @@
 <?php
 //trae la conexion
+//trae la conexion
 include "conexion.php";
 session_start();
 
