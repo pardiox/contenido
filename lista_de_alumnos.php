@@ -33,8 +33,6 @@ include "conexion.php";
         
     $materia=$fila["nombre_materia"];
     $curso=$fila["curso"]; 
-        echo $materia;
-        echo $curso;
     $sql =  "SELECT * FROM alumnos_verificados where curso='$curso' and materia='$materia' and verificacion='0'";
 if ($resultado = $con->query($sql)){
     while ($fila = mysqli_fetch_array($resultado)){
