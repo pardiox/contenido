@@ -20,7 +20,7 @@ if ($resultado->num_rows > 0){
     $_SESSION["u"]['apellido'] = $fila["apellido"];
     $_SESSION["u"]['Email'] = $fila["Email"];
     $_SESSION["u"]['sesion'] =   "s.p";
-    header("Location: perfil_profesor.php");
+    header("Location: vista_profesor_inicio.php");
     exit();}
 }
 
