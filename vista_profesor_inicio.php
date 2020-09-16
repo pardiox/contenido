@@ -22,26 +22,43 @@
        
         <div class="row center-xs">   
             <div class="opciones alumnos col-xs-11 col-lg-4">
-               <a href="" blank="target" title="Alumnos">
+             
+               <a href="" blank="target" >
                 <h2>Alumnos</h2>
-                <p class="texto_alumnos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, enim, deleniti! Consectetur natus nemo, ab nam deserunt adipisci ipsum quod velit error, id, fugiat beatae, optio omnis similique earum fugit.</p>
+                <p class="texto_alumnos">En esta ventana se administra la lista de todos los Estudiantes que tenga a su cargo. Podrá aceptar o denegar peticiones de ingreso hacia alguna materia que imparta o eliminarlos de la misma.</p>
                 </a>
+                
             </div>
         
             <div class="opciones clases col-xs-11 col-lg-4">
+               
+                <a href="">
                 <h2>Clases</h2>
                 <p class="texto_clases">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus fuga beatae voluptates qui nihil id ad dolor maiores, sint velit nemo dicta rerum alias cumque ipsa perspiciatis in architecto!</p>
+                </a>
+                <div class="fondo">
+                </div>
             </div>  
         </div>
         <div class="row center-xs">
             <div class="opciones cargar_clase col-xs-11 col-lg-4">
+             
+               <a href="">
                 <h2>Cargar Clases</h2>
                 <p class="texto_cargar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum est delectus, ipsam optio, repellendus sed laboriosam dignissimos molestias autem suscipit numquam quaerat asperiores rerum cumque omnis maiores minima. Alias, provident.</p>
+                </a>
+                 <div class="fondo">
+                </div>
             </div>
         
             <div class="opciones indefinido col-xs-11 col-lg-4 ">
+              
+               <a href="">
                 <h2>????</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, sequi. Deserunt libero ratione saepe autem sapiente accusantium dolorem id ex, harum nihil qui, nesciunt culpa doloribus rem reprehenderit voluptate non.</p>
+                </a>
+                <div class="fondo">
+                </div>
             </div>
         </div>
       </div>

@@ -28,6 +28,10 @@
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 
 body{background-color:var(--fondo); }
 
@@ -58,7 +62,6 @@ header h1{
 
 .opciones{
     margin: 20px;
-    margin-bottom: 20px;
     padding: 0;
     text-align: center;
     width:300px;
@@ -76,12 +79,12 @@ header h1{
 }
 .opciones p{
     font-size:25px;
-    opacity:0%;
-    
+    opacity: 0%;
+    text-decoration: none
 }
 .opciones:hover p{
-    opacity: 100%;
     transition: .4s linear;
+    opacity: 100%;
 }
 .opciones:hover h2{
     animation:opciones 0.9s linear;   
@@ -103,25 +106,25 @@ header h1{
 
 .alumnos {
     background-color:var(--violeta1);
-    color:white;
+    border-color: var(--violeta1);
     font-family: 'Lato', sans-serif;
-    text-decoration-line: none;
 }
+
 
 .clases{
     background-color: var(--azul1);
-    color:white;
+    border-color:var(--azul1);
     font-family: 'Lato', sans-serif;
 }
 
 .cargar_clase{
      background-color:var(--verde1);
-    color:white;
+    border-color:var(--verde1);
     font-family: 'Lato', sans-serif;
 }
 .indefinido{
     background-color:var(--rojo1);
-    color:white;
+    border-color:var(--rojo1);
     font-family: 'Lato', sans-serif;
 }
 
