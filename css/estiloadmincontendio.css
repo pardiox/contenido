@@ -114,6 +114,7 @@ button{
     font-style: italic;
     color: white;
     background-color: #889ccf;
+    border-bottom-color: #889ccf;
     border-radius: 15px;
 
 }
