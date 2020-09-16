@@ -17,16 +17,20 @@
    <a href="cerrar_sesion.php"><img src="img/logo.png" width="50px" height="auto"></a>
         </center>
    </header>
-    
+   
     <body>
-       <center><p class="titulo">tabla del contendio subido por los profesores</p></center>
-        <table>
-        
+       <center>
+           <p class="titulo">
+           En esta pestaña podra ver en una tabla las tareas/trabajos/consignas subidas a a plataforma por los profesores.
+           separado en columnas por nombre y apellido del profesor, materia del contendio, curso, y titulo del trabajo.
+           para acceder a el solo tiene que dar click en "ver". si el contendio no le parece adecuado o hay algo mal, podra eliminarlo presionando en "eliminar" segido enviarle un E-mail al profesor de porque su tarea fue borrada
+           </p></center>
+       <table>
         <tr class="tabla-arriba">
-        <td>Titulo</td>
+        <td>Profesor</td>
         <td>Materia</td>
         <td>Curso</td>
-        <td>Profesor</td>
+        <td>Titulo</td>
         </tr>
         
       <?php
@@ -51,7 +55,7 @@ if ($resultad = $con->query($sql)){
       echo "
       <tr class='cuerpo'>
          <td class='hi'>
-            ".$titulo."
+             ".$apellido. " ".$nombre."
          </td>
          <td class='hi'>
             ".$materia."</td>
@@ -59,7 +63,7 @@ if ($resultad = $con->query($sql)){
             ".$curso."
          </td class='hi'>
          <td class='hi'>
-           ".$nombre." ".$apellido."
+            ".$titulo."
          </td>
          <td class='hi__boton'>
 <a href='editar.php?cod_trabajo=$cod_trabajo'><button> ver </button></a></td>
@@ -80,7 +84,7 @@ if ($resultad = $con->query($sql)){
 
 
 <div class="footer">
-    facebook
+
 </div>
     
 </body>
