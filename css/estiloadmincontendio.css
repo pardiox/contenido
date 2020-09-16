@@ -30,11 +30,9 @@ body{
   
 }
 .header__h1{
-    text-align: 100vw;
     display: block;
     font-family: 'Libre Franklin', sans-serif;
     color:whitesmoke;
-    margin: 0;
 }
 
 
@@ -65,19 +63,23 @@ tr td {
 
 .cuerpo{
     font-style:italic;
-    background-color: #E9EEEE;
+    background-color: #EEEEE9;
 }
 
 .hi { 
+    font-size: 1vw 0.75vh;
     text-align: center;
     border: solid 1px;
     border-color: white;
+     color: 4C5050;
     font-family: 'Kumbh Sans', sans-serif;
     }
 .hi:hover { 
-    transition:0.3s linear;
-    color: red;
+    transition:0.3s;    
+    transition:0.3s;
+    border-color: white;
 	height: 7vh;
+     animation: mymove 3s infinite;
 }
 .hi__boton{
    background-color: white; 
@@ -94,7 +96,13 @@ tr td {
     border: 2px solid #5878ca;
 }
 
+@keyframes mymove {
+  0%   {color: #B9BDBD;}
 
+  50%  {color:  #EEEEE9 ;}
+ 
+  75% {color: #B9BDBD;}
+}
 
 button{
     padding: 3px;
@@ -105,30 +113,21 @@ button{
     font-size: 25px;
     font-style: italic;
     color: white;
-    background-color: 3FC6F1;
+    background-color: #889ccf;
     border-radius: 15px;
-    border: 3px double #006505;
+
 }
 button:hover{
     transition:0.3s linear;
+    color: #889ccf;
     background-color: gainsboro;
 }
 
-.noposible button{
-    color:#ffffff;
-    height:45px;
-    width:90px;
-    background-color:#52674f;
-    border:0;
-    border-radius:3px;
-    cursor: pointer;
-    font-size:12px;
-    font-family: 'Libre Franklin', sans-serif;
-}
+
 
 
 .footer{
-     background-color: #B9BDBD;
+    background-color: #B9BDBD;
     width: 100%;
     height: 50px;
     bottom: 0;
