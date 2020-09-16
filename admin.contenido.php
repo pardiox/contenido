@@ -9,13 +9,17 @@
 	 </head>
 <body>
   <header class="header">
-      
-      
-      
         <center>
-          <h1 class="header__h1">E.E.S.T.N°14</h1>
-   <a href="cerrar_sesion.php"><img src="img/logo.png" width="50px" height="auto"></a>
-        </center>
+          <p class="header__b">Carpeta de profesores</p>
+         </center>
+          
+   <a href="cerrar_sesion.php" >
+       <p class="header__b__cerrar">
+       cerrar sesion
+       <img src="img/cerrar.png" width="20px" height="auto">
+       </p>
+       </a>
+   
    </header>
    
     <body>
