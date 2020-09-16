@@ -7,7 +7,8 @@
 	  charset=utf-8">
 	  <link rel="stylesheet" type="text/css" href="css/estiloadmincontendio.css">
 	 </head>
-<body>
+
+ <body>
   <header class="header">
         <center>
           <p class="header__b">Carpeta de profesores</p>
