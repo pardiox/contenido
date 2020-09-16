@@ -5,12 +5,12 @@
    <?php
     include "conexion.php";
     session_start();
-    if ($_SESSION["u"]['sesion']=="s.p"){
+    if ($_SESSION["u"]['sesion']!="s.p"){
         
     }
    $nombre= $_SESSION["u"]['nombre'];
    $apellido=  $_SESSION["u"]['apellido'];
-     $Email=$_SESSION["u"]['Email'];
+   $Email=$_SESSION["u"]['Email'];
     echo "
     <meta charset='UTF-8'>
     <title>".$nombre." ".$apellido."</title>
