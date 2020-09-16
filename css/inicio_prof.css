@@ -1,0 +1,127 @@
+:root{
+    --marron1:#A7906D;
+    --violeta1:#705A7C;
+    --azul1:#5A687C;
+    --verde1:#5A7C7A;
+    --rojo1:#7C5F5A;
+    --fondo:#CFCFCF;
+    --fondointerior:#E8E8E8;
+}
+
+/*fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*font-family: 'Lato', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap');
+/*font-family: 'Saira', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+/*font-family: 'Hammersmith One', sans-serif;
+*/
+
+
+/*fuentes*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{background-color:var(--fondo); }
+
+header{
+    text-align: center;
+    height:70px;
+    background-color: var(--verde1);
+}
+
+header h1{
+    padding-top: 5px;
+}
+.bienvenido{
+    font-family: 'Hammersmith One', sans-serif;
+
+}
+
+.contenedor_principal{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: var(--fondointerior);
+}
+.cuadros{
+    margin-top: 25px;
+}
+
+.opciones{
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+    width:300px;
+    height: 300px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius:15px;
+}
+
+.opciones h2{
+    font-family: 'Saira', sans-serif;
+    margin-top:120px;
+    position: relative;
+    font-size: 40px;
+}
+.opciones p{
+    font-size:25px;
+    opacity:0%;
+    
+}
+.opciones:hover p{
+    opacity: 100%;
+    transition: .4s linear;
+}
+.opciones:hover h2{
+    animation:opciones 0.9s linear;   
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+
+@keyframes opciones {
+    from{
+        top:120px;
+    }
+    to{
+        top:0px;
+        margin-top:15px;
+    }
+} 
+
+.alumnos {
+    background-color:var(--violeta1);
+    color:white;
+    font-family: 'Lato', sans-serif;
+    text-decoration-line: none;
+}
+
+.clases{
+    background-color: var(--azul1);
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+
+.cargar_clase{
+     background-color:var(--verde1);
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+.indefinido{
+    background-color:var(--rojo1);
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+
