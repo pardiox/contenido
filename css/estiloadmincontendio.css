@@ -79,9 +79,7 @@ tr td {
     }
 .hi:hover { 
     transition:0.3s;    
-    transition:0.3s;
     border-color: white;
-	height: 7vh;
      animation: mymove 3s infinite;
 }
 .hi__boton{
@@ -90,7 +88,7 @@ tr td {
 .titulo{
     font-family: Century Gothic,CenturyGothic,AppleGothic;
     color: #ffffff;
-    font-size: 2vh;
+    font-size: 3vh;
     text-align: center;
     background: #889ccf;
     overflow: hidden;
@@ -108,6 +106,7 @@ tr td {
 }
 
 button{
+    cursor: pointer;
     padding: 3px;
     padding-left: 10px;
     padding-right: 10px;
