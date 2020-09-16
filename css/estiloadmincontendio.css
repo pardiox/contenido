@@ -32,7 +32,6 @@ body{
   
 }
 .header__b{
-    transform: scale3d(100);
     font-size: 20px;
     font-family: 'Libre Franklin', sans-serif;
     color:whitesmoke;
