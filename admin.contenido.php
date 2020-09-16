@@ -28,9 +28,9 @@
        <table>
         <tr class="tabla-arriba">
         <td class="tabla-arriba__profesor">Profesor</td>
-        <td>Materia</td>
+        <td class="tabla-arriba__materia">Materia</td>
         <td>Curso</td>
-        <td>Titulo</td>
+        <td class="tabla-arriba__titulo">Titulo</td>
         </tr>
         
       <?php
@@ -57,12 +57,12 @@ if ($resultad = $con->query($sql)){
          <td class='hi' class='tabla-arriba__profesor'>
              ".$apellido. " ".$nombre."
          </td>
-         <td class='hi'>
+         <td class='hi' class='tabla-arriba__materia'>
             ".$materia."</td>
          <td class='hi'>
             ".$curso."
          </td class='hi'>
-         <td class='hi'>
+         <td class='hi' class='tabla-arriba__titulo'>
             ".$titulo."
          </td>
          <td class='hi__boton'>
