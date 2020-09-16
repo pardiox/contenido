@@ -21,13 +21,13 @@
     <body>
        <center>
            <p class="titulo">
-           En esta pestaña podra ver en una tabla las tareas/trabajos/consignas subidas a a plataforma por los profesores.
+           En esta pestaña podra ver en una tabla las tareas/trabajos/consignas subidas a la plataforma por los profesores.
            separado en columnas por nombre y apellido del profesor, materia del contendio, curso, y titulo del trabajo.
            para acceder a el solo tiene que dar click en "ver". si el contendio no le parece adecuado o hay algo mal, podra eliminarlo presionando en "eliminar" segido enviarle un E-mail al profesor de porque su tarea fue borrada
            </p></center>
        <table>
         <tr class="tabla-arriba">
-        <td>Profesor</td>
+        <td class="tabla-arriba__profesor">Profesor</td>
         <td>Materia</td>
         <td>Curso</td>
         <td>Titulo</td>
@@ -54,7 +54,7 @@ if ($resultad = $con->query($sql)){
       $apellido=$fila["apellido"];
       echo "
       <tr class='cuerpo'>
-         <td class='hi'>
+         <td class='hi' class='tabla-arriba__profesor'>
              ".$apellido. " ".$nombre."
          </td>
          <td class='hi'>
