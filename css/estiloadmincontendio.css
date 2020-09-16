@@ -48,9 +48,14 @@ table {
     text-align: center;
 }
 .tabla-arriba__profesor{
-    width: 50%;
+    width: 45%;
 }
-
+.tabla-arriba__titulo{
+    width: 25%;
+}
+.tabla-arriba__materia{
+    width: 25%;
+}
 tr td { 
     border-top-right-radius: 10%;               
     border-top-left-radius: 10%; 
