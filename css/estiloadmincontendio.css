@@ -27,25 +27,33 @@ body{
 .header{
     background-color: #B9BDBD;
     width: 100vw;
+    /*position: fixed;*/
+
   
 }
-.header__h1{
-    display: block;
+.header__b{
+    transform: scale3d(100);
+    font-size: 20px;
     font-family: 'Libre Franklin', sans-serif;
     color:whitesmoke;
 }
-
+.header__b__cerrar{
+    text-align: right;
+    color:whitesmoke;
+}
 
 
 table { 
     font-size:200%;
     border-collapse: separate;
-      border-spacing: 1vw 0.5vh;
+    border-spacing: 1vw 0.5vh;
+    font-weight: bold;
 }
 .tabla-arriba{
     color: white;
     background-color: #B9BDBD;
     text-align: center;
+    
 }
 .tabla-arriba__profesor{
     width: 45%;
@@ -69,6 +77,7 @@ tr td {
     background-color: #EEEEE9;
 }
 
+
 .hi { 
     font-size: 1vw 0.75vh;
     text-align: center;
@@ -76,6 +85,7 @@ tr td {
     border-color: white;
      color: 4C5050;
     font-family: 'Kumbh Sans', sans-serif;
+
     }
 .hi:hover { 
     transition:0.3s;    
@@ -95,6 +105,7 @@ tr td {
     padding: 3vh;
     border-radius: 35px 0px 35px 0px;
     border: 2px solid #5878ca;
+    font-weight: bold;
 }
 
 @keyframes mymove {
