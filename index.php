@@ -35,7 +35,7 @@ if( $_SESSION["u"]['sesion'] == "s.p"){
 <body>
 <center>
 <div class="header">
-    <h1>Bienvenido a Carpeta Virtual</h1>
+    <h1>Bienvenido a Carpeta Virtual hola</h1>
 </div>
 
 <div class="contenedor_registro row center-xs around-md top-md col-xs-11 ">
