@@ -3,6 +3,7 @@
    <head>
       <title>verificar</title>  
 	  <!--comentario-->
+	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
 	  <link rel="stylesheet" type="text/css" href="css/estiloperfil2.css">
@@ -10,7 +11,7 @@
 <body>
   <header>
       
-      
+    
       
    <center>
    <h1>E.E.S.T.N°14</h1>
