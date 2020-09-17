@@ -4,33 +4,19 @@
    <link rel="stylesheet" href="css/flex/flexboxgrid.min.css">
     <meta charset="UTF-8">
     <title>formulario</title>
-    <style>
-        contenidoprincipal{
-            col-xs-12;
-            fsdf
-        }
-    </style>
 </head>
 <body>
     <form actions=resultado.html method="get">
        
-    <div id="contenidoprincipal">
-               
-            <div id="fechaa">
-               
-                <row>
+    <div id="contenidoprincipal row">
+            <div class="row center-xs">  
+            <div class="fecha col-xs-4">
+                <label for=fecha>Fecha</label>
+                <input type="date" fecha="fecha" id="fecha" required>   
+            </div>          
+                <button>enviar</button>
                 
-                        <label for=fecha>Fecha</label>
-                        <input type="date" fecha="fecha" id="fecha" required>
-                        
-                        
-                    <button>enviar</button>
-                
-                </row>
-                 
-              
-            </div>    
-            
+            </div> 
          
         <div>
             <label for=titulo>Titulo</label>
