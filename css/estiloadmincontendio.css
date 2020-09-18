@@ -2,14 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto+Slab&display=swap');
 
-:root{
-    --azul: #438EC8;
-    --negro: #222020;
-    --blanco: #FCFCFC;
-    --grisoscuro: #898888;
-    --gris: #BFBFBF;
-    --petroleo: #1F4C68;
-}
 @font-face {
   font-family: garamond;
   src: url('garamond.ttf');
@@ -23,110 +15,8 @@ body{
     font: 14px/1.4 Georgia, Serif; 
     background-color: #FBFBFB;
 }
-/*
-
-.header{
-    grid-area: header;
-    background: rgba(0,0,0,0.75);
-    padding: 10px; 0px;
-    display: grid;
-    position: static;
-    width: 100%;
-    height: 10%;
-}
-.header__b{
-    font-size: 20px;
-    font-family: 'Libre Franklin', sans-serif;
-    color:whitesmoke;
-    display: inline;
-    width: 100px;
-    height: 1000px;
-}
-.header__b__cerrar{
-     text-align: right;
-    height: 1000px;
-    width: 100px;
-     color:whitesmoke;
-     display: inline;
-}
-
-*/
-header {
-	width:100%; /* Establecemos que el header abarque el 100% del documento */
-    height: 100px;
-	overflow:hidden; /* Eliminamos errores de float */
-	background:#252932;
-	margin-bottom:20px;
-}
- 
-.wrapper {
-	width:90%; /* Establecemos que el ancho sera del 90% */
-	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-	margin:auto; /* Centramos los elementos */
-	overflow:hidden; /* Eliminamos errores de float */
-}
- 
-header .logo {
-	color:#f2f2f2;
-	font-size:50px;
-	line-height:100px;
-	float:left;
-}
- 
-header nav {
-	float:right;
-	line-height:100px;
-}
- 
-header nav a {
-	display:inline-block;
-	color:#fff;
-	text-decoration:none;
-	padding:10px 20px;
-	line-height:normal;
-	font-size:20px;
-	font-weight:bold;
-	-webkit-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	transition:all 500ms ease;
-}
- 
-header nav a:hover {
-	background:#889ccf;
-	border-radius:50px;
-}
 
 
-.header2 { 
-	position: fixed;
-	height:100px;
-}
- 
-.header2 .logo {
-	line-height:100px;
-	font-size:30px;
-}
- 
-.header2 nav {
-	line-height:100px;
-}
-@media screen and (max-width: 950px) {
-	header .logo,
-	header nav {
-		width:100%;
-		text-align:center; /*Centramos el menu y el logotipo*/
-		line-height:100px;
-	}
- 
-	.header2 {
-		height:auto;
-	}
- 
-	.header2 .logo,
-	.header2 nav {
-		line-height:50px;
-	}
-}
 table { 
     font-size:200%;
     border-collapse: separate;
@@ -248,4 +138,5 @@ button:hover{
     
     
 }
+
 
