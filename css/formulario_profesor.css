@@ -96,7 +96,7 @@ p{
   cursor: pointer;
 }
 
-.input:focus,
+.input:focus, .select:focus,
 .msg .area:focus{
   border: 2px solid var(--verde1);
 }
@@ -115,8 +115,19 @@ p{
   border-radius: 5px;
   outline: none;
   transform: all 0.5s ease;
-
-            
- 
+}
+#datos{
+    display: inline;
+}
+.select{
+  width: 49.6%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
 }
 
