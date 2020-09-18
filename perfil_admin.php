@@ -6,9 +6,14 @@
 	  charset=utf-8">
     <title>Perfil Administrador</title>
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" type="text/css" href="css/estilofooter.css" 
-    <link rel="stylesheet" type="text/css" href="css/flex/flexboxgrid.min.css">
-    <link rel="stylesheet" type="text/css" href="css/estiloadmin1.css">
+    <link rel="stylesheet" type="text/css" href="css/estilofooter.css">
+    <link rel="stylesheet" href="css/flex/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/inicio_admin.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+     
+
 </head>
 <?php
 //trae la conexion
@@ -23,38 +28,72 @@ session_start();
 ?>
 
 <body>
-     <header>
-        <center>
-        <h1>E.E.S.T.N°14</h1>
-        <a href="cerrar_sesion.php"><img src="img/logo.png" width="50px" height="auto"></a>
-        </center>
-   </header>
+<header>
+   
+		<div class="wrapper">
+
+			<div class="logo">carpeta virtual</div>
+			
+			<nav>
+				<a href="">Reporte</a>
+				<a href="">Ajustes</a>
+				<a href="">Ayuda</a>
+				<a href="cerrar_sesion.php">cerrar sesion</a>
+			</nav>
+		</div>
+
+	</header> 
     
-    
-    <div class="row">
-        <div class="col-md-offset-2 col-xs-12 col-md-4  holis">
-        <div class="row center-xs">
-            <a class="button" href="admin.contenido.php"><center>Contenido</center></a>
-        </div>
-        </div>
+    <div class="contenedor_principal row center-xs">
+    <div class="bienvenido">
+    <h1 class="col-xs-12">Bienvenido Un Dia Mas </h1>
+    </div>
+     
+      <div class="cuadros col-xs-12">
+       
+        <div class="row center-xs">   
+            <div class="opciones contenido col-xs-11 col-lg-4">
+             
+               <a href="admin.contenido.php" blank="target" >
+                <h2>Material Subido</h2>
+                <p class="texto_codigo">asdsadaskdjaskldaslkdasd</p>
+                </a>
+                
+            </div>
         
-        <div class="col-md-offset-1 col-xs-12 col-xs-7 col-md-4  holis">
-         <div class="row center-xs">
-            <a class="button" href="admin.verificar.php"><center>Verificar</center></a>
+            <div class="opciones clases col-xs-11 col-lg-4">
+               
+                <a href="admin_alumnos.php">
+                <h2>Lista de alumnos</h2>
+                <p class="texto_alumnos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus fuga beatae voluptates qui nihil id ad dolor maiores, sint velit nemo dicta rerum alias cumque ipsa perspiciatis in architecto!</p>
+                </a>
+                <div class="fondo">
+                </div>
+            </div>  
         </div>
-        </div>
+        <div class="row center-xs">
+            <div class="opciones cargar_clase col-xs-11 col-lg-4">
+             
+               <a href="codigogenerado.php">
+                <h2>Registrar profesores</h2>
+                <p class="texto_cargar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum est delectus, ipsam optio, repellendus sed laboriosam dignissimos molestias autem suscipit numquam quaerat asperiores rerum cumque omnis maiores minima. Alias, provident.</p>
+                </a>
+                 <div class="fondo">
+                </div>
+            </div>
         
-        <div class="col-md-offset-1 col-xs-12 col-md-4  holis">
-        <div class="row center-xs">
-            <a class="button" href="codigo.php"><center>Codigo</center></a>
+            <div class="opciones indefinido col-xs-11 col-lg-4 ">
+              
+               <a href="">
+                <h2>Agregar o quitar materias</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, sequi. Deserunt libero ratione saepe autem sapiente accusantium dolorem id ex, harum nihil qui, nesciunt culpa doloribus rem reprehenderit voluptate non.</p>
+                </a>
+                <div class="fondo">
+                </div>
+            </div>
         </div>
-        </div>
-         <div class="col-md-offset-5 col-xs-12 col-md-4  holis">
-        <div class="row center-xs">
-            <a class="button" href="admin_alumnos.php"> <center>alumnos</center></a>
-        </div>
-        </div>
-        </div>
+      </div>
+    </div>
     
      <footer>
        
