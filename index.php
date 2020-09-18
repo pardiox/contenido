@@ -11,7 +11,7 @@ if( $_SESSION["u"]['sesion'] == "s.a"){
     header ("location: alumno.php");
 }else
 if( $_SESSION["u"]['sesion'] == "s.p"){
-    header ("location: perfil_profesor.php");
+    header ("location: vista_profesor_inicio.php");
 }
 }
 ?>
