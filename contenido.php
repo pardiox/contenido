@@ -13,10 +13,10 @@
   if( $_SESSION["u"]['sesion'] != "s.p"){
     header ("location: login.php");
     }
-    echo   $_SESSION["u"]['curso'];
+
    include "conexion.php";
    if(isset($_POST['modificar'])){
-  $curso=    $_SESSION["u"]['curso'];
+  $curso= $_SESSION["u"]['curso'];
   $materia=$_SESSION["u"]['materia'];
   $Email=$_SESSION["u"]['Email'];}
  else
@@ -24,8 +24,8 @@
       echo"";
   }else
  {
-  $curso=$_REQUEST['curso'];
-  $materia=$_REQUEST['materia'];
+  $curso="2do_2da";
+  $materia="matematicas";
   $_SESSION["u"]['curso'] = $curso;
   $_SESSION["u"]['materia'] = $materia;
   $Email=$_SESSION["u"]['Email'];
