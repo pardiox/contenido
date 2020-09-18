@@ -1,9 +1,11 @@
 <?php
 session_start();
+/*
 if(  $_SESSION["u"]['verificado'] == "1"){
    header("Location: alumno.php");
    exit();
 }
+*/
 ?>
 
 
