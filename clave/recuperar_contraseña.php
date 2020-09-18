@@ -6,14 +6,7 @@
         <form action="enviar_codigo.php" metod="post">
             <input type="text" value=""placeholder="Email" name="Email">
             <input type="submit" value="enviar">
-        </form>
-        <?php
-        echo phpversion();
-        ?>
-        
-        
-        
-        
+        </form>    
         
     </body>
 </html>
