@@ -55,7 +55,7 @@ session_start();
             <div class="opciones contenido col-xs-11 col-lg-4">
              
                <a href="admin.contenido.php" blank="target" >
-                <h2>Material Subido</h2>
+                <h2 class="contendio__h2">Material Subido</h2>
                 <p class="texto_codigo">asdsadaskdjaskldaslkdasd</p>
                 </a>
                 
