@@ -3,20 +3,26 @@
     <head>
       <title>verificar</title>  
 	  <!--comentario-->
+	  
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
 	  <link rel="stylesheet" type="text/css" href="css/estiloadmincontendio.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css">
 	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
       <script src="http://code.jquery.com/jquery-latest.js"></script>
+      
+      
     </head>
- <body>
+ 
    <header>
+   
 		<div class="wrapper">
+
 			<div class="logo">carpeta virtual</div>
 			
 			<nav>
 				<a href="perfil_admin.php">inicio</a>
-				<a href="codigo.php">codigo</a>
+				<a href="codigogenerado.php">codigo</a>
 				<a href="admin_alumnos.php">alumnos</a>
 				<a href="cerrar_sesion.php">cerrar sesion</a>
 			</nav>
