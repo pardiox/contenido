@@ -1,6 +1,8 @@
 <?php
 include "../conexion.php";
+session_start();
 $Email=$_REQUEST["Email"];
+$_SESSION["Email"]=$Email;
 function generarCodigo($longitud) {
  $key = '';
  $pattern = '1234567890';
@@ -16,21 +18,8 @@ if(!$error= $con-> query($sql)){
 else{
     $titulo="codigo de confirmacion";
     $body="su codigo de confirmacion es $codigo";
+    $location="location: verificar_codigo.php";
     include("prueba.php");
-    if(!$mail->send()){
-        header ("location: verificar_codigo.php"); 
-    }
-    else{
-        "hubo un error";
-    }
-
 }
 
-
-
-
-
-
-
-
-?>x
+?>
