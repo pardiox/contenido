@@ -1,4 +1,5 @@
-<html>
+
+   <html>
     <head></head>
     <header></header>
     <body>
@@ -13,14 +14,21 @@
              session_start();
              $codigo=$_REQUEST['codigo'];
              include "../conexion.php";
-             $Email=$_SESSION["Email"]; //v
+             $Email=$_SESSION["Email"]; 
              $sql =  "SELECT * FROM recuperar_clave where Email='$Email' and codigo='$codigo'";
              if ($resultad = $con->query($sql)){
-             while ($fila = mysqli_fetch_array($resultad)){
-             $_SESSION["id"]=$fila["id"];
+                if ($resultad->num_rows > 0){
+                    header ("location: cambiar_contraseña.php");  
+                }
+             }else{
+                 echo "el codigo no coincide";
+             }
              
-             header ("location: cambiar_contraseña.php");
-        }}}
+        }
 ?>
     </body>
 </html>
+
+
+
+
