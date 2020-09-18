@@ -11,7 +11,7 @@
     <div id="contenidoprincipal row">
             <div class="row center-xs">  
             <div class="fecha col-xs-4">
-                <label for=fecha>Fecha</label>
+                <label for=fecha>Fecha de entrega</label>
                 <input type="date" fecha="fecha" id="fecha" required>   
             </div>          
                 <button>enviar</button>
@@ -23,10 +23,6 @@
             <input type="text" titulo="titulo" id="titulo" placeholder="Nombre del trabajo" required>
         </div>
           
-        <div>
-            <label for=fecha>Fecha de Entrega</label>
-            <input type="date" fde="fde" id="fde" required>
-        </div>
            
         <div>
             <label for=contenido>Contenido</label>
