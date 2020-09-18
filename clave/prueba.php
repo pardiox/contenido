@@ -7,7 +7,6 @@
     
     try {
     $mail = new PHPMailer\PHPMailer\PHPMailer();
-    echo "hola";
     $fromeemail="emailprueba869@gmail.com";
     $fromname="prueba";
     $host="smtp.gmail.com";  
@@ -38,7 +37,7 @@
     $mail->Subject = $titulo;
     $mail->Body    = $body;
 
-
+    header ($location); 
     } 
     catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
