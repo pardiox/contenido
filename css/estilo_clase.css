@@ -1,0 +1,86 @@
+:root{
+    --marron1:#A7906D;
+    --violeta1:#705A7C;
+    --azul1:#5A687C;
+    --verde1:#5A7C7A;
+    --rojo1:#7C5F5A;
+    --fondo:#CFCFCF;
+    --fondointerior:#E8E8E8;
+    --gris:#E8E8E8;
+    --gris2:#C9C9C9;
+}
+
+/*fuentes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*font-family: 'Lato', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap');
+/*font-family: 'Saira', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+/*font-family: 'Hammersmith One', sans-serif;
+*/
+
+
+/*fuentes*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    text-align: center;
+    height: 70px;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+.contenedor_principal{
+    width: 100%;
+    padding-bottom: 20px; 
+    margin-left: 0 !important;
+}
+
+.barra_lateral{
+    height: 700px;
+    
+    border-right:1px solid;
+    border-color:var(--gris2);
+    
+}
+
+.contenido{
+    height: 700px;
+    background-color: ;
+}
+
+.arriba h2{
+    font-family: 'Saira', sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.medio p:hover{
+    background-color: var(--azul1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
