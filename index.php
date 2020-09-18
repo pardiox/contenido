@@ -51,7 +51,8 @@ if( $_SESSION["u"]['sesion'] == "s.p"){
         </form>
          <p>Haga click</p> 
          <button id="abrir_ventana"> Aquí </button> 
-         <p>para registrarse como Profesor</p>
+        <p>para registrarse como Profesor</p><br>
+         <a href="clave/recuperar_contraseña.php"><p>¿haz olvidado tu contraseña?</p></a>
     </div>
     
     
@@ -86,7 +87,7 @@ if( $_SESSION["u"]['sesion'] == "s.p"){
                 <option>3ro_6ta</option>
                 <option>4to_1ra</option>
                 <option>4to_2da</option>
-                <option>4to_3ra</option>
+                <option>4to_3rax</option>
                 <option>4to_4ta</option>
                 <option>4to_5ta</option>
                 <option>5to_1ra</option>
