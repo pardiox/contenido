@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+session_start();
+include "conexion.php";
+$Email=$_SESSION["u"]['Email'];
+
+if( $_SESSION["u"]['sesion'] != "s.p"){
+    header ("location: index.php");
+}
+?>
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +26,11 @@
 
 <div class="container">
     <p>Subir Contenido</p>
-            
+            <form action="profesor_contenido_subido.php" method="post">  
     
     <div class="subject">
-     <input placeholder="Fecha de Entrega" class="input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+  
+     <input placeholder="Fecha de Entrega" class="input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name="fecha_de_entrega" required/>
       
     
 
@@ -31,44 +43,38 @@
    
     
     <div class="subject">
-      <input type="text" placeholder="Titulo" class="input">
-      
+      <input type="text" placeholder="Titulo" class="input" name="titulo" required>
+    
     </div>
     
     
   
-       <div class="input">
-                <select id="curso" name="curso">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="5">6</option>
-                    <option value="5">7</option>
+                <select class="select" name="curso" id="caja_busqueda" required>
+                      <?php
+                        $sql =  "SELECT * FROM materia where Email='$Email'";
+                        if ($resultad = $con->query($sql)){
+                        while ($fila = mysqli_fetch_array($resultad)){ 
+                        ?>
+                        <option type="text" id="caja_busqueda">
+                           <?php echo $fila["curso"]; ?>
+                        </option>
+                            <?php }} ?>
                 </select>
-            </div>
-    
-    
-    <div class="msg">
-      <textarea  class="area" placeholder="Contenido"></textarea>
-    </div>
+                <div id="datos"></div>
     
     <div class="msg">
-      <input type="text" placeholder="Anotaciones" class="input">
+      <textarea  class="area" placeholder="Contenido" name="contenido" required></textarea>
     </div>
-     <div class="boton">
     
-      
-      <div class="btn">Enviar</div> 
-
-
-    
-      
+    <div class="msg" id="datos">
+      <input type="text" placeholder="bibiografia" name="bibiografia" class="input">
     </div>
+        <center><input type="submit" value="enviar" class="btn" class="boton"></center>
+    </form>
 </div>
 
 
-
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
