@@ -6,23 +6,32 @@
 	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
-	  <link rel="stylesheet" type="text/css" href="css/estilologin1.css">
-	 </head>
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+   </head>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
     <title>codigo</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo1.css">
+
 
 </head>
 <body>
-  <header>
-         <center>
-          <h1>E.E.S.T.N°14</h1>
-         <a href="cerrar_sesion.php"><img src="img/logo.png" width="50px" height="auto"></a>
-        </center>
-   </header>
+ <header>
+   
+		<div class="wrapper">
+
+			<div class="logo">carpeta virtual</div>
+			
+			<nav>
+				<a href="perfil_admin.php">inicio</a>
+				<a href="admin_alumnos.php">alumnos</a>
+				<a href="admin.contenido.php">contendio</a>
+				<a href="cerrar_sesion.php">cerrar sesion</a>
+			</nav>
+		</div>
+
+	</header>
+
     
        <center>
       <p>Codigo generado</p> 
