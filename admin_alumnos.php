@@ -5,19 +5,52 @@
 	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
-	  <link rel="stylesheet" type="text/css" href="css/estiloperfil2.css">
+	  <link rel="stylesheet" type="text/css" href="css/estiloadmincontendio.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" type="text/css" href="css/estiloadminalumnos.css">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
 	 </head>
 
 <body>
-  <header>
-    <center>
-        <h1>E.E.S.T.N°14</h1>
-        <a href="cerrar_sesion.php"><img src="img/logo.png" width="50px" height="auto"></a>
-    </center>
-  </header>
+<header>
+   
+		<div class="wrapper">
+
+			<div class="logo">carpeta virtual</div>
+			
+			<nav>
+				<a href="perfil_admin.php">inicio</a>
+				<a href="codigogenerado.php">codigo</a>
+				<a href="admin.contenido.php">contendio</a>
+				<a href="cerrar_sesion.php">cerrar sesion</a>
+			</nav>
+		</div>
+
+	</header>
+
+	   		<script> 
+            $(document).ready(function(){
+
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 100 ){
+			$('header').addClass('header2');
+		} else {
+			$('header').removeClass('header2');
+		}
+	});
+
+});
+        </script>
+         <p class="titulo">
+         En esta pestaña podra ver en una tabla las tareas/trabajos/consignas subidas a la plataforma por los profesores.
+         separado en columnas por nombre y apellido del profesor, materia del contendio, curso, y titulo del trabajo.
+         para acceder a el solo tiene que dar click en "ver". si el contendio no le parece adecuado o hay algo mal, podra eliminarlo presionando en "eliminar" segido enviarle un E-mail al profesor de porque su tarea fue borrada
+         </p>
   <table>
-    <tr>
-       <td>nombre</td>
+    <tr class="tabla-arriba">
+       <td class="tabla-arriba__profesor">nombre</td>
+        <td class="tabla-arriba__profesor">apellido</td>
        <td>curso</td>
     </tr>
   <?php
@@ -33,19 +66,22 @@ if ($resultado = $con->query($sql)){
         $apellido=$fila["apellido"];
         $curso=$fila["curso"]; 
         $Email=$fila["Email"];
-echo"
- <tr>     
-     <td>       
-       ".$nombre.", ".  $apellido."
+?>
+ <tr class='cuerpo'>     
+     <td class='hi' class='tabla-arriba__profesor'>       
+       <?php echo $nombre?>
      </td>
-     <td>
-       ". $curso."
+     <td class='hi' class='tabla-arriba__profesor'>       
+       <?php echo $apellido?>
+     </td>
+     <td class='hi' >
+      <?php echo $curso;?>
      </td>  
-     <td>
+     <td class='hi__boton'>
         <a href='eliminar_alumno.php?Email=$Email'> <button>eliminar</button></a> 
      </td>
  </tr>
-";
+<?php
 }
 }
 ?>
