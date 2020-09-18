@@ -7,23 +7,12 @@
         include "../conexion.php";
         if(isset($_REQUEST["clave1"])){
         if ($_REQUEST["clave1"] == $_REQUEST["clave2"]){
-            $Email=$_SESSION["Email"];
+            $Email= $_SESSION["Email"];
             $clave = $_REQUEST["clave1"];
+            $tipo =$_SESSION["tipo"];
             
-            $sql =  "SELECT * from profesor where Email='$Email'";
-            if ($resultado = $con->query($sql)){
-                if ($resultado->num_rows > 0){
-                    $tipo="profesor";  
-                }
-            }
-            else{
-                $sql =  "SELECT * from alumno where Email='$Email'";
-                if ($resultado = $con->query($sql)){
-                    if ($resultado->num_rows > 0){
-                        $tipo="alumno";  
-                    }
-                }
-            if ($_REQUEST["tipo"]=="profesor"){
+            if(isset($tipo)){
+            if ($tipo=="profesor"){
                 $SQL="UPDATE profesor SET password='$clave' where Email='$Email'"; 
                 if(!$error= $con-> query($SQL)){
                     echo $con->error;
@@ -42,13 +31,13 @@
                     echo "contraseña cambiada con exito";
                     exit();
 	           }
-            }else{
+            }}else{
                 echo "email no existe";
             }
                 
-        }}}else{
+        }else{
         echo "las contraseña no coinciden";
-        }
+        }}
         
         ?>
         <form action="cambiar_contraseña.php">
