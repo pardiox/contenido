@@ -33,7 +33,7 @@
 .header{
     text-align: center;
     height: 70px;
-    border-bottom: 1px solid;
+    background-color: var(--azul1);
     width: 100%;
 }
 
@@ -51,9 +51,9 @@
     
 }
 
-.contenido{
-    height: 700px;
-    background-color: ;
+.arriba{
+    padding-bottom: 5px;
+    margin-bottom:7px; 
 }
 
 .arriba h2{
@@ -61,14 +61,40 @@
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-bottom-color: var(--gris2);
 }
-.medio p:hover{
+.medio .senal p{
+    font-size:20px;
+}
+
+.medio .cursos {
+    background-color: #F5F5F5;
+    margin-top: 20px;
+    height:320px;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--gris2);
+    overflow:auto;
+}
+.medio .cursos p{
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.medio .cursos p:hover{
+    cursor: pointer;
     background-color: var(--azul1);
+    color: white;
+    border-radius:5px;
 }
 
 
 
-
+.contenido{
+    height: 700px;
+    background-color: ;
+}
 
 
 
