@@ -1,7 +1,40 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:500|Montserrat:300|Roboto:100');
 
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto+Slab&display=swap');
+
+@font-face {
+  font-family: garamond;
+  src: url('garamond.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+html { height: 100%; }
+body{
+    font: 14px/1.4 Georgia, Serif; 
+    background-color: #FBFBFB;
+    background-color: #EEEEE9;
+}
+.contenedor{
+  background-color: white;
+  width: 60%;
+  height:  auto;
+  border: black 3px solid;
+  padding: 50px;
+    padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+     border-radius: 20px;
+}
 .mensaje {
     color: #fff;
     font-family: montserrat;
@@ -10,7 +43,7 @@
     margin: 12px;
     padding: 12px 20px ;
     border-radius: 20px;
-    display: inline;
+    display: block;
 }
 .curso, #curso{
     text-align: center;
@@ -18,7 +51,7 @@
     margin: 17px;
     font-family: montserrat;
     font-size: 20px;
-    border-color: aquamarine;
+    border-color: #EEEEE9;
     display: inline;
     border-radius: 10px;
     
@@ -27,14 +60,19 @@
     padding: 13px ;
     font-family: montserrat;
     font-size: 20px;
-    border-color:  aquamarine;
+    border-color:  #EEEEE9;
     display: inline;
     margin: 17px;
     border-radius: 10px;
 }
-#datos, #datos1{
+#datos, #datos1, #datos2{
     display: inline;
 }
 li{
     display: inline;
 }
+.a{
+   text-decoration: none;
+}
+
+
