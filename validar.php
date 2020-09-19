@@ -20,7 +20,7 @@ if ($resultado->num_rows > 0){
     $_SESSION["u"]['apellido'] = $fila["apellido"];
     $_SESSION["u"]['Email'] = $fila["Email"];
     $_SESSION["u"]['sesion'] =   "s.p";
-    header("Location: vista_profesor_inicio.php");
+    header("Location: profesor/vista_profesor_inicio.php");
     exit();}
 }
 
@@ -33,7 +33,7 @@ $sql =  "SELECT * from admin where Email='$Email' and password='$password'";
    if ($resultado->num_rows > 0){
       $fila=$resultado->fetch_assoc();
       $_SESSION["u"]['sesion'] = "s.admin";
-           header("Location: perfil_admin.php");
+           header("Location: admin/perfil_admin.php");
        exit();
 }}
 
