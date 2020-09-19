@@ -72,9 +72,9 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
         <center><input type="submit" value="enviar" class="btn" class="boton"></center>
     </form>
 </div>
+ 
 
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
