@@ -1,0 +1,48 @@
+
+.txt[contenteditable] {
+  outline: none;
+}
+
+/* Box ------------------------------------------------------ */
+
+#box {
+  padding: 0px;
+  font-weight: bold;
+  max-width: 1200px;
+    height: 100px;
+}
+
+
+/* txt ------------------------------------------------------ */
+
+.txt {
+
+  transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+	}
+	@-moz-document url-prefix() { .txt { text-shadow: #fff 0 0 60px; } } /* FF fix */
+
+#box:hover .txt {
+		text-shadow: #fff 0 0 5px;
+		transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+
+/* ♥ ------------------------------------------------------ */
+
+
+
+#box:hover .♥ {
+        font-size: 10px;
+		text-shadow: red 0 0 0px;
+		transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+}
+  @-moz-document url-prefix() { #box:hover .♥ { text-shadow: white 0 0 60px; } } /* FF fix */
+
+
+.p{
+    font-size: 10px;
+    display: inline;
+}
+.footer{
+    background-color: black;
+}
