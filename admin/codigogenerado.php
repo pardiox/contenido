@@ -8,7 +8,10 @@
 	  charset=utf-8">
       <link rel="stylesheet" type="text/css" href="css/header.css">
       <link rel="stylesheet" type="text/css" href="css/estilocodigo.css"> 
+
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
    </head>
 <html lang="en">
 <head>
@@ -33,7 +36,20 @@
 		</div>
 
 	</header>
+		   		<script> 
+            $(document).ready(function(){
 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 100 ){
+			$('header').addClass('header2');
+		} else {
+			$('header').removeClass('header2');
+		}
+	});
+
+});
+        </script>
+<div class="contenedor">
     
        <center>
       <p class="mensaje">A continuación ingrese su email y el su curso </p> 
@@ -64,7 +80,7 @@ $cod= generarCodigo(6);
 <input type="text" class="content__form" name="codigo" id="caja_busqueda" value=" <?php echo $cod; ?>" placeholder="codigo"><br>
 
  <select name="curso" id="caja_busqueda" class="curso" required >
-                <option>1ro_1ra</option>
+                <option id="caja_busqueda">1ro_1ra</option>
                 <option>1ro_2da</option>
                 <option>1ro_3ra</option>
                 <option>1ro_4ta</option>
@@ -106,26 +122,55 @@ var nextinput = 0;
     
 function AgregarCampos(){
     nextinput++;
-    if (nextinput<5){
-        campo = '<li id="rut'+nextinput+'"><select  class="curso" id="caja_busqueda'+nextinput+'"; name="materia' + nextinput + '"&nbsp;> <option>5to_1ra</option><option>5to_2da</option><option>5to_3ra</option></select></li>';
+    if (nextinput<3){
+        campo = '<li id="rut'+nextinput+'"><select  class="curso" id="caja_busqueda'+nextinput+'"; name="materia' + nextinput + '"&nbsp;> <option id="caja_busqueda">1ro_1ra</option><option>1ro_2da</option><option>1ro_3ra</option><option>1ro_4ta</option><option>1ro_5ta</option><option>1ro_6ta</option><option>2do_1ra</option><option>2do_2da</option><option>2do_3ra</option><option>2do_4ta</option><option>2do_5ta</option><option>2do_6ta</option><option>3ro_1ra</option><option>3ro_2da</option><option>3ro_3ra</option><option>3ro_4ta</option><option>3ro_5ta</option><option>3ro_6ta</option><option>4to_1ra</option> <option>4to_2da</option><option>4to_3ra</option><option>4to_4ta</option><option>4to_5ta</option><option>5to_1ra</option> <option>5to_2da</option><option>5to_3ra</option><option>5to_4ta</option><option>6to_1ra</option><option>6to_2da</option><option>6to_3ra</option><option>7mo_1ra</option><option>7mo_2da</option><option>7mo_3ra</option>/select></li>';
         
-        campo2 = '<li id="rut'+nextinput+'"><div id="datos'+nextinput+'"></div></li>';
+        campo2 = '<li id="rut'+nextinput+'"><div id="datos'+nextinput+'"></div><br></li>';
         $("#campos").append(campo);
         $("#campos").append(campo2);
         }
+        
 }
    
 </script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
  </div>
-<a href="#" onclick="AgregarCampos();">Agregar Campos</a>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+ <p>sdsadsads</p>
+<a href="#" class="a" onclick="AgregarCampos();">Agregar Campos</a>
 
 <br>
 <input type='submit' value='Enviar' class='button'>
-            </center>
-</div>
 
+            </form>
+</center>
+</div>
+    </div>
+    <div class="footer">
+    <div id="box">
+        <span class="txt"> <p class="p">no pases el mous por aca</p>
+        
+        <p class="p">no pases el mous por aca</p>
+        <p class="p">no pases el mous por aca</p><p class="p">no pases el mous por aca</p>
+        <p class="p">no pases el mous por aca</p>
+        
+        
+        </span>
+
+  
+</div>
+    </div>
 </body>
     
 </html>
