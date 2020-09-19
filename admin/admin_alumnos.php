@@ -7,6 +7,7 @@
 	  charset=utf-8">
 	  <link rel="stylesheet" type="text/css" href="css/estiloadmincontendio.css">
       <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" type="text/css" href="css/estilofooterchico.css">
       <link rel="stylesheet" type="text/css" href="css/estiloadminalumnos.css">
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
       <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -86,8 +87,19 @@ if ($resultado = $con->query($sql)){
 }
 ?>
 </table>
-<div class="footer">
-    facebook
+ <div class="footer">
+    <div id="box">
+        <span class="txt"> <p class="p">no pases el mous por aca</p>
+        
+        <p class="p">no pases el mous por aca</p>
+        <p class="p">no pases el mous por aca</p><p class="p">no pases el mous por aca</p>
+        <p class="p">no pases el mous por aca</p>
+        
+        
+        </span>
+
+  
 </div>
+    </div>
 </body>
 </html>
