@@ -5,7 +5,7 @@ include "conexion.php";
 session_start();
 if(isset($_SESSION["u"]['sesion'])){
 if( $_SESSION["u"]['sesion'] == "s.admin"){
-    header ("location: perfil_admin.php");
+    header ("location: admin/perfil_admin.php");
 }else
 if( $_SESSION["u"]['sesion'] == "s.a"){
     header ("location: alumno.php");
