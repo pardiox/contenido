@@ -16,7 +16,7 @@ if ($resultado->num_rows > 0){
     $fila=$resultado->fetch_assoc();
     $_SESSION["u"]['codigo'] = $fila["codigo"];
     $_SESSION["u"]['sesion'] = "s.a";
-    header("Location: alumno.php");
+    header("Location: alumno/alumno.php");
 }
  
     exit();
