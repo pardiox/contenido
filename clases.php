@@ -23,16 +23,20 @@
                     <input type="submit" class="col-xs-1" value="x">
                 </form>
             </div>
-            <div class="medio row center-xs">
-                  <p class="col-md-5">Curso</p>
-                  <p class="col-md-5">Materia</p>
-                  
-                <div class="cursos">
-                    
+            <div class="medio row center-xs middle-md">
+             
+                <div class="cursos col-md-12">
+                    <p>6mo 2da Matemáticas </p><!-- prueba -->
+                    <p>2do 1ra Fisio-Quimica </p><!-- prueba --><p>6mo 2da Matemáticas </p><!-- prueba -->
+                    <p>2do 1ra Fisio-Quimica </p><!-- prueba --><p>6mo 2da Matemáticas </p><!-- prueba -->
+                    <p>2do 1ra Fisio-Quimica </p><!-- prueba --><p>6mo 2da Matemáticas </p><!-- prueba -->
+                    <p>2do 1ra Fisio-Quimica </p><!-- prueba --><p>6mo 2da Matemáticas </p><!-- prueba -->
+                    <p>2do 1ra Fisio-Quimica </p><!-- prueba --><p>6mo 2da Matemáticas </p><!-- prueba -->
+                    <p>2do 1ra Fisio-Quimica </p><!-- prueba -->
                 </div>
             </div>
             <div class="abajo row">
-                
+                <p>hola</p>
             </div>
         </div>
         
