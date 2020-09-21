@@ -52,7 +52,7 @@
         <div class="row center-xs">
             <div class="opciones cargar_clase col-xs-11 col-lg-4">
              
-               <a href="">
+               <a href="formulario_profesor.php">
                 <h2>Cargar Clases</h2>
                 <p class="texto_cargar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum est delectus, ipsam optio, repellendus sed laboriosam dignissimos molestias autem suscipit numquam quaerat asperiores rerum cumque omnis maiores minima. Alias, provident.</p>
                 </a>
