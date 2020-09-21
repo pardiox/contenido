@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Fornulario</title>
 
-    <link rel="stylesheet" type="text/css" href="formulario_profesor.css">
+    <link rel="stylesheet" type="text/css" href="css/formulario_profesor.css">
     
 </head>
 <body>
