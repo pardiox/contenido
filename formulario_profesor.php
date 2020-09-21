@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="stylesheet" href="css/flex/flexboxgrid.min.css">
     <meta charset="UTF-8">
-    <title>formulario</title>
+    <title>Fornulario</title>
+
+    <link rel="stylesheet" type="text/css" href="formulario_profesor.css">
+    
 </head>
 <body>
-    <form actions=resultado.html method="get">
-       
-    <div id="contenidoprincipal row">
-            <div class="row center-xs">  
-            <div class="fecha col-xs-4">
-                <label for=fecha>Fecha de entrega</label>
-                <input type="date" fecha="fecha" id="fecha" required>   
-            </div>          
-                <button>enviar</button>
-                
-            </div> 
-         
-        <div>
-            <label for=titulo>Titulo</label>
-            <input type="text" titulo="titulo" id="titulo" placeholder="Nombre del trabajo" required>
-        </div>
-          
-           
-        <div>
-            <label for=contenido>Contenido</label>
-            <input type="text" contenido="contenido" id="contenido" placeholder="contenido" required>
-        </div>   
-        
-        <div>
-            <label for=anotaciones>Anotaciones</label>
-            <input type="text" contenido="anotaciones" id="anotaciones" placeholder="anotaciones" required>
-        </div>      
-           
-           
-        
+    
+
+
+
+
+<div class="container">
+    <p>Subir Contenido</p>
+            
+    
+    <div class="subject">
+     <input placeholder="Fecha de Entrega" class="input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+      
+    
+
+
+    
+      
     </div>
-    </form>
+    
+    
+   
+    
+    <div class="subject">
+      <input type="text" placeholder="Titulo" class="input">
+      
+    </div>
+    
+    <div class="msg">
+      <textarea  class="area" placeholder="Contenido"></textarea>
+    </div>
+    
+    <div class="msg">
+      <input type="text" placeholder="Anotaciones" class="input">
+    </div>
+     <div class="boton">
+    
+      
+      <div class="btn">Enviar</div> 
+
+
+    
+      
+    </div>
+</div>
+
+
+
 </body>
 </html>
