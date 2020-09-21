@@ -24,7 +24,7 @@
     
     <div class="contenedor_principal row center-xs">
     <div class="bienvenido">
-    <h1 class="col-xs-12">Bienvenido</h1>
+    <h1 class="col-xs-12">Bienvenido, <?php echo $nombre, $apellido;?></h1>
     </div>
      
       <div class="cuadros col-xs-12">
@@ -41,7 +41,7 @@
         
             <div class="opciones clases col-xs-11 col-lg-4">
                
-                <a href="contenido.php">
+                <a href="clases.php">
                 <h2>Clases</h2>
                 <p class="texto_clases">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus fuga beatae voluptates qui nihil id ad dolor maiores, sint velit nemo dicta rerum alias cumque ipsa perspiciatis in architecto!</p>
                 </a>
