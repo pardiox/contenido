@@ -138,8 +138,7 @@
           <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P> <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P> <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P> <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P> <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P> <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P> <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P> <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P> <P>sdadsadsadsadsadhsaudhsadasdjsakdjaskd</P>
 
 <div class="footer">
-
+<p>para mas informacionS</p>
 </div>
-    
- <body>
+</body>
 </html>

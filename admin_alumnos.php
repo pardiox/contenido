@@ -78,7 +78,7 @@ if ($resultado = $con->query($sql)){
       <?php echo $curso;?>
      </td>  
      <td class='hi__boton'>
-        <a href='eliminar_alumno.php?Email=$Email'> <button>eliminar</button></a> 
+        <a href='admin_eliminar_alumno.php?Email=$Email'> <button>eliminar</button></a> 
      </td>
  </tr>
 <?php
