@@ -6,7 +6,7 @@
 	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
-      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css"> 
    </head>
 <html lang="en">
 <head>
@@ -34,9 +34,9 @@
 
     
        <center>
-      <p>Codigo generado</p> 
+      <p class="mensaje">A continuación ingrese su email y el su curso </p> 
        	 	</center>
-
+<!--comentario
       <?php
  session_start();
   if( $_SESSION["u"]['sesion'] != "s.admin"){
@@ -52,16 +52,54 @@
 $cod= generarCodigo(6);
 
        ?>
-    	
+       -->
+    	<div class="content__form">
+    	<center>
   <form action='codigogeneradoverificado.php' method='post' class='form-register'>   
-<center>
-<input  type='email' placeholder='Email' name='email' class="minusc"> 
+
+<input  type='email' placeholder='Email' name='email' class="content__form"> 
 <br>  
-<?php echo "<input  type='codigo' value=".$cod." name='codigo'  class='minusc'>";?> 
-<br>  
-<input type='submit' value='aceptar' class='button'>
-      </center>
+<input type="text" class="content__form" placeholder="codigo"><br>
+ <select name="curso" id="curso" value="<?php echo $curso?>" required >
+                <option>1ro_1ra</option>
+                <option>1ro_2da</option>
+                <option>1ro_3ra</option>
+                <option>1ro_4ta</option>
+                <option>1ro_5ta</option>
+                <option>1ro_6ta</option>
+                <option>2do_1ra</option>
+                <option>2do_2da</option>
+                <option>2do_3ra</option>
+                <option>2do_4ta</option>
+                <option>2do_5ta</option>
+                <option>2do_6ta</option>
+                <option>3ro_1ra</option>
+                <option>3ro_2da</option>
+                <option>3ro_3ra</option>
+                <option>3ro_4ta</option>
+                <option>3ro_5ta</option>
+                <option>3ro_6ta</option>
+                <option>4to_1ra</option>
+                <option>4to_2da</option>
+                <option>4to_3rax</option>
+                <option>4to_4ta</option>
+                <option>4to_5ta</option>
+                <option>5to_1ra</option>
+                <option>5to_2da</option>
+                <option>5to_3ra</option>
+                <option>5to_4ta</option>
+                <option>6to_1ra</option>
+                <option>6to_2da</option>
+                <option>6to_3ra</option>
+                <option>7mo_1ra</option>
+                <option>7mo_2da</option>
+                <option>7mo_3ra</option>
+            </select>  
+<br>
+<input type='submit' value='Enviar' class='button'>
 </form>
+            </center>
+</div>
 <div class="footer">
     facebook
 </div>

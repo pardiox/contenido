@@ -15,7 +15,36 @@ header {
 	background:#252932;
 	margin-bottom:20px;
 }
- 
+.mensaje {
+    color: #fff;
+    font-family: montserrat;
+    font-size: 30px;
+    background: #889ccf;
+    margin: 12px;
+    padding: 12px 20px ;
+    border-radius: 20px;
+    display: inline;
+}
+#curso{
+    text-align: center;
+    padding: 13px;
+    margin: 17px;
+    font-family: montserrat;
+    font-size: 20px;
+    border-color: aquamarine;
+    display: inline;
+    border-radius: 10px;
+    
+}
+.content__form, .button {
+    padding: 13px ;
+    font-family: montserrat;
+    font-size: 20px;
+    border-color:  aquamarine;
+    display: inline;
+    margin: 17px;
+    border-radius: 10px;
+}
 .wrapper {
 	width:90%; 
 	max-width:1000px; 
