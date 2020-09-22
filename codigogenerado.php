@@ -6,7 +6,8 @@
 	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
-      <link rel="stylesheet" type="text/css" href="css/header.css"> 
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" type="text/css" href="css/estilo.css"> 
    </head>
 <html lang="en">
 <head>
