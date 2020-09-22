@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fornulario</title>
+    <title>Formulario</title>
 
     <link rel="stylesheet" type="text/css" href="css/formulario_profesor.css">
     
@@ -34,6 +34,21 @@
       <input type="text" placeholder="Titulo" class="input">
       
     </div>
+    
+    
+  
+       <div class="input">
+                <select id="curso" name="curso">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="5">6</option>
+                    <option value="5">7</option>
+                </select>
+            </div>
+    
     
     <div class="msg">
       <textarea  class="area" placeholder="Contenido"></textarea>

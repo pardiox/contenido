@@ -8,6 +8,7 @@
     --fondointerior:#E8E8E8;
 }
 
+
 /*fuentes*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -104,5 +105,18 @@ p{
   font-family: 'Lato', sans-serif;
 }
 
+  .divcurso{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
 
+            
+ 
+}
 
