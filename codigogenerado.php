@@ -30,13 +30,9 @@
 				<a href="cerrar_sesion.php">cerrar sesion</a>
 			</nav>
 		</div>
-
 	</header>
-
     
-       <center>
-      <p class="mensaje">A continuación ingrese su email y el su curso </p> 
-       	 	</center>
+
 <!--comentario
       <?php
  session_start();
@@ -57,7 +53,9 @@ $cod= generarCodigo(6);
     	<div class="content__form">
     	<center>
   <form action='codigogeneradoverificado.php' method='post' class='form-register'>   
-
+       <center>
+      <p class="mensaje">A continuación ingrese su email y  su curso </p> 
+       	 	</center>
 <input  type='email' placeholder='Email' name='email' class="content__form"> 
 <br>  
 <input type="text" class="content__form" placeholder="codigo"><br>

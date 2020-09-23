@@ -1,14 +1,14 @@
 <html>
     <head>	
         <meta charset="UTF-8">
-	    <link rel="stylesheet" href="css/estilos.css">
+	    <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
 
-        <p>ingresa tu correo electronico o nombre de usuario</p>
+        <p class="mensaje">ingresa tu correo electronico o nombre de usuario</p>
         <form action="enviar_codigo.php" metod="post">
-            <input type="text" value=""placeholder="Email" name="Email">
-            <input type="submit" value="enviar">
+            <input class="content__form" type="text" value=""placeholder="Email" name="Email">
+            <input class="button" type="submit" value="enviar">
         </form>    
         <?php
         session_start();
