@@ -28,15 +28,28 @@ if( $_SESSION["u"]['sesion'] == "s.p"){
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/flex/flexboxgrid.min.css">
 	<link rel="stylesheet" href="css/estilofooter.css">
+	<link rel="stylesheet" href="css/header.css">
 
 	
 	<title>Carpeta Virtual</title>
 </head>
+<header>
+   
+		<div class="wrapper">
+
+			<div class="logo">carpeta virtual</div>
+			
+			<nav>
+				
+				<a href="codigogenerado.php">Inicio</a>
+				<a href="admin_alumnos.php">Ayuda</a>
+				<a href="cerrar_sesion.php">Acerca de nosotros</a>
+			</nav>
+		</div>
+
+	</header>
 <body>
 <center>
-<div class="header">
-    <h1>Bienvenido a Carpeta Virtual hola</h1>
-</div>
 
 <div class="contenedor_registro row center-xs around-md top-md col-xs-11 ">
    
