@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "conexion.php";
+include "../conexion.php";
 $Email=$_SESSION["u"]['Email'];
 
 if( $_SESSION["u"]['sesion'] != "s.p"){
@@ -15,7 +15,7 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
     <meta charset="UTF-8">
     <title>Formulario</title>
 
-    <link rel="stylesheet" type="text/css" href="css/formulario_profesor.css">
+    <link rel="stylesheet" type="text/css" href="../css/formulario_profesor.css">
     
 </head>
 <body>

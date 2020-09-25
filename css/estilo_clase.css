@@ -141,6 +141,7 @@
 .contenido{
     height: 700px;
     border-bottom: 1px solid;
+    border-color:#C9C9C9;
     overflow: auto;
 
 }

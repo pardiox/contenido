@@ -12,7 +12,7 @@
    
     <header class="header">hola</header>
     
-    <div class="contenedor_principal">
+    <div class="contenedor_principal row">
         <div class="barra_lateral col-xs-12 col-md-3">
             <div class="arriba row center-xs">
                <div class="row center-xs">

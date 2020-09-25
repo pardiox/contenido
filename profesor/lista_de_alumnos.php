@@ -5,7 +5,7 @@
 	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
-	  <link rel="stylesheet" type="text/css" href="css/estiloperfil.css">
+	  <link rel="stylesheet" type="text/css" href="../css/estiloperfil.css">
 	 </head>
 
 <body>
@@ -25,7 +25,7 @@
   if( $_SESSION["u"]['sesion'] != "s.p"){
     header ("location: login.php");
     }
-include "conexion.php";
+include "../conexion.php";
     $Email=$_SESSION["u"]['Email'];
     $sql =  "SELECT * FROM materia where Email='$Email' and verificado='1'";
     if ($resultad = $con->query($sql)){
