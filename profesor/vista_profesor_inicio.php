@@ -1,5 +1,5 @@
    <?php
-    include "conexion.php";
+    include "../conexion.php";
     session_start();
     if ($_SESSION["u"]['sesion']!="s.p"){
             header ("location: login.php");
@@ -13,8 +13,8 @@
     <meta charset="UTF-8">
     <title><?php echo $nombre, $apellido;?></title>
     
-    <link rel="stylesheet" href="css/flex/flexboxgrid.min.css">
-    <link rel="stylesheet" type="text/css" href="css/inicio_prof.css">
+    <link rel="stylesheet" href="../css/flex/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/inicio_prof.css">
     
 </head>
 <body>
