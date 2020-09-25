@@ -5,21 +5,13 @@
 	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
-	  <link rel="stylesheet" type="text/css" href="../css/estiloperfil.css">
+	  <link rel="stylesheet" type="text/css" href="../css/lista_alumnos.css">
 	 </head>
 
 <body>
-  <header>
-      
-      
-      
-   <center>
-   <h1>E.E.S.T.N°14</h1>
-   <a href="cerrar_sesion.php"><img src="img/logo.png" width="50px" height="auto"></a>
-   </center>
-   </header>
-    
-      
+    <header>  
+      <h1>E.E.S.T.N°14</h1>
+    </header>  
       <?php
     session_start();
   if( $_SESSION["u"]['sesion'] != "s.p"){
@@ -62,16 +54,8 @@ if ($resultado = $con->query($sql)){
         </table>
 
 ";
-          
-
-        
-
 }}
-
- 
-}}
-    
-    
+}}   
 ?>
 </body>
 </html>
