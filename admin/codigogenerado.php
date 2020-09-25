@@ -8,10 +8,10 @@
 	  charset=utf-8">
       <link rel="stylesheet" type="text/css" href="css/header.css">
       <link rel="stylesheet" type="text/css" href="css/estilocodigo.css"> 
+      <link rel="stylesheet" type="text/css" href="css/estilofooterchico.css"> 
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-      <script src="http://code.jquery.com/jquery-latest.js"></script>
+
    </head>
 <html lang="en">
 <head>
@@ -35,24 +35,17 @@
 			</nav>
 		</div>
 
-	</header>
-		   		<script> 
-            $(document).ready(function(){
-
-	$(window).scroll(function(){
-		if( $(this).scrollTop() > 100 ){
-			$('header').addClass('header2');
-		} else {
-			$('header').removeClass('header2');
-		}
-	});
-
-});
-        </script>
+    </header>
 <div class="contenedor">
-    
+    <div class="window-notice" id="window-notice">
+
+</div>
+       <div class="content">
+       hooa
+    </div>
        <center>
-      <p class="mensaje">A continuación ingrese su email y el su curso </p> 
+      <span class="texto-borde">Buenos dias ¿que tal estuviste?</span>
+
        	 	</center>
 <!--comentario
       <?php
@@ -76,8 +69,8 @@ $cod= generarCodigo(6);
   <form action='codigogeneradoverificado.php' method='post' class='form-register'>   
 
 <input  type='email' placeholder='Email' name="Email" class="content__form">
-<br>  
-<input type="text" class="content__form" name="codigo" id="caja_busqueda" value=" <?php echo $cod; ?>" placeholder="codigo"><br>
+  
+<input type="text" class="content__form" name="codigo" value=" <?php echo $cod; ?>" placeholder="codigo"><br>
 
  <select name="curso" id="caja_busqueda" class="curso" required >
                 <option id="caja_busqueda">1ro_1ra</option>
@@ -136,20 +129,8 @@ function AgregarCampos(){
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
  </div>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
- <p>sdsadsads</p>
-<a href="#" class="a" onclick="AgregarCampos();">Agregar Campos</a>
 
+<a href="#" class="a" onclick="AgregarCampos();">¿desea agregar una materia mas?</a>
 <br>
 <input type='submit' value='Enviar' class='button'>
 
