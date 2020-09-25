@@ -25,45 +25,66 @@ body{
     background-color: #EEEEE9;
 }
 .contenedor{
-  background-color: white;
+  background-color: FFFFFF;
   width: 60%;
   height:  auto;
   border: black 3px solid;
   padding: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
      border-radius: 20px;
 }
-.mensaje {
-    color: #fff;
-    font-family: montserrat;
-    font-size: 30px;
-    background: #889ccf;
-    margin: 12px;
-    padding: 12px 20px ;
-    border-radius: 20px;
-    display: block;
+.texto-borde {
+
+    font-size: 40px;
+-webkit-text-fill-color: white;
+-webkit-text-stroke: 1px black;
+  
 }
 .curso, #curso{
     text-align: center;
     padding: 13px;
-    margin: 17px;
+    margin: 10px;
     font-family: montserrat;
     font-size: 20px;
     border-color: #EEEEE9;
     display: inline;
     border-radius: 10px;
-    
+        width: 40%;
+    height: 10%;
 }
-.content__form, .button {
-    padding: 13px ;
+.content__form {
+    
+    padding: 0px ;
     font-family: montserrat;
     font-size: 20px;
-    border-color:  #EEEEE9;
+    border-color: #EEEEE9;
     display: inline;
     margin: 17px;
     border-radius: 10px;
+    
+    width: 40%;
+    height: 10%;
+}
+.button{
+    display: block;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #7f8c8d;
+    font-size: 20px;
+    border: 0.15em solid #7f8c8d;
+    width: 40%;
+    height: 10%;
+}
+.button:hover {
+    cursor: pointer;
+    transition: 1.5s;
+    color: white;
+    background-color: #7f8c8d;
+
 }
 #datos, #datos1, #datos2{
     display: inline;
@@ -74,5 +95,38 @@ li{
 .a{
    text-decoration: none;
 }
+.window-notice{
+        background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+    opacity: 0%;
+}
+.window-notice:active {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    opacity: 100%
+}
+.content {
+    backgground: red;
+   
+}
+
 
 
