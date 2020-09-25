@@ -6,6 +6,9 @@
                      $materia=$_REQUEST["materia"];
                         echo $curso;
                         echo $materia;
+                        $str = 'abcdef    
+        ';
+                        
                     $Email=$_SESSION["u"]['Email'];
                      $sql =  "SELECT * FROM contenido where Email='$Email' and curso='$curso' and materia='$materia'";
                         
@@ -17,11 +20,11 @@
                          $contenido =$fila["contenido"];
                          $bibiografia=$fila["bibiografia"];
                         
-                         
+                         echo strlen($contenido);
                      
                         }else{
                             $titulo="TITULO";
-                            $fecha_de_entrega="FECHA DE ENTREGA";
+                            $fecha_de_entrega="FECHA DE ENTREGA                   ";
                             $contenido="<h2>aqui se veran sus trabajos, que espera a publicar algo¿? <br> hola</h2>";
                             $bibiografia="y aca de donde los alumnos se pueden guiar para estudiar";
                         }

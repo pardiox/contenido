@@ -9,6 +9,8 @@
 	$contenido=$_REQUEST['contenido'];
     $bibiografia=$_REQUEST['bibiografia'];
     $Email=$_SESSION["u"]['Email'];
+echo strlen($contenido);
+exit();
 	$SQL="INSERT INTO contenido (fecha_de_entrega, titulo, curso, materia, contenido, bibiografia, Email) VALUES
 	('$fecha_de_entrega', '$titulo', '$curso', '$materia', '$contenido','$bibiografia','$Email')";
 	
