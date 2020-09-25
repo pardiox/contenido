@@ -1,9 +1,10 @@
 
-
-<html>
+<!DOCTYPE html>
+<html lang="es">
    <head>
       <title>Verificacion</title>  
 	  <!--comentario-->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
       <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -40,9 +41,6 @@
     <div class="window-notice" id="window-notice">
 
 </div>
-       <div class="content">
-       hooa
-    </div>
        <center>
       <span class="texto-borde">Buenos dias ¿que tal estuviste?</span>
 
@@ -138,20 +136,21 @@ function AgregarCampos(){
 </center>
 </div>
     </div>
-    <div class="footer">
+    
+    
+    
+    
+<div class="footer">
     <div id="box">
-        <span class="txt"> <p class="p">no pases el mous por aca</p>
-        
-        <p class="p">no pases el mous por aca</p>
-        <p class="p">no pases el mous por aca</p><p class="p">no pases el mous por aca</p>
-        <p class="p">no pases el mous por aca</p>
-        
-        
+        <span class="txt">
+            <p class="p">no pases el mous por aca</p> 
+            <p class="p">no pases el mous por aca</p>
+            <p class="p">no pases el mous por aca</p>
+            <p class="p">no pases el mous por aca</p>
+            <p class="p">no pases el mous por aca</p>
         </span>
-
-  
-</div>
     </div>
+</div>
 </body>
     
 </html>
