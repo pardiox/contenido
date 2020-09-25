@@ -4,7 +4,7 @@ include "../conexion.php";
 $Email=$_SESSION["u"]['Email'];
 
 if( $_SESSION["u"]['sesion'] != "s.p"){
-    header ("location: index.php");
+    header ("location: ../index.php");
 }
 ?>
 
@@ -51,7 +51,7 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
   
                 <select class="select" name="curso" id="caja_busqueda" required>
                       <?php
-                        $sql =  "SELECT * FROM materia where Email='$Email'";
+                        $sql =  "SELECT distinct curso FROM cursos_y_materia where profesor='$Email'";
                         if ($resultad = $con->query($sql)){
                         while ($fila = mysqli_fetch_array($resultad)){ 
                         ?>
@@ -75,6 +75,6 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
  
 
 <script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
