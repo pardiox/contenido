@@ -223,8 +223,8 @@ CREATE TABLE `cursos_y_materia` (
   `materia` varchar(70) NOT NULL,
   `profesor` varchar(40) DEFAULT NULL,
   `tipo` varchar(10) NOT NULL,
-  `id` int(5) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id`)
+  `id` int(5) NOT NULL
+ 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
