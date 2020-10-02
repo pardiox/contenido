@@ -21,15 +21,17 @@
   if( $_SESSION["u"]['sesion'] != "s.p"){
     header ("location: login.php");
     }
+   
 include "../conexion.php";
     $Email=$_SESSION["u"]['Email'];
-    $sql =  "SELECT * FROM materia where Email='$Email' and verificado='1'";
-    if ($resultad = $con->query($sql)){
+    $sq =  "SELECT * FROM cursos_y_materia where profesor='$Email'";
+    if ($resultad = $con->query($sq)){
     while ($fila = mysqli_fetch_array($resultad)){
         
-    $materia=$fila["nombre_materia"];
+    $materia=$fila["materia"];
     $curso=$fila["curso"]; 
-    $sql =  "SELECT * FROM alumnos_verificados where curso='$curso' and materia='$materia' and verificacion='0'";
+        echo $materia;
+    $sql =  "SELECT * FROM alumnos_verificados where curso='$curso' and materia='$materia'"; /*and verificacion='0'*/
 if ($resultado = $con->query($sql)){
     while ($fila = mysqli_fetch_array($resultado)){
         $curso=$fila["curso"];
