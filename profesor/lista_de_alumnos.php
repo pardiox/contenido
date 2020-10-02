@@ -1,10 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
 
-<html>
    <head>
       <title>verificar</title>  
 	  <!--comentario-->
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
+	  <link rel="stylesheet" type="text/css" href="../css/header.css">
+	  <link rel="stylesheet" href="../css/flex/flexboxgrid.min.css">
 	  <link rel="stylesheet" type="text/css" href="../css/lista_alumnos.css">
 	 </head>
 

@@ -62,15 +62,15 @@ $cod= generarCodigo(6);
 
        ?>
        -->
-    	<div class="content__form">
-    	<center>
-  <form action='codigogeneradoverificado.php' method='post' class='form-register'>   
-
-<input  type='email' placeholder='Email' name="Email" class="content__form">
+    <div class="content__form">
+    	
+      <form action='codigogeneradoverificado.php' method='post' class='form-register'>   
+           
+            <input  type='email' placeholder='Email' name="Email" class="content__form">
   
-<input type="text" class="content__form" name="codigo" value=" <?php echo $cod; ?>" placeholder="codigo"><br>
+            <input type="text" class="content__form" name="codigo" value=" <?php echo $cod; ?>" placeholder="codigo"><br>
 
- <select name="curso" id="caja_busqueda" class="curso" required >
+            <select name="curso" id="caja_busqueda" class="curso" required >
                 <option id="caja_busqueda">1ro_1ra</option>
                 <option>1ro_2da</option>
                 <option>1ro_3ra</option>
@@ -106,9 +106,9 @@ $cod= generarCodigo(6);
                 <option>7mo_3ra</option>
             </select> 
 
-             <div id="datos"></div>
-<div id="campos">
-<script type="text/javascript">
+            <div id="datos"></div>
+            <div id="campos">
+                <script type="text/javascript">
 var nextinput = 0;
     
 function AgregarCampos(){
@@ -124,18 +124,16 @@ function AgregarCampos(){
 }
    
 </script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
- </div>
+                <script type="text/javascript" src="js/jquery.min.js"></script>
+                <script type="text/javascript" src="js/main.js"></script>
+            </div>
 
-<a href="#" class="a" onclick="AgregarCampos();">¿desea agregar una materia mas?</a>
-<br>
-<input type='submit' value='Enviar' class='button'>
+            <a href="#" class="a" onclick="AgregarCampos();">¿desea agregar una materia mas?</a>
+            <input type='submit' value='Enviar' class='button'>
 
-            </form>
-</center>
-</div>
+     </form>
     </div>
+</div>
     
     
     
