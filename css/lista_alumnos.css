@@ -6,28 +6,27 @@
 .contendor_principal{
     width: 100%;
     height: auto;
-    background-color: blue;
+    background-color: olivedrab;
     margin-bottom: 20px;
     margin: 0!important;
     padding: 0!important;
 }
  .peticiones{
     margin:5px;
-    height:80vh;
-    background-color: aqua;
-    overflow-y: auto;
-    
+    height:80vh;   
 }
 .alu_aceptados{
     margin:5px;
     height:80vh;
-    background-color: aqua;
-    overflow-y: auto;
+    background-color: white; 
 }
 
 .contenedor-tabla{
     height:auto;
-    background-color: red;
+    
     margin:5px;
     padding: 5px;
+}
+.peticiones{
+    background-color: red;
 }
