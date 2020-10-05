@@ -24,8 +24,8 @@
                      
                         }else{
                             $titulo="TITULO";
-                            $fecha_de_entrega="FECHA DE ENTREGA                   ";
-                            $contenido="<h2>aqui se veran sus trabajos, que espera a publicar algo¿? <br> hola</h2>";
+                            $fecha_de_entrega="FECHA DE ENTREGA";
+                            $contenido="<h2>aqui se veran sus trabajos, que espera a publicar algo¿?";
                             $bibiografia="y aca de donde los alumnos se pueden guiar para estudiar";
                         }
                      }}
@@ -63,6 +63,7 @@
                     <h2>Cursos</h2>
                 </div>
                 <div class="row center-xs">
+                   <div class="formulario">
                     <form action="">
                        
                         <input type="text" placeholder="Año" class="col-xs-3" id="caja_busqueda">
@@ -71,6 +72,7 @@
                         <input type="text" placeholder="Materia" class="col-xs-8">
                     
                     </form>
+                    </div>
                 </div>
             </div>
             <div class="medio row center-xs middle-md">

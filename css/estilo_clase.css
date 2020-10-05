@@ -68,12 +68,19 @@
 .barra_lateral .arriba form input{
     height: 25px;
     text-align: center;
-    border: 1px solid !important;
-    border-radius: 15px;
+    border: 0px;
+    border-bottom: 3px solid;
+    border-bottom-color:#5A687C;
+    background-color: #EEEEEE;
+    
 }
-.barra_lateral .arriba form input:active{
-    border-color: var(--azul1);
+
+.barra_lateral .arriba form input:focus{
+    outline: none; 
+    border-bottom-color:#705A7C;
+    background: linear-gradient(to bottom, transparent, #999);
 }
+
 
 .medio .cursos {
     background-color: #F5F5F5;
