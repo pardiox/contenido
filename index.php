@@ -8,10 +8,10 @@ if( $_SESSION["u"]['sesion'] == "s.admin"){
     header ("location: admin/perfil_admin.php");
 }else
 if( $_SESSION["u"]['sesion'] == "s.a"){
-    header ("location: alumno.php");
+    header ("location: alumno/alumno.php");
 }else
 if( $_SESSION["u"]['sesion'] == "s.p"){
-    header ("location: vista_profesor_inicio.php");
+    header ("location: profesor/vista_profesor_inicio.php");
 }
 }
 ?>
