@@ -73,7 +73,6 @@ session_start();
         </div>
         <div class="row center-xs">
             <div class="opciones cargar_clase col-xs-11 col-lg-4">
-             
                <a href="codigogenerado.php">
                 <h2>Registrar profesores</h2>
                 <p class="texto_cargar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum est delectus, ipsam optio, repellendus sed laboriosam dignissimos molestias autem suscipit numquam quaerat asperiores rerum cumque omnis maiores minima. Alias, provident.</p>
@@ -83,7 +82,6 @@ session_start();
             </div>
         
             <div class="opciones indefinido col-xs-11 col-lg-4 ">
-              
                <a href="">
                 <h2>Agregar o quitar materias</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, sequi. Deserunt libero ratione saepe autem sapiente accusantium dolorem id ex, harum nihil qui, nesciunt culpa doloribus rem reprehenderit voluptate non.</p>
@@ -98,16 +96,14 @@ session_start();
      <footer>
        
        <div class="container-footer-all"> 
-        
             <div class="container-body">
-
                 <div class="colum1">
                     <h1>Acerca de "Carpeta Virtual" 6º2ª</h1>
                     <p>Este grupo esta compuesto por:</p>
-                    <p>Alvarado Matias    Guerrero Lucas</p>
-                    <p>Ayala Victoria    Jaime Camila</p>
-                    <p>Cabrera Jonatan    Pardo Axel</p>
-                    <p>Galeano Roberto    Silva Mario</p>
+                    <p>Alvarado Matias </p>   
+                    <p>Guerrero Lucas</p>
+                    <p>Galeano Roberto </p>  
+                    <p> Pardo Axel</p>
                     
                     
                     
