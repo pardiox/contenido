@@ -14,7 +14,7 @@
         
         echo "<select  class='select'name='materia' id='curso' required>";
     	while ($fila = $resultado->fetch_assoc()) {
-    		?>                            
+            ?>                            
                    
                     <option><?php echo $fila['materia']; ?></option>
 
@@ -28,11 +28,3 @@
     }
 
 ?>
-
-
-
-
-
-
-
-  ?>
