@@ -41,7 +41,11 @@
         
             <div class="opciones clases col-xs-11 col-lg-4">
                
+<<<<<<< HEAD
                 <a href="clases.php">
+=======
+                <a href="../profesor/clases.php">
+>>>>>>> e6525ef0714f18d1554f7645370e1e485342ba65
                 <h2>Clases</h2>
                 <p class="texto_clases">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus fuga beatae voluptates qui nihil id ad dolor maiores, sint velit nemo dicta rerum alias cumque ipsa perspiciatis in architecto!</p>
                 </a>
