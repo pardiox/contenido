@@ -5,7 +5,7 @@
     $query = "SELECT * FROM cursos_y_materia";    
     if (isset($_POST['consulta'])) {
     	$q = $_POST['consulta'];
-    	$query = "SELECT * FROM  cursos_y_materia WHERE curso='$q'";
+    	$query = "SELECT * FROM  cursos_y_materia WHERE curso='$q' and profesor=' '";
     
 
     $resultado = $con->query($query);
@@ -28,7 +28,7 @@
     }
     if (isset($_POST['consulta1'])) {
     	$qq = $_POST['consulta1'];
-    	$query = "SELECT * FROM  cursos_y_materia WHERE curso='$qq'";
+    	$query = "SELECT * FROM  cursos_y_materia WHERE curso='$qq' and profesor=' '";
     
 
     $resultado = $con->query($query);
@@ -52,14 +52,14 @@
     }
     if (isset($_POST['consulta2'])) {
     	$qqq = $_POST['consulta2'];
-    	$query = "SELECT * FROM  cursos_y_materia WHERE curso='$qqq'";
+    	$query = "SELECT * FROM  cursos_y_materia WHERE curso='$qqq' and profesor=' '";
     
 
     $resultado = $con->query($query);
 
     if ($resultado->num_rows>0) {
         
-        echo "<select  name='materia1' id='curso' required>";
+        echo "<select  name='materia2' id='curso' required>";
     	while ($fila = $resultado->fetch_assoc()) {
     		?>                            
                    
