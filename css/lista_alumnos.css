@@ -1,32 +1,72 @@
+:root{
+    --marron1:#A7906D;
+    --violeta1:#705A7C;
+    --violeta2:#826F8C
+;
+    --azul1:#5A687C;
+    --verde1:#5A7C7A;
+    --rojo1:#7C5F5A;
+    --fondo:#CFCFCF;
+    --fondointerior:#E8E8E8;
+}
+
 *     {
     margin:0;
     padding: 0;
+    text-align: center;
 }
 
+header{
+    margin-bottom: 0 !important;
+}
 .contendor_principal{
     width: 100%;
     height: auto;
-    background-color: olivedrab;
     margin-bottom: 20px;
     margin: 0!important;
     padding: 0!important;
 }
  .peticiones{
     margin:5px;
-    height:80vh;   
-}
+    height:80vh;  
+    background-color:var(--violeta2);
+    overflow: auto;
+} 
+
 .alu_aceptados{
     margin:5px;
     height:80vh;
-    background-color: white; 
+    background-color:var(--violeta2) ;
+    
 }
 
 .contenedor-tabla{
     height:auto;
-    
     margin:5px;
     padding: 5px;
 }
-.peticiones{
-    background-color: red;
+
+.fila-aceptados{
+    color:white;
+    transition: 0.2s linear;
+    font-size:18px;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+.fila-aceptados:hover{
+    color:white;
+    background-color: var(--violeta1);
+}
+
+.fila-peticiones{
+    color:white;
+    transition: 0.2s linear;
+    font-size:18px;
+    cursor: pointer;
+    border-radius:5px;
+}
+.fila-peticiones:hover{
+    color:white;
+    background-color: var(--violeta1);
 }

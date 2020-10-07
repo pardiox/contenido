@@ -17,11 +17,27 @@
 
 <body>
     <header>  
-      <h1>E.E.S.T.N°14</h1>
+      <div class="wrapper">
+
+			<div class="logo">carpeta virtual</div>
+			
+			<nav>
+				
+				<a href="vista_profesor_inicio.php">Inicio</a>
+				<a href="admin_alumnos.php">Ayuda</a>
+				<a href="cerrar_sesion.php">Acerca de nosotros</a>
+			</nav>
+		</div>
     </header> 
     <div class="contendor_principal row around-md ">
         <div class="peticiones col-md-5 col-xs-12">
-        
+            <div class="row top-peticiones center-xs">
+                <h2 class="col-xs-12">Peticiones de Ingreso</h2>
+                <form action="">
+                    <input type="text" placeholder="Curso" class="col-xs-12">
+                </form>
+            </div>
+            <div class="tabla col-xs-12">
         <?php      
         session_start();
         if( $_SESSION["u"]['sesion'] != "s.p"){
@@ -61,9 +77,9 @@
 
                     echo"
         
-                        <div class='contenedor-tabla row around-xs'> 
+                        <div class='contenedor-tabla row center-xs'> 
                             <table class='col-xs-12'>
-                                <tr >
+                                <tr class='row around-xs middle-xs fila-peticiones '>
                                     <td class='col-xs-3'>  
                                         ". $nombre ."<br> ". $apellido."
                                     </td>  
@@ -87,9 +103,16 @@
                         </div>";
 }}
                 }}   
-?>
-</div> 
+        ?>
+        </div>
+        </div> 
         <div class="alu_aceptados col-xs-12 col-md-5">
+        <div class="row top-inscriptos center-xs">
+        <h2 class="col-xs-12">Alumnos Inscriptos</h2>
+        <form action="">
+            <input type="text" placeholder="Curso" class="col-xs-12">
+        </form>
+        </div>
         <?php
             
         $Email=$_SESSION["u"]['Email'];
@@ -124,9 +147,9 @@
                         }
                         echo" 
          
-                            <div class='contenedor-tabla row around-xs'> 
+                            <div class='contenedor-tabla row center-xs'> 
                                 <table class='col-xs-12'>
-                                    <tr >
+                                    <tr class='row around-xs middle-xs fila-aceptados'>
                                         <td class='col-xs-3'>  
                                             ". $nombre ."<br> ". $apellido."
                                         </td>
