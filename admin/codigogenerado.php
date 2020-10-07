@@ -65,10 +65,10 @@ $cod= generarCodigo(6);
     <div class="content__form">
     	
       <form action='codigogeneradoverificado.php' method='post' class='form-register'>   
-           
-            <input  type='email' placeholder='Email' name="Email" class="content__form">
+        <center>   
+            <input  type='email' placeholder='Email' name="Email" class="content__form" required>
   
-            <input type="text" class="content__form" name="codigo" value=" <?php echo $cod; ?>" placeholder="codigo"><br>
+            <input type="text" class="content__form" name="codigo" value=" <?php echo $cod; ?>" placeholder="codigo" required><br>
 
             <select name="curso" id="caja_busqueda" class="curso" required >
                 <option id="caja_busqueda">1ro_1ra</option>
@@ -82,7 +82,7 @@ $cod= generarCodigo(6);
                 <option>2do_3ra</option>
                 <option>2do_4ta</option>
                 <option>2do_5ta</option>
-                <option>2do_6ta</option>
+
                 <option>3ro_1ra</option>
                 <option>3ro_2da</option>
                 <option>3ro_3ra</option>
@@ -91,7 +91,7 @@ $cod= generarCodigo(6);
                 <option>3ro_6ta</option>
                 <option>4to_1ra</option>
                 <option>4to_2da</option>
-                <option>4to_3rax</option>
+                <option>4to_3ra</option>
                 <option>4to_4ta</option>
                 <option>4to_5ta</option>
                 <option>5to_1ra</option>
@@ -114,7 +114,7 @@ var nextinput = 0;
 function AgregarCampos(){
     nextinput++;
     if (nextinput<3){
-        campo = '<li id="rut'+nextinput+'"><select  class="curso" id="caja_busqueda'+nextinput+'"; name="materia' + nextinput + '"&nbsp;> <option id="caja_busqueda">1ro_1ra</option><option>1ro_2da</option><option>1ro_3ra</option><option>1ro_4ta</option><option>1ro_5ta</option><option>1ro_6ta</option><option>2do_1ra</option><option>2do_2da</option><option>2do_3ra</option><option>2do_4ta</option><option>2do_5ta</option><option>2do_6ta</option><option>3ro_1ra</option><option>3ro_2da</option><option>3ro_3ra</option><option>3ro_4ta</option><option>3ro_5ta</option><option>3ro_6ta</option><option>4to_1ra</option> <option>4to_2da</option><option>4to_3ra</option><option>4to_4ta</option><option>4to_5ta</option><option>5to_1ra</option> <option>5to_2da</option><option>5to_3ra</option><option>5to_4ta</option><option>6to_1ra</option><option>6to_2da</option><option>6to_3ra</option><option>7mo_1ra</option><option>7mo_2da</option><option>7mo_3ra</option>/select></li>';
+        campo = '<li id="rut'+nextinput+'"><select  class="curso" id="caja_busqueda'+nextinput+'"; name="curso' + nextinput + '"&nbsp;> <option id="caja_busqueda">1ro_1ra</option><option>1ro_2da</option><option>1ro_3ra</option><option>1ro_4ta</option><option>1ro_5ta</option><option>1ro_6ta</option><option>2do_1ra</option><option>2do_2da</option><option>2do_3ra</option><option>2do_4ta</option><option>2do_5ta</option> <option>3ro_1ra</option><option>3ro_2da</option><option>3ro_3ra</option><option>3ro_4ta</option><option>3ro_5ta</option><option>3ro_6ta</option><option>4to_1ra</option> <option>4to_2da</option><option>4to_3ra</option><option>4to_4ta</option><option>4to_5ta</option><option>5to_1ra</option> <option>5to_2da</option><option>5to_3ra</option><option>5to_4ta</option><option>6to_1ra</option><option>6to_2da</option><option>6to_3ra</option><option>7mo_1ra</option><option>7mo_2da</option><option>7mo_3ra</option>/select></li>';
         
         campo2 = '<li id="rut'+nextinput+'"><div id="datos'+nextinput+'"></div><br></li>';
         $("#campos").append(campo);
@@ -128,9 +128,9 @@ function AgregarCampos(){
                 <script type="text/javascript" src="js/main.js"></script>
             </div>
 
-            <a href="#" class="a" onclick="AgregarCampos();">¿desea agregar una materia mas?</a>
+            <a href="#" class="a" onclick="AgregarCampos();"><button class="button">¿desea agregar una materia mas?</button></a>
             <input type='submit' value='Enviar' class='button'>
-
+</center>
      </form>
     </div>
 </div>
