@@ -74,23 +74,29 @@ body{
 
 .opciones h2{
     font-family: 'Saira', sans-serif;
-    margin-top:120px;
+    margin-top:110px;
     position: relative;
     font-size: 40px;
     border-style: hidden;
     -webkit-text-stroke: 1px black;
 }
 .opciones p{
-    font-size:25px;
+    font-x: ;size:25px;
     opacity: 0%;
     text-decoration: none
 }
 .opciones:hover p{
-    transition: .4s linear;
-    opacity: 100%;
+    animation: mymove 0.5s;
+}
+@keyframes mymove {
+  0%   {opacity: 0%;}
+
+  50%  {opacity: 0% ;}
+ 
+  100% {opacity: 100%;}
 }
 .opciones:hover h2{
-    animation:opciones 0.9s linear;   
+    animation:opciones 0.4s linear;   
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 30px;
@@ -108,7 +114,7 @@ body{
 } 
 
 .contenido {
-    background-color: #0223CA;
+    background-color: #1BDBFA;
     border-color: black;
     font-family: 'Lato', sans-serif;
 }
@@ -126,7 +132,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 .indefinido{
-    background-color: #0223CA;
+    background-color: #1BDBFA;
     border-color: black;
     font-family: 'Lato', sans-serif;
 }
