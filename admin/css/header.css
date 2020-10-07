@@ -55,6 +55,7 @@ header nav a:hover {
 
 
 .header2 { 
+    transition: 2.0s linear;
 	position: fixed;
 	height:100px;
 }
