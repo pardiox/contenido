@@ -15,6 +15,8 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
     <meta charset="UTF-8">
     <title>Formulario</title>
 
+
+
     <link rel="stylesheet" type="text/css" href="../css/formulario_profesor.css">
     
 </head>
@@ -60,10 +62,25 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
                         </option>
                             <?php }} ?>
                 </select>
+            
+ <script type="text/javascript">
+
+function showKeyPress(evt)
+{
+a = evt.keyCode;
+    if(a==13){
+        var e = "</br>";
+       
+    }
+}
+
+</script>
                 <div id="datos"></div>
     
     <div class="msg">
-      <textarea  class="area" placeholder="Contenido" name="contenido" required></textarea>
+     
+      <textarea  class="area" placeholder="Contenido" name="contenido" required onkeypress="showKeyPress(event);"
+ onkeydown="keyDown(event);"><br></textarea>
     </div>
     
     <div class="msg" id="datos">
@@ -73,6 +90,8 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
     </form>
 </div>
  
+
+</script>
 
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
