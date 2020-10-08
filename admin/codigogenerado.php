@@ -32,7 +32,7 @@
 				<a href="perfil_admin.php">inicio</a>
 				<a href="admin_alumnos.php">alumnos</a>
 				<a href="admin.contenido.php">contendio</a>
-				<a href="cerrar_sesion.php">cerrar sesion</a>
+				<a href="../cerrar_sesion.php">cerrar sesion</a>
 			</nav>
 		</div>
 
@@ -42,7 +42,7 @@
 
 </div>
        <center>
-      <span class="texto-borde">Buenos dias ¿que tal estuviste?</span>
+      <span class="texto-borde">Registrar profesor</span>
 
        	 	</center>
 <!--comentario
