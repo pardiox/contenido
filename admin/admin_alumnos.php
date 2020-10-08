@@ -78,8 +78,11 @@ if ($resultado = $con->query($sql)){
      <td class='hi' >
       <?php echo $curso;?>
      </td>  
+    <td class='hi__boton'>
+        <a href='admin_perfil_alumno.php'.php?Email=<?php echo $Email;?>'> <button>perfil</button></a> 
+     </td>
      <td class='hi__boton'>
-        <a href='admin_eliminar_alumno.php?Email=$Email'> <button>eliminar</button></a> 
+        <a href='admin_eliminar_alumno.php?Email=<?php echo $Email;?>'> <button>eliminar</button></a> 
      </td>
  </tr>
 <?php
