@@ -38,11 +38,26 @@
     
     <link rel="stylesheet" type="text/css" href="../css/estilo_clase.css">
     <link rel="stylesheet" type="text/css" href="../css/flex/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
 </head>
 <body>
        <script type="text/javascript" src="../js/jquery.min.js"></script>
 
-    <header class="header">hola</header>
+    <header>
+   
+		<div class="wrapper">
+
+			<div class="logo">carpeta virtual</div>
+			
+			<nav>
+				<a href="formulario_profesor.php">formulario</a>
+				<a href="lista_de_alumnos.php">alumnos</a>
+				<a href="#">indifinido</a>
+				<a href="../cerrar_sesion.php">cerrar sesion</a>
+			</nav>
+		</div>
+
+	</header>
     
     <div class="contenedor_principal row">
         <div class="barra_lateral col-xs-12 col-md-3">
