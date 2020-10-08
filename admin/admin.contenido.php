@@ -101,13 +101,13 @@
                 </td>
                 
                 <td class='hi__boton'>
-                    <a href='editar.php?cod_trabajo=$cod_trabajo'>
+                    <a href='ver_contenido.php?cod_trabajo=<?php echo $cod_trabajo;?>'>
                         <button> ver </button>
                     </a>
                 </td>
                 
                 <td class='hi__boton'>
-                    <a href='eliminar.php?Email=$Email & curso=$curso & materia=$materia'>
+                    <a href='eliminar.php?Email=<?php echo $Email;?> & curso=<?php echo $curso;?> & materia=<?php echo $materia;?>'>
                         <button>eliminar </button>
                     </a>
                 </td>
