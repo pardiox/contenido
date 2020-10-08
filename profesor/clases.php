@@ -1,45 +1,33 @@
                 <?php
                     include "../conexion.php";
                     session_start();
+                    $profesor = $_SESSION["u"]['Email'];
+                    $_SESSION["NADA"]=1;
+                    $fecha_de_subida="fecha_de_subida";
+                    $titulo="TITULO";
+                    $fecha_de_entrega="FECHA DE ENTREGA";
+                    $contenido="<h2>aqui se veran sus trabajos, que espera a publicar algo¿?";
+                    $bibiografia="y aca de donde los alumnos se pueden guiar para estudiar";
                     if(isset($_REQUEST["curso"])){
                      $curso=$_REQUEST["curso"];
                      $materia=$_REQUEST["materia"];
-                        echo $curso;
-                        echo $materia;
-                        $str = 'abcdef    
-        ';
+                     $Email=$_SESSION["u"]['Email'];
                         
-                    $Email=$_SESSION["u"]['Email'];
+                        
                      $sql =  "SELECT * FROM contenido where Email='$Email' and curso='$curso' and materia='$materia'";
                         
                      if ($resultado = $con->query($sql)){
                         if ($resultado->num_rows > 0){
-                             $fila=$resultado->fetch_assoc();
+                        $fila=$resultado->fetch_assoc();
                          $fecha_de_entrega =$fila["fecha_de_entrega"];
                          $titulo =$fila["titulo"];
                          $contenido =$fila["contenido"];
                          $bibiografia=$fila["bibiografia"];
-                        
-                         echo strlen($contenido);
-                     
-                        }else{
-                            $titulo="TITULO";
-                            $fecha_de_entrega="FECHA DE ENTREGA";
-                            $contenido="<h2>aqui se veran sus trabajos, que espera a publicar algo¿?";
-                            $bibiografia="y aca de donde los alumnos se pueden guiar para estudiar";
+                         $fecha_de_subida=$fila['fecha_de_subida'];
+            
                         }
                      }}
                     
-
-/*
-                    $Email=$_SESSION["u"]['Email'];
-                        $sql =  "SELECT * FROM cursos_y_materia where profesor='$Email'";
-                        if ($resultad = $con->query($sql)){
-                        while ($fila = mysqli_fetch_array($resultad)){ 
-                        $curso =$fila["curso"];
-                        $materia=$fila["materia"];
-                        echo " <p> $curso, $materia </p>";
-                          }}*/
                             ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,9 +65,28 @@
             </div>
             <div class="medio row center-xs middle-md">
                 <div class="cursos col-md-12">
-                <div id="datos"></div>
-                <div id="datos1"></div>
-                         
+                <div id="datos">
+                   <?php
+        
+                    $query = "SELECT * FROM  cursos_y_materia WHERE profesor='$profesor'";
+                    $resultado = $con->query($query);
+                    if ($resultado->num_rows>0) {
+    	            while ($fila = $resultado->fetch_assoc()) {
+                    $curso=$fila['curso'];
+                    $materia=$fila['materia'];
+                    $respuesta = "
+                    <a href='clases.php?curso=$curso & materia=$materia'><p>
+                    $curso $materia
+                    </p></a>
+                    ";
+                    echo $respuesta;
+    	           }
+                    }
+                    $con->close();
+    
+                    ?>
+                </div>  
+
                 </div>
             </div>
             <div class="abajo row start-xs">
@@ -95,7 +102,7 @@
         <div class="contenido col-xs-12 col-md-9">
             <div class="row center-xs between-md">
                 <div class="fecha col-md-2">
-                    <p>fecha de subida</p>
+                    <p><?php echo $fecha_de_subida?><p>
                 </div>
                 <div class="titulo col-md-4">
                     <p><?php echo $titulo; ?></p>
