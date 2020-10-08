@@ -80,7 +80,7 @@ a = evt.keyCode;
     <div class="msg">
      
       <textarea  class="area" placeholder="Contenido" name="contenido" required onkeypress="showKeyPress(event);"
- onkeydown="keyDown(event);"><br></textarea>
+ onkeydown="keyDown(event);"></textarea>
     </div>
     
     <div class="msg" id="datos">
