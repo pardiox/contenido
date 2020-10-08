@@ -15,12 +15,25 @@
     
     <link rel="stylesheet" href="../css/flex/flexboxgrid.min.css">
     <link rel="stylesheet" type="text/css" href="../css/inicio_prof.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
     
 </head>
 <body>
-    <header class="header">
-        <h1>E.E.S.T N°14</h1>
-    </header>
+<header>
+   
+		<div class="wrapper">
+
+			<div class="logo">carpeta virtual</div>
+			
+			<nav>
+				<a href="">Reporte</a>
+				<a href="">Ajustes</a>
+				<a href="">Ayuda</a>
+				<a href="../cerrar_sesion.php">cerrar sesion</a>
+			</nav>
+		</div>
+
+	</header>
     
     <div class="contenedor_principal row center-xs">
     <div class="bienvenido">
@@ -41,11 +54,8 @@
         
             <div class="opciones clases col-xs-11 col-lg-4">
                
-<<<<<<< HEAD
-                <a href="clases.php">
-=======
+
                 <a href="../profesor/clases.php">
->>>>>>> e6525ef0714f18d1554f7645370e1e485342ba65
                 <h2>Clases</h2>
                 <p class="texto_clases">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus fuga beatae voluptates qui nihil id ad dolor maiores, sint velit nemo dicta rerum alias cumque ipsa perspiciatis in architecto!</p>
                 </a>
