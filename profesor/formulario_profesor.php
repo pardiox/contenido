@@ -18,10 +18,25 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
 
 
     <link rel="stylesheet" type="text/css" href="../css/formulario_profesor.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
     
 </head>
 <body>
-    
+    <header>
+   
+		<div class="wrapper">
+
+			<div class="logo">carpeta virtual</div>
+			
+			<nav>
+				<a href="lista_de_alumnos.php">alumnos</a>
+				<a href="clases.php">clases</a>
+				<a href="#">indifinido</a>
+				<a href="../cerrar_sesion.php">cerrar sesion</a>
+			</nav>
+		</div>
+
+	</header>
 
 
 
