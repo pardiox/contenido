@@ -1,5 +1,5 @@
 <?php
-include "conexion.php";
+include "../conexion.php";
 
 $Email=$_REQUEST['Email'];
 $SQL="DELETE FROM alumno WHERE Email='$Email'";
