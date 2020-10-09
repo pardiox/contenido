@@ -1,11 +1,12 @@
 <?php
     include "../conexion.php";
-
+    session_start();
+    $Email=$_SESSION["u"]["Email"];
 
     $query = "SELECT * FROM cursos_y_materia";    
     if (isset($_POST['consulta'])) {
     	$q = $_POST['consulta'];
-    	$query = "SELECT * FROM  cursos_y_materia WHERE curso='$q'";
+    	$query = "SELECT * FROM  cursos_y_materia WHERE curso='$q' and profesor='$Email'";
     
 
     $resultado = $con->query($query);
