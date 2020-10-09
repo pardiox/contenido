@@ -44,7 +44,7 @@ mail($para, $titulo, $mensaje, $cabeceras);
 
 
  
-$sql =  "SELECT distinct materia FROM alumnos_verificados where curso='$curso' and materia!='0'";
+$sql =  "SELECT distinct materia FROM cursos_y_materia where curso='$curso'";
 if ($resultado = $con->query($sql)){
     while ($fila = mysqli_fetch_array($resultado)){
         $materia=$fila["materia"];
