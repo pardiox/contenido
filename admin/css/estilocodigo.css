@@ -21,10 +21,10 @@
 html { height: 100%; }
 body{
     font: 14px/1.4 Georgia, Serif; 
-    background-color: #889ccf;
+    background-color:  #3D4558;
 }
 .contenedor{
-  background-color: #EEEEE9;
+  background-color: #414755;
   width: 60%;
   height:  auto;
   border: black 3px solid;
