@@ -1,85 +1,128 @@
 <?php
 //trae la conexion
 
-include "conexion.php";
+include "../conexion.php";
 session_start();
 
+$nombre = $_SESSION["u"]['nombre'];
+$apellido = $_SESSION["u"]['apellido'];
+$curso = $_SESSION["u"]['curso'];
+$verifiado =$_SESSION["u"]['verificado'];
 if( $_SESSION["u"]['sesion'] != "s.a"){
-  header ("location: index.php");
+  header ("location: ../index.php");
 }
 ?>
 
 <html>
    <head>
-      <title>Formulario</title>  
-	  <!--comentario-->
+      <title>Perfil</title>  
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
 	  <link rel="stylesheet" type="text/css" href="css/estiloperfil.css">
+	  <link rel="stylesheet" type="text/css" href="../css/flex/flexboxgrid.min.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	 </head>
 
 <body>
-  <header>
-         <center>
-          <h1>E.E.S.T.N°14</h1>
-
-       <a href="cerrar_sesion.php"><img src="img/logo.png" width="50px" height="auto"></a>
-        </center>
-   </header>
-    <center>
-	<?php
-        include "confirmar_verificado.php";
-
-echo "<h2>Bienvenido  </br></h2> " ;
-       
-echo $_SESSION["u"]['nombre'];
-        echo" ";
-echo $_SESSION["u"]['apellido'];
-        
-  $curso = $_SESSION["u"]['curso'];
-  $Email = $_SESSION["u"]['Email'];
-        ?>
-    </center>
-    <?php
-        echo $curso;
-        echo $Email;
-$sql =  "SELECT * FROM alumnos_verificados WHERE curso='$curso' and Email='$Email' and verificacion='1'";
-if ($resultad = $con->query($sql)){
-while ($fila = mysqli_fetch_array($resultad)){
-    
-$materia=$fila["materia"];
-$sql =  "SELECT * FROM contenido  WHERE curso='$curso' and materia='$materia'";
-if ($resultado = $con->query($sql)){
-while ($fila = mysqli_fetch_array($resultado)){
-      $titulo=$fila["titulo"];
-        $materia=$fila["materia"];
-        $cod_trabajo=$fila["cod_trabajo"];
-    
-    
-echo "
-        <table>
-           <tr>
-              <td>
-            ".$titulo."
-               </td>
-              <td>".$materia."</td>               
-<td>
-<a href='ver_contenido.php?cod_trabajo=$cod_trabajo'><button>ver contenido </button>
-</a>
-</td>
-</tr>
-</table>
+  <div class="container">
+   <header class="row">
+          <div class="col-xs-12">
+               <div class="header">
+                   <div id="main">
+                     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                   </div>
+                   <a href="../cerrar_sesion.php"> cerrar sesion </a>
+               </div>
+          </div>
+	</header>
 
 
-";
-    }}}}
-    ?>
-    
-    
-       
-<div class="footer">
-    facebook
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Clases</a>
+  <a href="#" name="tarea">Tareas pendientes</a>
+  <a href="perfil_alumno">perfil</a>
+  <a href="#">Contact</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a href="../cerrar_sesion.php">cerrar sesion</a>
 </div>
-  
-</body>
-</html>
+<div class="row">
+<?php
+     $sql =  "SELECT * FROM cursos_y_materia where curso='$curso'";
+            
+        if ($resultad = $con->query($sql)){
+            while ($fila = mysqli_fetch_array($resultad)){
+
+                $materia=$fila["materia"];
+                $Email=$fila["profesor"];
+                $sq =  "SELECT * from profesor where Email='$Email'";
+                if ($resultado = $con->query($sq)){
+                    if ($resultado->num_rows > 0){
+                        $fila=$resultado->fetch_assoc();
+                        $nombre=$fila["nombre"];
+                        $apellido=$fila["apellido"];
+                    }else{
+                        $nombre="no hay profesor";
+                        $apellido="en esta materia";
+                    }
+                }
+                $sq =  "SELECT * from contenido where Email='$Email' and materia='$materia'";
+                if ($resultado = $con->query($sq)){
+                    if ($resultado->num_rows > 0){
+                        $fila=$resultado->fetch_assoc();
+                        $fecha_de_subida=$fila["fecha_de_subida"];
+                        $fecha_de_entrega=$fila["fecha_de_entrega"];
+                    }else{
+                        $fecha_de_subida="pronto habran nuevos trabajos";
+                        $fecha_de_entrega="";
+                    }
+                }
+?>
+
+        <a href="ver_contenido.php?Email=<?php echo $Email;?> & materia=<?php echo $materia;?>">
+          <!---
+          celular - xs
+          tablet - sm
+          un poquito mas grande - md
+          muy grande - lg
+          -->
+          
+           <div class="col-lg-12 col-md-8 col-sm-4 col-xs-2">
+            <div class="materia">
+                <h2><?php echo $materia; ?> </h2>
+                <p><?php echo $nombre, " ", $apellido; ?></p>
+                <p><?php echo $fecha_de_subida, " ", $fecha_de_entrega; ?></p>
+            </div>
+            </div>
+        </a>
+
+<?php }} ?>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   </div>
+    </body></html>    
