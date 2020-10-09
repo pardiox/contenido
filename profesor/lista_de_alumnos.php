@@ -54,7 +54,7 @@
         
                 $materia=$fila["materia"];
                 $curso=$fila["curso"];
-                $sql =  "SELECT * FROM alumnos_verificados where curso='$curso' and materia='$materia'"; /*and verificacion='0'";*/
+                $sql =  "SELECT * FROM alumnos_verificados where curso='$curso' and materia='$materia' and verificacion='0'"; /*and verificacion='0'";*/
                 
                 if ($resultado = $con->query($sql)){
                     
@@ -125,7 +125,7 @@
         
                 $materia=$fila["materia"];
                 $curso=$fila["curso"];  
-                $sl =  "SELECT * FROM alumnos_verificados where curso='$curso' and materia='$materia'"; /*and verificacion='0'*/
+                $sl =  "SELECT * FROM alumnos_verificados where curso='$curso' and materia='$materia' and verificacion='1'"; /*and verificacion='0'*/
                 
                 if ($resultados = $con->query($sl)){
                     
