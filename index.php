@@ -1,6 +1,5 @@
 <?php
-//puto el que lo lea
-//aca tambien
+
 include "conexion.php";
 session_start();
 if(isset($_SESSION["u"]['sesion'])){
