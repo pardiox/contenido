@@ -178,6 +178,11 @@
         }   
 ?>
 </div>
-    </div>
+</div>
+<div class="row center-xs footer">
+<footer class="col-xs-12">
+    <h2 class="feis">Feisuk</h2>
+</footer>
+</div>
 </body>
 </html>
