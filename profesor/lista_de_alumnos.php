@@ -31,7 +31,7 @@
     </header> 
     <div class="contendor_principal row around-md ">
         <div class="peticiones col-md-5 col-xs-12">
-            <div class="row top-peticiones center-xs">
+            <div class="row center-xs top-peticiones">
                 <h2 class="col-xs-12">Peticiones de Ingreso</h2>
                 <form action="">
                     <input type="text" placeholder="Curso" class="col-xs-12">
@@ -93,9 +93,9 @@
                                     </td> 
                                     
                                     <td class='col-xs-2'>
-                                        <a href='verificado_denegado.php?Email=$Email & materia=$materia' > <button>denegar</button></a> </td>
+                                        <a href='verificado_denegado.php?Email=$Email & materia=$materia' > <button>Denegar</button></a> </td>
                                     <td  class='col-xs-2'>
-                                    <a href='verificado_alumno.php?Email=$Email & materia=$materia'> <button>verificar</button>
+                                    <a href='verificado_alumno.php?Email=$Email & materia=$materia'> <button>Verificar</button>
                                     </a>
                                     </td>
                                 </tr>
@@ -113,6 +113,7 @@
             <input type="text" placeholder="Curso" class="col-xs-12">
         </form>
         </div>
+        <div class="tabla col-xs-12"></div>
         <?php
             
         $Email=$_SESSION["u"]['Email'];
@@ -164,7 +165,7 @@
                                         
                                         <td class='col-xs-2'>
                                             <a href='verificado_denegado.php?Email=$Email & materia=$materia' > 
-                                                <button>denegar</button>
+                                                <button>Eliminar</button>
                                             </a> 
                                         </td>
                                     </tr>
