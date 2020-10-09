@@ -38,6 +38,15 @@
                 </form>
             </div>
             <div class="tabla col-xs-12">
+            <div class="tabla-arriba">
+            <table class="row center-xs">
+                <tr class="col-xs-7">
+                    <td class="col-xs-3">Nombre</td>
+                    <td class="col-xs-2">Curso</td>
+                    <td class="col-xs-2">Materia</td>
+                </tr>
+            </table>
+            </div>
         <?php      
         session_start();
         if( $_SESSION["u"]['sesion'] != "s.p"){
