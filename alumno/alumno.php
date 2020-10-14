@@ -92,21 +92,12 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
                 }
 ?>
 
-        <a href="ver_contenido.php?Email=<?php echo $Email;?> & materia=<?php echo $materia;?>">
-          <!---
-          celular - xs
-          tablet - sm
-          un poquito mas grande - md
-          muy grande - lg
-          -->
-          
-           
+        <a href="ver_contenido.php?Email=<?php echo $Email;?> & materia=<?php echo $materia;?>">    
             <div class="materia" >
-                <h2><?php echo $materia; ?> </h2>
-                <p><?php echo $nombre, " ", $apellido; ?></p>
-                <p><?php echo $fecha_de_subida, " ", $fecha_de_entrega; ?></p>
-            </div>
-            
+                <h2> <?php echo $materia; ?> </h2>
+                <p> <?php echo $nombre, " ", $apellido; ?> </p>
+                <p> <?php echo $fecha_de_subida, " ", $fecha_de_entrega; ?> </p>
+            </div>  
         </a>
 
 <?php }} ?>
