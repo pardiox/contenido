@@ -48,7 +48,8 @@
              
                <a href="lista_de_alumnos.php" blank="target" >
                 <h2>Alumnos</h2>
-                <p class="texto_alumnos">En esta ventana se administra la lista de todos los Estudiantes que tenga a su cargo. Podrá aceptar o denegar peticiones de ingreso hacia alguna materia que imparta o eliminarlos de la misma.</p>
+                <p class="texto_alumnos">En esta ventana se administra la lista de todos los Estudiantes que tenga a su cargo. <br>
+                Podrá aceptar o denegar peticiones de ingreso hacia alguna materia que imparta o eliminarlos de la misma.</p>
                 </a>
                 
             </div>
@@ -57,8 +58,8 @@
                
 
                 <a href="../profesor/clases.php">
-                <h2>Clases</h2>
-                <p class="texto_clases">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus fuga beatae voluptates qui nihil id ad dolor maiores, sint velit nemo dicta rerum alias cumque ipsa perspiciatis in architecto!</p>
+                <h2>Trabajos enviados</h2>
+                <p class="texto_clases">Aqui dentro podra ver todos los trabajos practicos enviados de sus difentes cursos y materias, o del mismo modo fijarse en cual no envio.</p>
                 </a>
                 <div class="fondo">
                 </div>
@@ -68,8 +69,8 @@
             <div class="opciones cargar_clase col-xs-11 col-lg-4">
              
                <a href="formulario_profesor.php">
-                <h2>Cargar Clases</h2>
-                <p class="texto_cargar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum est delectus, ipsam optio, repellendus sed laboriosam dignissimos molestias autem suscipit numquam quaerat asperiores rerum cumque omnis maiores minima. Alias, provident.</p>
+                <h2>Subir trabajos</h2>
+                <p class="texto_cargar">¿desea enviar una actividad?. <br><br> bueno solo entra compla los campos y todos los estudiantes del año seleccionado se le notificara y recibiran el trabajo</p>
                 </a>
                  <div class="fondo">
                 </div>
@@ -78,8 +79,8 @@
             <div class="opciones indefinido col-xs-11 col-lg-4 ">
               
                <a href="">
-                <h2>????</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, sequi. Deserunt libero ratione saepe autem sapiente accusantium dolorem id ex, harum nihil qui, nesciunt culpa doloribus rem reprehenderit voluptate non.</p>
+                <h2>administracion</h2>
+                <p> Administra la cantidad de trabajos subidos, si los alumnos tienen alguna duda, o si recibio alguna respuesta por parte de los administradores</p>
                 </a>
                 <div class="fondo">
                 </div>
