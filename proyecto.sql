@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-10-2020 a las 06:48:22
+-- Tiempo de generación: 14-10-2020 a las 07:37:08
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -62,7 +62,7 @@ CREATE TABLE `alumno` (
 --
 
 INSERT INTO `alumno` (`nombre`, `apellido`, `fecha`, `Email`, `password`, `curso`, `verificado`, `ban_profesor`) VALUES
-('Guerrero', 'Lucas', '0000-00-00', 'lucasg3322@gmail.com', '1234', '2do_2da', 0, 0),
+('Guerrero', 'Lucas', '0000-00-00', 'lucasg3322@gmail.com', '1234', '2do_2da', 1, 0),
 ('Matias', 'Alvarado', '0000-00-00', 'mati123@gmail.com', '1234', '2do_2da', 0, 0);
 
 -- --------------------------------------------------------
@@ -89,7 +89,7 @@ INSERT INTO `alumnos_verificados` (`curso`, `materia`, `Email`, `verificacion`, 
 ('2do_2da', 'Educacion Artis', 'lucasg3322@gmail.com', 0, 43),
 ('2do_2da', 'Educacion Fisic', 'lucasg3322@gmail.com', 0, 44),
 ('2do_2da', 'Fisico-Quimica', 'lucasg3322@gmail.com', 1, 45),
-('2do_2da', 'Geografia', 'lucasg3322@gmail.com', 0, 46),
+('2do_2da', 'Geografia', 'lucasg3322@gmail.com', 1, 46),
 ('2do_2da', 'Historia', 'lucasg3322@gmail.com', 0, 47),
 ('2do_2da', 'Ingles', 'lucasg3322@gmail.com', 0, 48),
 ('2do_2da', 'Matematica', 'lucasg3322@gmail.com', 0, 49),
@@ -127,7 +127,9 @@ CREATE TABLE `codigo` (
 --
 
 INSERT INTO `codigo` (`email`, `codigo`) VALUES
-('mati123@gmail.com', '0615');
+('mati123@gmail.com', '0615'),
+('lucasg3322@gmail.com', '1234'),
+('mario@gmail.com', ' i8n242');
 
 -- --------------------------------------------------------
 
@@ -156,7 +158,8 @@ INSERT INTO `contenido` (`fecha_de_entrega`, `cod_trabajo`, `fecha_de_subida`, `
 ('2020-09-23', 2321335, '0000-00-00', 'Hola', '2do_2da', '', 'Kskks', 'Iskks', '123@gmail.com'),
 ('2020-12-12', 2321337, '0000-00-00', 'trabajo practico numero 1', '1ro_1ra', 'matematicas', '1. 2+2=¿?\r\n2. 2.2=¿?\r\n3. 3*5/7=¿?\r\n4. si la raix cuadrada de 2 la multiplicamos a la hipotenusa de un chanco elevado al cuadrado y...\r\n(va en el examen)', 'julioprofe.net', 'mario@gmail.com'),
 ('2001-12-12', 2321338, '0000-00-00', 'tp1 fisica', '3ro_4ta', '', 'hola, como estas¿?\r\n-\r\n-\r\n-\r\n-\r\n-\r\n\r\n-\r\n-\r\n', 'google.com/', 'mario@gmail.com'),
-('2001-12-12', 2321339, '2020-10-08', 'tp1 fisica', '3ro_4ta', 'Fisico-Quimica', 'hola, como estas¿?\r\n-\r\n-\r\n-\r\n-\r\n-\r\n\r\n-\r\n-\r\n', 'google.com/', 'mario@gmail.com');
+('2001-12-12', 2321339, '2020-10-08', 'tp1 fisica', '3ro_4ta', 'Fisico-Quimica', 'hola, como estas¿?\r\n-\r\n-\r\n-\r\n-\r\n-\r\n\r\n-\r\n-\r\n', 'google.com/', 'mario@gmail.com'),
+('2020-11-12', 2321340, '2020-10-09', 'Matemaicas Funcion Lineal', '2do_2da', 'Matematica', '1.dividir una manzana en 3 partes\r\n2. calcular la raiz cuadrada de la manzana en su tercera parte\r\n3. hola', 'funcionlinea.com', 'mario@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -166,7 +169,7 @@ INSERT INTO `contenido` (`fecha_de_entrega`, `cod_trabajo`, `fecha_de_subida`, `
 
 CREATE TABLE `cursos_y_materia` (
   `curso` varchar(10) NOT NULL,
-  `materia` varchar(20) NOT NULL,
+  `materia` varchar(30) NOT NULL,
   `profesor` varchar(40) NOT NULL,
   `tipo` varchar(10) NOT NULL,
   `id` int(5) NOT NULL
@@ -245,15 +248,15 @@ INSERT INTO `cursos_y_materia` (`curso`, `materia`, `profesor`, `tipo`, `id`) VA
 ('2do_1ra', 'Procedimientos Tecni', '', 'taller', 424),
 ('2do_1ra', 'Lenguajes Tecnologic', '', 'taller', 425),
 ('2do_1ra', 'Sistemas Tecnologico', '', 'taller', 426),
-('2do_2da', 'Biologia', 'mario@gmail.com', 'aula', 427),
-('2do_2da', 'Construccion de Ciud', 'mario@gmail.com', 'aula', 428),
+('2do_2da', 'Biologia', 'lucasg@gmail.com', 'aula', 427),
+('2do_2da', 'Construccion de Ciud', 'lucasg@gmail.com', 'aula', 428),
 ('2do_2da', 'Educacion Artistica', 'mario@gmail.com', 'aula', 429),
 ('2do_2da', 'Educacion Fisica', 'mario@gmail.com', 'aula', 430),
 ('2do_2da', 'Fisico-Quimica', 'mario@gmail.com', 'aula', 431),
 ('2do_2da', 'Geografia', 'mario@gmail.com', 'aula', 432),
 ('2do_2da', 'Historia', 'mario@gmail.com', 'aula', 433),
 ('2do_2da', 'Ingles', 'mario@gmail.com', 'aula', 434),
-('2do_2da', 'Matematica', '', 'aula', 435),
+('2do_2da', 'Matematica', 'mario@gmail.com', 'aula', 435),
 ('2do_2da', 'Practicas del Lengua', '', 'aula', 436),
 ('2do_2da', 'Procedimientos Tecni', '', 'taller', 437),
 ('2do_2da', 'Lenguajes Tecnologic', 'mario@gmail.com', 'taller', 438),
@@ -642,7 +645,7 @@ ALTER TABLE `alumnos_verificados`
 -- AUTO_INCREMENT de la tabla `contenido`
 --
 ALTER TABLE `contenido`
-  MODIFY `cod_trabajo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2321340;
+  MODIFY `cod_trabajo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2321341;
 
 --
 -- AUTO_INCREMENT de la tabla `cursos_y_materia`
