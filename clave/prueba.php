@@ -14,8 +14,10 @@
     $SMTPAuth="login";
     $SMTPSecure="tls"; 
     $password="cuentaprueba" ;   
-        
-    $bodyemail="lucasg3322@gmail.com";
+    session_start();
+    $E=$_SESSION['Email'];
+    $Email ="$E";    
+    $bodyemail=$Email;
     $subject="que tal";
     $bodyEmail="mensaje";
         
