@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:500|Montserrat:300|Roboto:100');
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto+Slab&display=swap');
+
+@font-face {
+  font-family: garamond;
+  src: url('garamond.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+body{
+    font: 14px/1.4 Georgia, Serif; 
+    background-color: #FBFBFB;
+}
+
+
+table { 
+    font-size:200%;
+    border-collapse: separate;
+    border-spacing: 1vw 0.5vh;
+    font-weight: bold;
+}
+.tabla-arriba{
+    color: white;
+    background-color: #B9BDBD;
+    text-align: center;
+    
+}
+.tabla-arriba__profesor{
+    width: 45%;
+}
+.tabla-arriba__titulo{
+    width: 25%;
+}
+.tabla-arriba__materia{
+    width: 25%;
+}
+tr td { 
+    border-top-right-radius: 10%;               
+    border-top-left-radius: 10%; 
+    border-bottom-left-radius: 10%; 
+    border-bottom-right-radius: 10%;
+    
+}
+
+.cuerpo{
+    font-style:italic;
+    background-color: #EEEEE9;
+}
+
+
+.hi { 
+    font-size: 1vw 0.75vh;
+    text-align: center;
+    border: solid 1px;
+    border-color: white;
+     color: 4C5050;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    }
+.hi:hover { 
+    transition:0.3s;    
+    border-color: white;
+     animation: mymove 3s infinite;
+}
+.hi__boton{
+   background-color: white; 
+}
+.titulo{
+    font-family: Century Gothic,CenturyGothic,AppleGothic;
+    color: #ffffff;
+    font-size: 3vh;
+    text-align: center;
+    background: #889ccf;
+    overflow: hidden;
+    padding: 3vh;
+    border-radius: 35px 0px 35px 0px;
+    border: 2px solid #5878ca;
+    font-weight: bold;
+}
+
+@keyframes mymove {
+  0%   {color: #B9BDBD;}
+
+  50%  {color:  #EEEEE9 ;}
+ 
+  75% {color: #B9BDBD;}
+}
+
+button{
+    cursor: pointer;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    background-color: #889ccf;
+    border-bottom-color: #889ccf;
+    border-radius: 15px;
+    border: 0px;
+
+}
+button:hover{
+    transition:0.3s linear;
+    color: #889ccf;
+    background-color: gainsboro;
+}
+
+
+
+
+.contenedor-inputs{
+    visibility:;
+}
+
+
+
+
+.form__titulo{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+    
+}
+
+
