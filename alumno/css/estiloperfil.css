@@ -60,9 +60,19 @@ body {
 *{
     margin: 0;
     padding: 0;
+ 
 }
-
-
+.body{
+    padding-left:150px;
+    padding-right:150px;
+}
+.main{
+    color: red;
+}
+a{
+    text-decoration: none;
+    text-decoration-skip: none;
+}
 /*estilo del body*/
 .materia{
     margin: 20px;
@@ -70,6 +80,8 @@ body {
     display: inline-block;
     text-align: center;
     height: 300px;
+    width: 300px;
+   
     border: 1px solid;
     cursor: pointer;
     border-radius:15px;
