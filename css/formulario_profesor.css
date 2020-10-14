@@ -78,7 +78,11 @@ p{
 }
 
 .msg .area{
-  height: 200px;
+    height: 200px;
+    
+}
+.msg #area{
+    resize: none;
 }
 
 .btn{
