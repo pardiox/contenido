@@ -30,11 +30,9 @@
 }
 
 body{
-  background: color;
-
   height: auto;
   font-family: 'Saira', sans-serif;
-  background-color:var(--fondointerior);
+  background-color:#3D4558;
 }
 
 

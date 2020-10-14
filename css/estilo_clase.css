@@ -30,26 +30,27 @@
     padding: 0;
 }
 
-
+header{margin-bottom: 0px !important;}
 .header{
     text-align: center;
     height: 70px;
     background-color: var(--azul1);
     width: 100%;
+    margin-bottom: 0px !important;
 }
 
 .contenedor_principal{
     width: 100%;
     padding-bottom: 20px; 
+    background-color: #3D4558;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
 
 .barra_lateral{
     height: 700px;
-    border-right:1px solid;
-    border-bottom: 1px solid; 
-    border-color:var(--gris2);
+    border-right:0;
+    background-color:#353B4A;
     
 }
 
@@ -60,10 +61,10 @@
 
 .arriba h2{
     font-family: 'Saira', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
+    color: white;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom-color: var(--gris2);
 }
 .barra_lateral .arriba form input{
     height: 25px;
@@ -71,23 +72,20 @@
     border: 0px;
     border-bottom: 3px solid;
     border-bottom-color:#5A687C;
-    background-color: #EEEEEE;
     
 }
 
 .barra_lateral .arriba form input:focus{
     outline: none; 
     border-bottom-color:#705A7C;
-    background: linear-gradient(to bottom, transparent, #999);
+    
 }
 
 
 .medio .cursos {
-    background-color: #F5F5F5;
+    background-color: #313541;
     margin-top: 20px;
     height:450px;
-    border-bottom: 1px solid;
-    border-bottom-color: var(--gris2);
     overflow:auto;
     
 }
@@ -116,11 +114,13 @@
     
 }
 
-.medio .cursos p{
+.medio .cursos a{
     height: 30px;
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     font-family: 'Hammersmith One', sans-serif;
+    text-decoration: none;
+    color: #C5C1C1;
 }
 
 .medio .cursos p:hover{
@@ -136,9 +136,9 @@
     margin-left:20px;
     margin-top:8px;
     margin-bottom:5px;
-    font-size:20px;
+    font-size:1rem;
     text-decoration: none;
-    color:#000;
+    color:white;
 }
 .barra_lateral .abajo a:hover{
     color:var(--azul1);
@@ -146,9 +146,8 @@
 
 .contenido{
     height: 700px;
-    border-bottom: 1px solid;
-    border-color:#C9C9C9;
     overflow: auto;
+    font-family: 'Hammersmith One', sans-serif
 
 }
 .contenedor_principal .contenido::-webkit-scrollbar{
@@ -169,39 +168,51 @@
 }
 
 .contenido .fecha{
-    height: 30px;
-    background-color: brown;
+    height: 1.5rem;
     padding-top: 5px;
     margin-left: 30px;
     margin-top: 30px;
 }
+.contenido .fecha p{
+    font-size:1.2rem;
+    color: white;
+}
 
 .contenido .titulo{
-    height: 45px;
-    background-color: aqua;
+    height:1.7rem;
     padding-top: 12px;
     margin-top: 50px;
 }
+.contenido .titulo p{
+    font-size:1.5rem;
+    color: white;
+}
 
 .contenido .fecha_entrega{
-    height: 30px;
-    background-color: darkblue;
+    height: 1.5rem;
     padding-top: 5px;
     margin-top: 30px;
     margin-right: 30px;
 }
 
+.contenido .fecha_entrega p{
+    font-size:1.2rem;
+    color: white;
+}
+
 .contenido .consigna{
-    background-color: darkgreen;
     margin-top: 30px;
-    height:auto;
+    height:300px;
+    margin-left:40px;
+    margin-right:40px;
     padding-left:50px; 
     padding-right:50px; 
     padding-bottom: 15px;
+    color:white;
 }
 
-.consigna p{
-    font-size: 25px;
+.contenido .consigna p{
+    font-size: 1rem;
     margin-left:40px;
     margin-right:40px;
 }
@@ -210,9 +221,12 @@
     height:100px;
     margin-top:20px;
     margin-bottom: 20px;
-    background-color: palevioletred;
 }
 
+.contenido .biliografia p{
+    font-size: 1.3rem;
+    color:white;
+}
 
 
 
