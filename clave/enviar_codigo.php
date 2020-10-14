@@ -45,6 +45,7 @@ $codigo = generarCodigo(4);
                                 }
                             }
                         }
+                        $_SESSION['Email'] = $Email;
                         $titulo="codigo de confirmacion";
                         $body="su codigo de confirmacion es $codigo";
                         $location="location: verificar_codigo.php";
