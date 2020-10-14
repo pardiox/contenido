@@ -40,7 +40,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
   <a href="#">Clases</a>
   <a href="#" name="tarea">Tareas pendientes</a>
   <a href="perfil_alumno.php">perfil</a>
-  <a href="#">Contact</a>
+  <a href="configuracion.php">configuracion</a>
   <br>
   <br>
   <br>
