@@ -11,6 +11,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    
     <title><?php echo $nombre, $apellido;?></title>
     
     <link rel="stylesheet" href="../css/flex/flexboxgrid.min.css">
@@ -37,11 +39,10 @@
     
     <div class="contenedor_principal row center-xs">
     <div class="bienvenido">
-    <h1 class="col-xs-12">Bienvenido, <?php echo $nombre, $apellido;?></h1>
+    <h1 class="col-xs-12">Bienvenido, <?php echo $nombre .' '.  $apellido;?></h1>
     </div>
      
       <div class="cuadros col-xs-12">
-       
         <div class="row center-xs">   
             <div class="opciones alumnos col-xs-11 col-lg-4">
              
@@ -87,6 +88,10 @@
       </div>
     </div>
     
-    <footer></footer>
+    <div class="footer row center-xs">
+        <footer class="col-xs-12">
+            <h3>Feisbuk</h3>
+        </footer>
+    </div>  
 </body>
 </html>

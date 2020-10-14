@@ -33,12 +33,12 @@ a{
     color: white;
 }
 
-body{background-color:var(--fondo); }
+body{background-color:#3D4558; }
 
 header{
     text-align: center;
     height:70px;
-    background-color: var(--verde1);
+    
 }
 
 header h1{
@@ -46,7 +46,7 @@ header h1{
 }
 .bienvenido{
     font-family: 'Hammersmith One', sans-serif;
-
+    color: white;
 }
 
 .contenedor_principal{
@@ -54,7 +54,7 @@ header h1{
     margin-right: 150px;
     padding-top: 30px;
     text-align: center;
-    background-color: var(--fondointerior);
+    background-color:#353B4A;
 }
 .cuadros{
     margin-top: 25px;
@@ -66,28 +66,36 @@ header h1{
     text-align: center;
     width:300px;
     height: 300px;
-    border: 1px solid;
-    cursor: pointer;
+    border: 0;
+    border-color:;
     border-radius:15px;
+    cursor: pointer;
+    background-color:#3D4558;
+}
+.opciones:hover{
+    background:rgba(0,0,0,0.3);
+   
 }
 
 .opciones h2{
     font-family: 'Saira', sans-serif;
     margin-top:120px;
     position: relative;
-    font-size: 40px;
+    font-size:2.3rem;
+    
 }
 .opciones p{
-    font-size:25px;
+    font-size:1.4rem;
     opacity: 0%;
-    text-decoration: none
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
 }
 .opciones:hover p{
     transition: .4s linear;
     opacity: 100%;
 }
 .opciones:hover h2{
-    animation:opciones 0.9s linear;   
+    animation:opciones 0.8s linear;   
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 30px;
@@ -105,27 +113,22 @@ header h1{
     }
 } 
 
-.alumnos {
-    background-color:var(--violeta1);
-    border-color: var(--violeta1);
-    font-family: 'Lato', sans-serif;
-}
 
 
-.clases{
-    background-color: var(--azul1);
-    border-color:var(--azul1);
-    font-family: 'Lato', sans-serif;
-}
 
-.cargar_clase{
-     background-color:var(--verde1);
-    border-color:var(--verde1);
-    font-family: 'Lato', sans-serif;
-}
-.indefinido{
-    background-color:var(--rojo1);
-    border-color:var(--rojo1);
-    font-family: 'Lato', sans-serif;
-}
 
+
+
+
+
+
+.footer{
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+    position:fixed;
+    background-color: #252932;
+}
+.footer footer{
+    height: 2rem;
+}

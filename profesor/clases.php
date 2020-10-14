@@ -23,7 +23,7 @@
                          $titulo =$fila["titulo"];
                          $contenido =$fila["contenido"];
                          $bibiografia=$fila["bibiografia"];
-                         $fecha_de_subida=$fila['fecha_de_subida'];
+                         $fecha_de_subida = date('d/m/a');
             
                         }
                      }}
@@ -115,18 +115,18 @@
         </div>
         
         <div class="contenido col-xs-12 col-md-9">
-            <div class="row center-xs between-md">
-                <div class="fecha col-md-2">
+            <div class="row center-xs between-md contenido-arriba">
+                <div class="fecha col-xs-2">
                     <p><?php echo $fecha_de_subida?><p>
                 </div>
-                <div class="titulo col-md-4">
+                <div class="titulo col-xs-4">
                     <p><?php echo $titulo; ?></p>
                 </div>
-                <div class="fecha_entrega col-md-2">
+                <div class="fecha_entrega col-xs-2">
                     <p><?php echo $fecha_de_entrega; ?></p>
                 </div>
             </div>
-            <div class="row center-xs">
+            <div class="row center-xs contenido-abajo">
                
                 <div class="consigna col-xs-12">
                     <p> <?php echo $contenido; ?></p>

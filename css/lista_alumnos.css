@@ -68,24 +68,16 @@ header{
     color:#616775;
     font-family: 'Poppins', sans-serif;
 }
-.peticiones .top-peticiones input{
-    height:2rem;
-    font-size:1rem;
-    color:white;
+select{
+    width:30%;
+    height: 1.5rem;
     outline: none;
-    border: none;
-    border-bottom: 3px solid;
-    border-color: var(--violeta1);
-    background:transparent;
-}
-.peticiones .top-peticiones input::placeholder{
-    color:white;
-    opacity:75%
+    border:0;
+    background: transparent;
 }
 
-.peticiones .top-peticiones input:focus{
-    background:rgba(0,0,0,0.2);
-    border-bottom-color: #9771AD;
+.peticiones .top-peticiones select:focus{
+    background-color: rgba(#fff,0.3);
 }
 
 .peticiones::-webkit-scrollbar{

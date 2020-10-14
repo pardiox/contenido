@@ -41,9 +41,9 @@ session_start();
 <div class = "peticiones col-md-5 col-xs-12">
 <div class = "row center-xs top-peticiones">
 <h2 class = "col-xs-12">Peticiones de ingreso</h2>
-<div class = 'filtro-lista'>
-<div class = 'lista'>
-<select name = 'Curso' id = ''>
+<div class = 'filtro-lista col-xs-12'>
+<select name = 'Cursos' id = '' value='Cursos'>
+<option value="">Selecciones un curso</option>
 <?php
 $Email = $_SESSION["u"]['Email'];
 $cons = "SELECT distinct curso FROM cursos_y_materia where profesor='$Email'";
@@ -63,7 +63,7 @@ if ( $resultadiox->num_rows>0 ) {
 
 ?>
 </select>
-</div>
+
 </div>
 </div>
 <div class = "tabla col-xs-12">
@@ -140,10 +140,30 @@ if ( $resultad = $con->query( $sq ) ) {
         <div class="alu_aceptados col-xs-12 col-md-5">
         <div class="row top-inscriptos center-xs">
         <h2 class="col-xs-12">Alumnos Inscriptos</h2>
-        <form action="">
-            <input type="text" placeholder="Filtrar ( Curso )" class="col-xs-12">
-            
-        </form>
+        <div class = 'filtro-lista col-xs-12'>
+<select name = 'Cursos' id = '' value='Cursos'>
+<option value="">Selecciones un curso</option>
+<?php
+$Email = $_SESSION["u"]['Email'];
+$cons = "SELECT distinct curso FROM cursos_y_materia where profesor='$Email'";
+$resultadiox = $con->query( $cons );
+if ( $resultadiox->num_rows>0 ) {
+    while ( $fila = mysqli_fetch_array( $resultadiox ) ) {
+
+        $curso = $fila['curso'];
+        echo  "
+        <option>$curso</option>              
+        ";
+    }
+
+} else {
+    echo $con->error;
+}
+
+?>
+</select>
+
+</div>
         </div>
         <div class="tabla col-xs-12"></div>
         <?php
