@@ -24,16 +24,14 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
 	 </head>
 
 <body>
-  <div class="container">
-   <header class="row">
-          <div class="col-xs-12">
-               <div class="header">
+  
+     <header>
+               <div class="header ">
                    <div id="main">
                      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
                    </div>
                    <a href="../cerrar_sesion.php"> cerrar sesion </a>
-               </div>
-          </div>
+         </div>
 	</header>
 
 
@@ -41,7 +39,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Clases</a>
   <a href="#" name="tarea">Tareas pendientes</a>
-  <a href="perfil_alumno">perfil</a>
+  <a href="perfil_alumno.php">perfil</a>
   <a href="#">Contact</a>
   <br>
   <br>
@@ -61,7 +59,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
   <br>
   <a href="../cerrar_sesion.php">cerrar sesion</a>
 </div>
-<div class="row">
+<div class="body">
 <?php
      $sql =  "SELECT * FROM cursos_y_materia where curso='$curso'";
             
@@ -102,17 +100,17 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
           muy grande - lg
           -->
           
-           <div class="col-lg-12 col-md-8 col-sm-4 col-xs-2">
-            <div class="materia">
+           
+            <div class="materia" >
                 <h2><?php echo $materia; ?> </h2>
                 <p><?php echo $nombre, " ", $apellido; ?></p>
                 <p><?php echo $fecha_de_subida, " ", $fecha_de_entrega; ?></p>
             </div>
-            </div>
+            
         </a>
 
 <?php }} ?>
-</div>
+
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
