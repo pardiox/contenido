@@ -46,7 +46,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
     <a href="../cerrar_sesion.php">cerrar sesion</a>
 </div>
 <div class="contenedor-principal row center-xs around-md">
-    <div class="perfil col-xs-11 col-md-4">
+    <div class="perfil col-xs-11 col-md-4" id="perfil">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea, quae suscipit quis sit obcaecati quaerat distinctio omnis est nam et inventore, maxime debitis, beatae ipsam repellendus error esse soluta.</p>
     </div>
 
@@ -82,24 +82,24 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
                     if ($resultado->num_rows > 0){
                         $fila=$resultado->fetch_assoc();
                         $fecha_de_subida=$fila["fecha_de_subida"];
-                       
-                       $fecha_de_entrega=$fila["fecha_de_entrega"];
+                        $fecha_e="fecha de entrega: ";
+                        $fecha_de_entrega=$fila["fecha_de_entrega"];
                     }else{
                         $fecha_de_subida="No hay ningun trabajos disponible";
-                        
+                        $fecha_e="";
                         $fecha_de_entrega="No hay trabajos disponibles";
                     }
                 }
 ?>
-<div class="materia col-xs-11" >
+<div class="materia col-xs-11">
     <div class="overlay col-xs-12">
         <div class="titulo-materia row center-xs">
             <h2><?php echo $materia; ?> </h2>
         </div>
         <div class="materia-info row start-md center-xs">
-            <p><?php echo "Profesor: ", $nombre, " ", $apellido; ?></p>
+            <p><?php echo "Profesor: ", $apellido, " ", $nombre; ?></p>
             <p></p>
-            <p><?php echo "Ultimo trabajo ", $fecha_de_entrega; ?></p>
+            <p><?php echo $fecha_e, " ", $fecha_de_entrega; ?></p>
         </div>
         <div class="ir-materia row center-xs middle-xs">
            <div class="btn-ir col-xs-3">
@@ -119,6 +119,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
+
 }
 
 function closeNav() {
