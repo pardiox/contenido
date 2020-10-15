@@ -13,7 +13,8 @@
             
             if(isset($tipo)){
             if ($tipo=="profesor"){
-                $SQL="UPDATE profesor SET password='$clave' where Email='$Email'"; 
+                $nueva_clave = password_hash($clave, PASSWORD_DEFAULT, ['cost'=> 10]);
+                $SQL="UPDATE profesor SET password='$nueva_clave' where Email='$Email'"; 
                 if(!$error= $con-> query($SQL)){
                     echo $con->error;
 	            }
@@ -23,14 +24,15 @@
 	           }
             }else 
             if ($tipo=="alumno"){
-                $SQL="UPDATE alumno SET password='$clave' where Email='$Email'"; 
-                if(!$error= $con-> query($SQL)){
-                  echo $con->error;
-	            }
-                else{
-                    echo "contraseña cambiada con exito";
-                    exit();
-	           }
+                            $nueva_clave = password_hash($clave, PASSWORD_DEFAULT, ['cost'=> 10]);
+                            $SQL="UPDATE alumno SET password='$nueva_clave' where Email='$Email'"; 
+                            if(!$error= $con-> query($SQL)){
+                                echo $con->error;
+                            }
+                            else{
+                                echo "contraseña cambiada con exito";
+                                exit();
+                            }
             }}else{
                 echo "email no existe";
             }
