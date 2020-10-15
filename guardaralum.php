@@ -5,16 +5,20 @@ include "conexion.php";
     $Email=$_REQUEST['Email'];
     $password=$_REQUEST['password'];
     $curso=$_REQUEST['curso'];
-	//incluimos la conexion
-	
+
 	
 	/*
+	$pepper = "aasda123";
+    $hash = hash_hmac("sha256", $password, $pepper);
+
 	inserta los datos recibidos en la tabla
 	NOTA: INSERT INTO Tabla_en la que quiero insertar (los campos separados por coma)
 	*/
+
+    $hash = password_hash($password, PASSWORD_DEFAULT, ['cost'=> 10]);
 	
 	$SQL="INSERT INTO alumno (nombre, apellido,Email,password,curso) VALUES
-	('$nombre', '$apellido','$Email', '$password', '$curso')";
+	('$nombre', '$apellido','$Email', '$hash', '$curso')";
 	
 	if(!$error= $con-> query($SQL)){
 		 echo $con->error;
@@ -33,6 +37,7 @@ if(!$error= $con-> query($SQL)){
 		 echo $con->error;
 	}
 	else{
+        /*
 $para      = $Email;
 $titulo    = 'codigo de verificacion';
 $mensaje   = "el codigo de verificacion es: $codigo" ;
@@ -42,7 +47,7 @@ $cabeceras = 'From: tecnica14@gmail.com' . "\r\n" .
 
 mail($para, $titulo, $mensaje, $cabeceras);
 
-
+*/
  
 $sql =  "SELECT distinct materia FROM cursos_y_materia where curso='$curso'";
 if ($resultado = $con->query($sql)){
