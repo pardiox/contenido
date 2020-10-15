@@ -129,7 +129,7 @@
             <div class="row center-xs contenido-abajo">
                
                 <div class="consigna col-xs-12">
-                    <p> <?php echo nl2br($contenido); ?></p>
+                    <p> <?php echo $contenido; ?></p>
                 </div>
                 <div class="biliografia col-xs-7">
                     <p><?php echo $bibiografia; ?></p>
