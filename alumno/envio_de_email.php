@@ -1,7 +1,7 @@
 <?php
- include ("Mailer/src/PHPMailer.php");
- include ("Mailer/src/SMTP.php");
- include ("Mailer/src/Exception.php");
+ include ("Mailer/PHPMailer.php");
+ include ("Mailer/SMTP.php");
+ include ("Mailer/Exception.php");
     
     
     
@@ -14,15 +14,14 @@
     $SMTPAuth="login";
     $SMTPSecure="tls"; 
     $password="cuentaprueba" ;   
-    session_start();
-    $E=$_SESSION['Email'];
-    $Email ="$E";    
+    
+    $Email = $_SESSION['Email'];    
     $bodyemail=$Email;
     $subject="que tal";
     $bodyEmail="mensaje";
         
     $mail->isSMTP();             
-    $mail->SMTPDebug  = 0;
+    $mail->SMTPDebug  = 2;
     $mail->Host       = $host;
     $mail->Port       = $port;
     $mail->SMTPAuth   = $SMTPAuth;
@@ -38,9 +37,10 @@
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $titulo;
     $mail->Body    = $body;
-
+        //echo "mail enviado";    
     header ($location); 
     } 
+
     catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }

@@ -9,6 +9,7 @@
        
         <header>
             <h2>Carpeta virtual</h2>
+            <a href="configuracion.php"><p>atras</p></a>
         </header>
         
         <center>

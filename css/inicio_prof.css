@@ -85,17 +85,29 @@ header h1{
     
 }
 .opciones p{
+    margin: 10px;
     font-size:1.4rem;
     opacity: 0%;
+    text-align: left;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
 }
 .opciones:hover p{
-    transition: .4s linear;
+    animation: mymove 0.5s linear;
+}
+@keyframes mymove {
+  0%   {opacity: 0%;}
+
+
+  90% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+.opciones:hover p{
     opacity: 100%;
 }
+
 .opciones:hover h2{
-    animation:opciones 0.8s linear;   
+    animation:opciones 0.4s linear;   
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 30px;
