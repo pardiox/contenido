@@ -11,6 +11,7 @@ if(empty($Email) || empty($password)){
         exit();
 }
 
+
 $sql =  "SELECT * from profesor where Email='$Email' and password='$password'";
 
 if ($resultado = $con->query($sql)){
