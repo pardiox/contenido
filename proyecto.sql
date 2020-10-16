@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2020 a las 07:37:08
+-- Tiempo de generación: 15-10-2020 a las 10:48:31
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -51,7 +51,7 @@ CREATE TABLE `alumno` (
   `apellido` varchar(25) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
   `fecha` date NOT NULL,
   `Email` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
-  `password` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
+  `password` varchar(200) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
   `curso` varchar(8) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `verificado` int(1) NOT NULL DEFAULT 0,
   `ban_profesor` int(11) NOT NULL DEFAULT 0
@@ -62,7 +62,8 @@ CREATE TABLE `alumno` (
 --
 
 INSERT INTO `alumno` (`nombre`, `apellido`, `fecha`, `Email`, `password`, `curso`, `verificado`, `ban_profesor`) VALUES
-('Guerrero', 'Lucas', '0000-00-00', 'lucasg3322@gmail.com', '1234', '2do_2da', 1, 0),
+('0', 'acosta', '0000-00-00', 'Juan@gmail.com', '$2y$10$ziZb4KVtk1XKk6zzOXARXe1YdznXnRLpyd9tNZD1S0S0KVxTTEET6', '2do_2da', 0, 0),
+('0', 'Guerrero', '0000-00-00', 'lucasg3322@gmail.com', '1234', '2do_2da', 1, 0),
 ('Matias', 'Alvarado', '0000-00-00', 'mati123@gmail.com', '1234', '2do_2da', 0, 0);
 
 -- --------------------------------------------------------
@@ -109,7 +110,85 @@ INSERT INTO `alumnos_verificados` (`curso`, `materia`, `Email`, `verificacion`, 
 ('2do_2da', 'Practicas del L', 'mati123@gmail.com', 0, 63),
 ('2do_2da', 'Procedimientos ', 'mati123@gmail.com', 0, 64),
 ('2do_2da', 'Lenguajes Tecno', 'mati123@gmail.com', 0, 65),
-('2do_2da', 'Sistemas Tecnol', 'mati123@gmail.com', 0, 66);
+('2do_2da', 'Sistemas Tecnol', 'mati123@gmail.com', 0, 66),
+('2do_2da', 'Biologia', 'rober@gmail.com', 0, 67),
+('2do_2da', 'Construccion de', 'rober@gmail.com', 0, 68),
+('2do_2da', 'Educacion Artis', 'rober@gmail.com', 0, 69),
+('2do_2da', 'Educacion Fisic', 'rober@gmail.com', 0, 70),
+('2do_2da', 'Fisico-Quimica', 'rober@gmail.com', 0, 71),
+('2do_2da', 'Geografia', 'rober@gmail.com', 0, 72),
+('2do_2da', 'Historia', 'rober@gmail.com', 0, 73),
+('2do_2da', 'Ingles', 'rober@gmail.com', 0, 74),
+('2do_2da', 'Matematica', 'rober@gmail.com', 0, 75),
+('2do_2da', 'Practicas del L', 'rober@gmail.com', 0, 76),
+('2do_2da', 'Procedimientos ', 'rober@gmail.com', 0, 77),
+('2do_2da', 'Lenguajes Tecno', 'rober@gmail.com', 0, 78),
+('2do_2da', 'Sistemas Tecnol', 'rober@gmail.com', 0, 79),
+('2do_2da', 'Biologia', 'rober@gmail.com', 0, 80),
+('2do_2da', 'Construccion de', 'rober@gmail.com', 0, 81),
+('2do_2da', 'Educacion Artis', 'rober@gmail.com', 0, 82),
+('2do_2da', 'Educacion Fisic', 'rober@gmail.com', 0, 83),
+('2do_2da', 'Fisico-Quimica', 'rober@gmail.com', 0, 84),
+('2do_2da', 'Geografia', 'rober@gmail.com', 0, 85),
+('2do_2da', 'Historia', 'rober@gmail.com', 0, 86),
+('2do_2da', 'Ingles', 'rober@gmail.com', 0, 87),
+('2do_2da', 'Matematica', 'rober@gmail.com', 0, 88),
+('2do_2da', 'Practicas del L', 'rober@gmail.com', 0, 89),
+('2do_2da', 'Procedimientos ', 'rober@gmail.com', 0, 90),
+('2do_2da', 'Lenguajes Tecno', 'rober@gmail.com', 0, 91),
+('2do_2da', 'Sistemas Tecnol', 'rober@gmail.com', 0, 92),
+('2do_2da', 'Biologia', 'par2@gmail.com', 0, 93),
+('2do_2da', 'Construccion de', 'par2@gmail.com', 0, 94),
+('2do_2da', 'Educacion Artis', 'par2@gmail.com', 0, 95),
+('2do_2da', 'Educacion Fisic', 'par2@gmail.com', 0, 96),
+('2do_2da', 'Fisico-Quimica', 'par2@gmail.com', 0, 97),
+('2do_2da', 'Geografia', 'par2@gmail.com', 0, 98),
+('2do_2da', 'Historia', 'par2@gmail.com', 0, 99),
+('2do_2da', 'Ingles', 'par2@gmail.com', 0, 100),
+('2do_2da', 'Matematica', 'par2@gmail.com', 0, 101),
+('2do_2da', 'Practicas del L', 'par2@gmail.com', 0, 102),
+('2do_2da', 'Procedimientos ', 'par2@gmail.com', 0, 103),
+('2do_2da', 'Lenguajes Tecno', 'par2@gmail.com', 0, 104),
+('2do_2da', 'Sistemas Tecnol', 'par2@gmail.com', 0, 105),
+('2do_2da', 'Biologia', 'Juan@gmail.com', 0, 132),
+('2do_2da', 'Construccion de', 'Juan@gmail.com', 0, 133),
+('2do_2da', 'Educacion Artis', 'Juan@gmail.com', 0, 134),
+('2do_2da', 'Educacion Fisic', 'Juan@gmail.com', 0, 135),
+('2do_2da', 'Fisico-Quimica', 'Juan@gmail.com', 0, 136),
+('2do_2da', 'Geografia', 'Juan@gmail.com', 0, 137),
+('2do_2da', 'Historia', 'Juan@gmail.com', 0, 138),
+('2do_2da', 'Ingles', 'Juan@gmail.com', 0, 139),
+('2do_2da', 'Matematica', 'Juan@gmail.com', 0, 140),
+('2do_2da', 'Practicas del L', 'Juan@gmail.com', 0, 141),
+('2do_2da', 'Procedimientos ', 'Juan@gmail.com', 0, 142),
+('2do_2da', 'Lenguajes Tecno', 'Juan@gmail.com', 0, 143),
+('2do_2da', 'Sistemas Tecnol', 'Juan@gmail.com', 0, 144),
+('2do_2da', 'Biologia', 'Juan@gmail.com', 0, 145),
+('2do_2da', 'Construccion de', 'Juan@gmail.com', 0, 146),
+('2do_2da', 'Educacion Artis', 'Juan@gmail.com', 0, 147),
+('2do_2da', 'Educacion Fisic', 'Juan@gmail.com', 0, 148),
+('2do_2da', 'Fisico-Quimica', 'Juan@gmail.com', 0, 149),
+('2do_2da', 'Geografia', 'Juan@gmail.com', 0, 150),
+('2do_2da', 'Historia', 'Juan@gmail.com', 0, 151),
+('2do_2da', 'Ingles', 'Juan@gmail.com', 0, 152),
+('2do_2da', 'Matematica', 'Juan@gmail.com', 0, 153),
+('2do_2da', 'Practicas del L', 'Juan@gmail.com', 0, 154),
+('2do_2da', 'Procedimientos ', 'Juan@gmail.com', 0, 155),
+('2do_2da', 'Lenguajes Tecno', 'Juan@gmail.com', 0, 156),
+('2do_2da', 'Sistemas Tecnol', 'Juan@gmail.com', 0, 157),
+('2do_2da', 'Biologia', 'Juan@gmail.com', 0, 158),
+('2do_2da', 'Construccion de', 'Juan@gmail.com', 0, 159),
+('2do_2da', 'Educacion Artis', 'Juan@gmail.com', 0, 160),
+('2do_2da', 'Educacion Fisic', 'Juan@gmail.com', 0, 161),
+('2do_2da', 'Fisico-Quimica', 'Juan@gmail.com', 0, 162),
+('2do_2da', 'Geografia', 'Juan@gmail.com', 0, 163),
+('2do_2da', 'Historia', 'Juan@gmail.com', 0, 164),
+('2do_2da', 'Ingles', 'Juan@gmail.com', 0, 165),
+('2do_2da', 'Matematica', 'Juan@gmail.com', 0, 166),
+('2do_2da', 'Practicas del L', 'Juan@gmail.com', 0, 167),
+('2do_2da', 'Procedimientos ', 'Juan@gmail.com', 0, 168),
+('2do_2da', 'Lenguajes Tecno', 'Juan@gmail.com', 0, 169),
+('2do_2da', 'Sistemas Tecnol', 'Juan@gmail.com', 0, 170);
 
 -- --------------------------------------------------------
 
@@ -129,7 +208,15 @@ CREATE TABLE `codigo` (
 INSERT INTO `codigo` (`email`, `codigo`) VALUES
 ('mati123@gmail.com', '0615'),
 ('lucasg3322@gmail.com', '1234'),
-('mario@gmail.com', ' i8n242');
+('mario@gmail.com', ' i8n242'),
+('rober@gmail.com', '9883'),
+('rober@gmail.com', '7858'),
+('par2@gmail.com', '4107'),
+('Juan@gmail.com', '7908'),
+('Juan@gmail.com', '5348'),
+('Juan@gmail.com', '0114'),
+('Juan@gmail.com', '1827'),
+('Juan@gmail.com', '1975');
 
 -- --------------------------------------------------------
 
@@ -589,7 +676,8 @@ CREATE TABLE `recuperar_clave` (
 --
 
 INSERT INTO `recuperar_clave` (`Email`, `codigo`, `id`) VALUES
-('lucasg3322@gmail.com', 4646, 47);
+('lucasg3322@gmail.com', 1466, 47),
+('Juan@gmail.com', 8507, 48);
 
 --
 -- Índices para tablas volcadas
@@ -639,7 +727,7 @@ ALTER TABLE `recuperar_clave`
 -- AUTO_INCREMENT de la tabla `alumnos_verificados`
 --
 ALTER TABLE `alumnos_verificados`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=171;
 
 --
 -- AUTO_INCREMENT de la tabla `contenido`
@@ -657,7 +745,7 @@ ALTER TABLE `cursos_y_materia`
 -- AUTO_INCREMENT de la tabla `recuperar_clave`
 --
 ALTER TABLE `recuperar_clave`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
