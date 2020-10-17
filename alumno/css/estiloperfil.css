@@ -305,7 +305,8 @@ body {
     text-align: center;
     font-size: 25px;
     border: 10px;
-    border: 2px solid;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
     border-radius: 30px;
     border-color: gray
      
@@ -318,7 +319,6 @@ body {
     border: 1px solid;
     border-color:#C0C0C0;
     border-radius: .5rem;
-    
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 .contenedor_biografia_parrafo{
@@ -338,7 +338,9 @@ button{
     font-style: italic;
     color: white;
     background-color: #889ccf;
-    border-bottom-color: #889ccf;
+
+    border-bottom: 2px solid;
+    border-top: 2px solid;
     border-radius: 15px;
     border: 0px;
 
