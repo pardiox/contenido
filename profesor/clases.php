@@ -1,20 +1,21 @@
                 <?php
                     include "../conexion.php";
                     session_start();
+                    $curso_actual="";
+                    $materia_actual=""; 
                     $profesor = $_SESSION["u"]['Email'];
-                    $_SESSION["NADA"]=1;
-                    $fecha_de_subida="fecha_de_subida";
-                    $titulo="TITULO";
-                    $fecha_de_entrega="FECHA DE ENTREGA";
-                    $contenido="<h2>aqui se veran sus trabajos, que espera a publicar algo¿?";
-                    $bibiografia="y aca de donde los alumnos se pueden guiar para estudiar";
+                $fecha_de_subida="fecha_de_subida";
+                        $titulo="TITULO";
+                        $fecha_de_entrega="FECHA DE ENTREGA";
+                        $contenido="<h2>aqui se veran sus trabajos, que espera a publicar algo¿?";
+                        $bibiografia="y aca de donde los alumnos se pueden guiar para estudiar";
+
                     if(isset($_REQUEST["curso"])){
-                     $curso=$_REQUEST["curso"];
-                     $materia=$_REQUEST["materia"];
+                     $curso_actual=$_REQUEST["curso"];
+                     $materia_actual=$_REQUEST["materia"];
                      $Email=$_SESSION["u"]['Email'];
                         
-                        
-                     $sql =  "SELECT * FROM contenido where Email='$Email' and curso='$curso' and materia='$materia'";
+                     $sql =  "SELECT * FROM contenido where Email='$Email' and curso='$curso_actual' and materia='$materia_actual'";
                         
                      if ($resultado = $con->query($sql)){
                         if ($resultado->num_rows > 0){
@@ -26,7 +27,25 @@
                          $fecha_de_subida = date('Y/m/d');
             
                         }
-                     }}
+                     }}else if(isset($_REQUEST["codigo"])){
+                     $curso_actual=$_REQUEST["cursoactual"];
+                     $materia_actual=$_REQUEST["materiaactual"]; 
+                      $codigo = $_REQUEST["codigo"];
+                        $sql =  "SELECT * FROM contenido where cod_trabajo='$codigo'";
+                        
+                     if ($resultado = $con->query($sql)){
+                        if ($resultado->num_rows > 0){
+                        $fila=$resultado->fetch_assoc();
+                         $fecha_de_entrega =$fila["fecha_de_entrega"];
+                         $titulo =$fila["titulo"];
+                         $contenido =$fila["contenido"];
+                         $bibiografia=$fila["bibiografia"];
+                         $fecha_de_subida = date('Y/m/d');
+            
+                        }
+                     }
+                    }
+                    
                     
                             ?>
 <!DOCTYPE html>
@@ -39,6 +58,7 @@
     <link rel="stylesheet" type="text/css" href="../css/estilo_clase.css">
     <link rel="stylesheet" type="text/css" href="../css/flex/flexboxgrid.min.css">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
        <script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -50,9 +70,9 @@
 			<div class="logo">carpeta virtual</div>
 			
 			<nav>
+			    <a href="vista_profesor_inicio.php">inicio</a>
 				<a href="formulario_profesor.php">formulario</a>
 				<a href="lista_de_alumnos.php">alumnos</a>
-				<a href="#">indifinido</a>
 				<a href="../cerrar_sesion.php">cerrar sesion</a>
 			</nav>
 		</div>
@@ -66,9 +86,18 @@
                     <h2>Clases</h2>
                 </div>
                 <div class="select row center-xs">
-                   <select name="" id="" class="col-xs-6">
-                       <option value="">Cursos</option>
-                       <option value=""></option>
+                   <select name="curso" id="caja_busqueda" class="curso" class="col-xs-6">
+                    <?php
+                    $sql =  "SELECT distinct curso FROM cursos_y_materia where profesor='$profesor'";
+                       if ($resultado = $con->query($sql)){
+                            while ($fila = mysqli_fetch_array($resultado)){
+                                $curso=$fila["curso"];   
+                            
+                                echo "<option> $curso </option>";
+                            }}
+                    ?>
+            
+                      
                    </select>
                 </div>
             </div>
@@ -84,7 +113,7 @@
                     $curso=$fila['curso'];
                     $materia=$fila['materia'];
                     $respuesta = "
-                    <a href='clases.php?curso=$curso & materia=$materia'><p>
+                    <a href='clases.php?curso=$curso & materia=$materia'><p class='columna'>
                     $curso $materia
                     </p></a>
                     ";
@@ -136,7 +165,25 @@
                     </div>
                     <div class="row center-xs middle-md fech-trabajos">
                        <div class="tabla-fecha col-xs-12">
-                        <p><?php echo $fecha_de_subida;?></p>
+                       <?php
+                       include "../conexion.php";
+                            $sql = "SELECT * FROM  contenido WHERE Email='$profesor' and curso='$curso_actual' and materia='$materia_actual'";
+                           
+                            if ($resultado = $con->query($sql)){
+                                echo "fecha de antiguos trabajos";
+                                while ($fila = mysqli_fetch_array($resultado)){
+                                    $fecha_subida=$fila['fecha_de_subida'];
+                                    $cod_trabajo=$fila['cod_trabajo'];
+                                    
+                        ?>
+                        <p>
+                                   <a href="clases.php?codigo=<?php echo $cod_trabajo;?> & materiaactual=<?php echo $materia_actual;?> & cursoactual=<?php echo $curso_actual;?>">
+                                   <td><?php echo $fecha_subida;?></td>
+                                   </a>
+                                   <?php
+                                }
+                            }?>
+                        </p>
                         </div>
                     </div>
                 </div>
@@ -144,7 +191,7 @@
             <div class="row center-xs contenido-abajo ">
                 <div class="biliografia col-xs-7">
                    <h3>Bibliografía</h3>
-                    <p><?php echo $bibiografia; ?></p>
+                    <a href="<?php echo $bibiografia; ?>"><p><?php echo $bibiografia; ?></p></a>
                 </div>
             </div>
         </div>
