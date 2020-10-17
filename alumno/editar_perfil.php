@@ -9,7 +9,12 @@ $apellido = $_SESSION["u"]['apellido'];
 $curso = $_SESSION["u"]['curso'];
 $Email = $_SESSION["u"]['Email'];
 $biografia = $_SESSION["u"]['biografia'];
-$foto = $_SESSION["u"]['foto'];
+if (empty($_SESSION["u"]['foto'])){
+    $foto="foto_perfil";
+}
+else{
+    $foto = $_SESSION["u"]['foto'];
+}
 $verifiado =$_SESSION["u"]['verificado'];
 
 if(empty($biografia)){
@@ -35,11 +40,8 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
          <div class="perfil">
        
         <div clas="foto">
-          <?php
-            echo $_SESSION["u"]['foto'];
-            ?>
            <center>
-            <img src="../img/foto_perfil.png" width="100" height="100"><a href="cambiar_foto.php"><button><p>cambiar foto</p></button></a>
+            <img src="img/<?php echo $foto;?>" width="100" height="100"><a href="cambiar_foto.php"><button><p>cambiar foto</p></button></a>
             </center>
         </div>
         <div class="nombre"> 
