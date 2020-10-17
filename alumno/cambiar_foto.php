@@ -20,8 +20,8 @@
                    $_SESSION["tipo"] = "";
                 }
                ?>
-                <form action="cambiar_foto_verificar.php" method="post">
-                   <input type="file" name="foto">
+                <form action="cambiar_foto_verificar.php" method="post" enctype="multipart/form-data">
+                   <input type="file" name="imagen1">
                   <input type="submit" value="enviar">
                 </form>
             </div>
