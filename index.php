@@ -36,7 +36,7 @@ if( $_SESSION["u"]['sesion'] == "s.p"){
    
 		<div class="wrapper">
 
-			<div class="logo">carpeta virtual</div>
+			<div class="logo">Volder</div>
 			
 			<nav>
 				

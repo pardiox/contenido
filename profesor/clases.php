@@ -62,8 +62,8 @@
     <div class="contenedor_principal row">
         <div class="barra_lateral col-xs-12 col-md-3">
             <div class="arriba row center-xs">
-               <div class="row center-xs">
-                    <h2>Cursos</h2>
+               <div class="barra-h2 row center-xs">
+                    <h2>Clases</h2>
                 </div>
                 <div class="row center-xs">
                    <div class="formulario">
@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="medio row center-xs middle-md">
-                <div class="cursos col-md-12">
+                <div class="cursos col-xs-12">
                 <div id="datos">
                    <?php
         
@@ -104,33 +104,48 @@
 
                 </div>
             </div>
-            <div class="abajo row start-xs">
-               <div class="opciones col-xs-12">
-                <a href="">hola</a>
-                <a href="">hola</a>
-                <a href="">Configuración</a>
-                <a href="">Cerrar Sesión</a>
-                </div>
-            </div>
+
         </div>
         
         <div class="contenido col-xs-12 col-md-9">
+           <div class="row lista-trabajos-arriba center-xs">
+                    <div class="row center-xs middle-xs top-lista">
+                        <h2>Trabajos</h2>
+                    </div>
+                    
+                    <div class="row center-xs middle-xs fech-trabajos">
+                       <div class="-tabla-fecha col-xs-12">
+                        <p><?php echo $fecha_de_subida;?></p>
+                        </div>
+                    </div>
+            </div>   
             <div class="row center-xs between-md contenido-arriba">
                 <div class="fecha col-xs-2">
-                    <p><?php echo $fecha_de_subida?><p>
+                    <p><?php echo "Fecha: ", $fecha_de_subida;?><p>
                 </div>
                 <div class="titulo col-xs-4">
                     <p><?php echo $titulo; ?></p>
                 </div>
                 <div class="fecha_entrega col-xs-2">
-                    <p><?php echo $fecha_de_entrega; ?></p>
+                    <p><?php echo "Fecha de Entrega: ", $fecha_de_entrega; ?></p>
                 </div>
             </div>
-            <div class="row center-xs contenido-abajo">
-               
-                <div class="consigna col-xs-12">
-                    <p> <?php echo $contenido; ?></p>
+            <div class="row center-xs end-md middle-xs contenido-medio">
+                <div class="consigna col-xs-12 col-md-9">
+                    <p> <?php echo nl2br($contenido);?></p>
                 </div>
+                <div class="lista-trabajos">
+                    <div class="row center-xs middle-xs top-lista">
+                        <h2>Trabajos</h2>
+                    </div>
+                    <div class="row center-xs middle-md fech-trabajos">
+                       <div class="-tabla-fecha col-xs-12">
+                        <p><?php echo $fecha_de_subida;?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row center-xs contenido-abajo ">
                 <div class="biliografia col-xs-7">
                     <p><?php echo $bibiografia; ?></p>
                 </div>

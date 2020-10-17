@@ -41,10 +41,11 @@ header{margin-bottom: 0px !important;}
 
 .contenedor_principal{
     width: 100%;
-    padding-bottom: 20px; 
-    background-color: #3D4558;
+ 
+    background-color: ;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    background-color: #EEEEEE;
 }
 
 .barra_lateral{
@@ -57,6 +58,10 @@ header{margin-bottom: 0px !important;}
 .arriba{
     padding-bottom: 5px;
     margin-bottom:7px; 
+}
+
+.barra-h2{
+    width:100vw;
 }
 
 .arriba h2{
@@ -130,25 +135,14 @@ header{margin-bottom: 0px !important;}
     border-radius:5px;
 }
 
-.barra_lateral .abajo a{
-    display: block;
-    font-family: 'Lato', sans-serif;
-    margin-left:20px;
-    margin-top:8px;
-    margin-bottom:5px;
-    font-size:1rem;
-    text-decoration: none;
-    color:white;
-}
-.barra_lateral .abajo a:hover{
-    color:var(--azul1);
-}
+
 
 .contenido{
     height: 700px;
     overflow: auto;
-    font-family: 'Hammersmith One', sans-serif
-
+    font-family: 'Hammersmith One', sans-serif;
+    
+    background-color: yellow;
 }
 .contenedor_principal .contenido::-webkit-scrollbar{
     width: 10px;
@@ -167,48 +161,116 @@ header{margin-bottom: 0px !important;}
     
 }
 
-.contenido .fecha{
-    height: 1.5rem;
-    padding-top: 5px;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.contenido .fecha p{
-    font-size:1.2rem;
-    color: white;
+.contenido .lista-trabajos-arriba{
+    width:74vw;
+    height:10vh;
+    
+    background-color: red;
 }
 
-.contenido .titulo{
-    height:1.7rem;
-    padding-top: 12px;
-    margin-top: 50px;
+@media screen (max-width:768px){
+    .lista-trabajos-arriba{
+        background-color: blue;
+    }
 }
-.contenido .titulo p{
-    font-size:1.5rem;
-    color: white;
+
+.contenido .contenido-arriba{
+    height: 15vh;
+    margin-bottom: 1rem;
+    background-color: blue;
 }
 
 .contenido .fecha_entrega{
     height: 1.5rem;
     padding-top: 5px;
-    margin-top: 30px;
-    margin-right: 30px;
+
+}
+.contenido .fecha{
+    height: 1.5rem;
+    padding-top: 5px;
+}
+.contenido .fecha p{
+    font-size:1.2rem;
+}
+
+.contenido .titulo{
+    height:1.7rem;
+    margin-top: 2rem;
+}
+.contenido .titulo p{
+    font-size:1.5rem;
+
 }
 
 .contenido .fecha_entrega p{
     font-size:1.2rem;
-    color: white;
+    
 }
 
 .contenido .consigna{
-    margin-top: 30px;
     height:300px;
-    margin-left:40px;
-    margin-right:40px;
-    padding-left:50px; 
-    padding-right:50px; 
+    text-align: center;
+    padding-left:25px; 
+    padding-right:25px; 
     padding-bottom: 15px;
-    color:white;
+    
+    background-color: green;
+}
+.contenido .lista-trabajos{
+    width: 7vw;
+    height:30vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left:.3rem;
+    padding-right:.3rem; 
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    border:1px solid;
+    border-radius: 5px;
+    background-color: gray;
+    border-color: ;
+}
+
+
+
+
+
+
+.contenido .top-lista{
+    font-size:.7rem;
+    
+}
+
+.contenido .fech-trabajos{
+    width:100%;
+    height: 3vh;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    display: block;  
+}
+
+.contenido fech-trabajos::-webkit-scrollbar{
+    width: 7px;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.contenido fech-trabajos::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color:var(--azul1);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contenido fech-trabajos::-webkit-scrollbar-thumb:hover{
+    background-color: #4C5768;
+    
+}
+
+.contenid .tabla-fecha{
+    background-color: red;
+    font-size:0.3rem;
 }
 
 .contenido .consigna p{
@@ -221,11 +283,13 @@ header{margin-bottom: 0px !important;}
     height:100px;
     margin-top:20px;
     margin-bottom: 20px;
+    
+    background-color: gray;
 }
 
 .contenido .biliografia p{
     font-size: 1.3rem;
-    color:white;
+
 }
 
 
@@ -234,8 +298,8 @@ header{margin-bottom: 0px !important;}
 footer{
     width: 100%;
     height: 30px;
-    background-color: darkgoldenrod;
-    margin-top: 20px;
+    background-color:#252932;
     margin-left: 0 !important;
     bottom:0;
+    color: white;
 }
