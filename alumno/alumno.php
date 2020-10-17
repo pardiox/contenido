@@ -32,6 +32,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
 	  <meta http-equiv="Content-type" content="text/html;
 	  charset=utf-8">
 	  <link rel="stylesheet" type="text/css" href="css/estiloperfil.css">
+	  <link rel="stylesheet" type="text/css" href="css/header.css">
 	  <link rel="stylesheet" type="text/css" href="../css/flex/flexboxgrid.min.css">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	 </head>
@@ -52,9 +53,6 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
 	</header>
 	<div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Clases</a>
-    <a href="#" name="tarea">Tareas pendientes</a>
-    <a href="perfil_alumno.php">perfil</a>
     <Updated upstream></Updated>
     <a href="configuracion.php">configuracion</a>
     <a href="#">Contact</a>
@@ -85,7 +83,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
 
             </div>
             <div class="contenedor_biografia">
-            <p class="contenedor_biografia_parrafo"><?php echo $biografia;?></p>
+            <p class="contenedor_biografia_parrafo"><?php echo nl2br($biografia);?></p>
             </div>
         </div>
         <a href='editar_perfil.php'>
