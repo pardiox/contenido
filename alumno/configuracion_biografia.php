@@ -22,7 +22,8 @@
                ?>
                 <form action="cambiar_biografia_verificar.php" method="post">
                    <p>biografia:</p>
-                    <input type="text" name="biografia" value="<?php echo $biografia;?>" required>
+                   <textarea placeholder="biografia" name="biografia" required></textarea>
+                   
                     <p>contraseña:</p>
                     <input type="text" name="clave" placeholder="contraseña" required>
                     <input type="submit" value="enviar" class="btn" class="boton">
