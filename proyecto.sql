@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-10-2020 a las 10:48:31
+-- Tiempo de generación: 17-10-2020 a las 12:47:01
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -53,6 +53,8 @@ CREATE TABLE `alumno` (
   `Email` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
   `password` varchar(200) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
   `curso` varchar(8) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `foto` blob DEFAULT NULL,
+  `biografia` varchar(300) COLLATE utf8mb4_spanish2_ci DEFAULT NULL,
   `verificado` int(1) NOT NULL DEFAULT 0,
   `ban_profesor` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
@@ -61,10 +63,11 @@ CREATE TABLE `alumno` (
 -- Volcado de datos para la tabla `alumno`
 --
 
-INSERT INTO `alumno` (`nombre`, `apellido`, `fecha`, `Email`, `password`, `curso`, `verificado`, `ban_profesor`) VALUES
-('0', 'acosta', '0000-00-00', 'Juan@gmail.com', '$2y$10$ziZb4KVtk1XKk6zzOXARXe1YdznXnRLpyd9tNZD1S0S0KVxTTEET6', '2do_2da', 0, 0),
-('0', 'Guerrero', '0000-00-00', 'lucasg3322@gmail.com', '1234', '2do_2da', 1, 0),
-('Matias', 'Alvarado', '0000-00-00', 'mati123@gmail.com', '1234', '2do_2da', 0, 0);
+INSERT INTO `alumno` (`nombre`, `apellido`, `fecha`, `Email`, `password`, `curso`, `foto`, `biografia`, `verificado`, `ban_profesor`) VALUES
+('gabriel', 'ricardes', '0000-00-00', 'gabo@gmail.com', '$2y$10$XVaLddyovYXksIjK4tPCZ.W2dHSc/Wf434n0pr3mke0Om1nR72nCu', '2do_2da', NULL, NULL, 0, 0),
+('Juan', 'acosta', '0000-00-00', 'Juan@gmail.com', '$2y$10$ziZb4KVtk1XKk6zzOXARXe1YdznXnRLpyd9tNZD1S0S0KVxTTEET6', '2do_2da', 0x686f7273652d353632353932325f313932302e6a7067, 'Hola soy noob,me encanta el minecraft y juego lol.', 0, 0),
+('0', 'Guerrero', '0000-00-00', 'lucasg3322@gmail.com', '1234', '2do_2da', NULL, NULL, 1, 0),
+('Matias', 'Alvarado', '0000-00-00', 'mati123@gmail.com', '1234', '2do_2da', NULL, NULL, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -188,7 +191,20 @@ INSERT INTO `alumnos_verificados` (`curso`, `materia`, `Email`, `verificacion`, 
 ('2do_2da', 'Practicas del L', 'Juan@gmail.com', 0, 167),
 ('2do_2da', 'Procedimientos ', 'Juan@gmail.com', 0, 168),
 ('2do_2da', 'Lenguajes Tecno', 'Juan@gmail.com', 0, 169),
-('2do_2da', 'Sistemas Tecnol', 'Juan@gmail.com', 0, 170);
+('2do_2da', 'Sistemas Tecnol', 'Juan@gmail.com', 0, 170),
+('2do_2da', 'Biologia', 'gabo@gmail.com', 0, 171),
+('2do_2da', 'Construccion de', 'gabo@gmail.com', 0, 172),
+('2do_2da', 'Educacion Artis', 'gabo@gmail.com', 0, 173),
+('2do_2da', 'Educacion Fisic', 'gabo@gmail.com', 0, 174),
+('2do_2da', 'Fisico-Quimica', 'gabo@gmail.com', 0, 175),
+('2do_2da', 'Geografia', 'gabo@gmail.com', 0, 176),
+('2do_2da', 'Historia', 'gabo@gmail.com', 0, 177),
+('2do_2da', 'Ingles', 'gabo@gmail.com', 0, 178),
+('2do_2da', 'Matematica', 'gabo@gmail.com', 0, 179),
+('2do_2da', 'Practicas del L', 'gabo@gmail.com', 0, 180),
+('2do_2da', 'Procedimientos ', 'gabo@gmail.com', 0, 181),
+('2do_2da', 'Lenguajes Tecno', 'gabo@gmail.com', 0, 182),
+('2do_2da', 'Sistemas Tecnol', 'gabo@gmail.com', 0, 183);
 
 -- --------------------------------------------------------
 
@@ -216,7 +232,8 @@ INSERT INTO `codigo` (`email`, `codigo`) VALUES
 ('Juan@gmail.com', '5348'),
 ('Juan@gmail.com', '0114'),
 ('Juan@gmail.com', '1827'),
-('Juan@gmail.com', '1975');
+('Juan@gmail.com', '1975'),
+('gabo@gmail.com', '1677');
 
 -- --------------------------------------------------------
 
@@ -727,7 +744,7 @@ ALTER TABLE `recuperar_clave`
 -- AUTO_INCREMENT de la tabla `alumnos_verificados`
 --
 ALTER TABLE `alumnos_verificados`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=171;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
 
 --
 -- AUTO_INCREMENT de la tabla `contenido`
