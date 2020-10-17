@@ -10,6 +10,8 @@ if ($resultado->num_rows > 0){
     $_SESSION["u"]['apellido'] = $fila["apellido"];
     $_SESSION["u"]['curso'] = $fila["curso"];
     $_SESSION["u"]['Email'] = $fila["Email"];
+    $_SESSION["u"]['foto'] = $fila["foto"];
+    $_SESSION["u"]['biografia'] = $fila["biografia"];
     $_SESSION["u"]['verificado'] = $fila["verificado"];
     $_SESSION["u"]['sesion'] = "s.a";
     header("Location: alumno/alumno.php");
