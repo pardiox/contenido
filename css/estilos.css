@@ -216,3 +216,6 @@ option{
     cursor: pointer;
     background-color:var(--verde2);
 }
+a{
+    text-decoration: none;
+}
