@@ -152,11 +152,10 @@ if( $_SESSION["u"]['sesion'] == "s.p"){
             <div class="container-body">
 
                 <div class="colum1">
-                    <h1>Acerca de "Carpeta Virtual" 6º2ª</h1>
+                    <h1>Acerca de "Carpeta Virtual" 7º2ª</h1>
                     <p>Este grupo esta compuesto por:</p>
                     <p>Alvarado Matias</p>
                     <p>Guerrero Lucas</p>
-                    <p>Ayala Victoria</p>
                     <p>Pardo Axel</p>
                     
                     
