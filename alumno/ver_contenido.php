@@ -32,8 +32,9 @@ if(empty($Email_profe) || empty($materia)){
       <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <Updated upstream></Updated>
+    <a href="alumno.php">inicio</a>
     <a href="configuracion.php">configuracion</a>
-    <a href="#">Contact</a>
+
     <a href="../cerrar_sesion.php">cerrar sesion</a>
 </div>
        
@@ -53,6 +54,7 @@ if(empty($Email_profe) || empty($materia)){
                 $materia=$fila["materia"];
                 $fecha_de_entrega=$fila["fecha_de_entrega"];
                 $fecha_de_subida=$fila["fecha_de_subida"];
+                $cod_trabajo=$fila["cod_trabajo"];
                 ?>
                 <tr class="tabla_abajo">
                     <td>
@@ -65,7 +67,7 @@ if(empty($Email_profe) || empty($materia)){
                         <?php echo $fecha_de_subida;?>
                     </td>
                     <td class="button">
-                        <button>ver</button>
+                      <a href="ver_contenido_subido.php"> <button>ver</button></a> 
                     </td>
                 </tr>
                 
