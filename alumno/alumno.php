@@ -9,6 +9,11 @@ $apellido = $_SESSION["u"]['apellido'];
 $curso = $_SESSION["u"]['curso'];
 $Email = $_SESSION["u"]['Email'];
 $verifiado =$_SESSION["u"]['verificado'];
+$biografia = $_SESSION["u"]['biografia'];
+
+if(empty($biografia)){
+    $biografia="hola eres nuevo por aqui¿? <br> agraga en la biografia algo sobre ti para que tus amigos/compañeros te conozcan mas";
+}
 if( $_SESSION["u"]['sesion'] != "s.a"){
   header ("location: ../index.php");
 }
@@ -73,10 +78,10 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
 
             </div>
             <div class="contenedor_biografia">
-            <p class="contenedor_biografia_parrafo">fulanito de tal siempre tal y nunca deja de tal le encatna tal y muere poe tal</p>
+            <p class="contenedor_biografia_parrafo"><?php echo $biografia;?></p>
             </div>
         </div>
-        <a href='#'>
+        <a href='editar_perfil.php'>
                 <button> Editar perfil</button>
         </a>
     </div>
