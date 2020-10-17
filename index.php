@@ -179,7 +179,7 @@ if( $_SESSION["u"]['sesion'] == "s.p"){
                     </div>
                     <div class="row">
                         <img src="img/instagram.png">
-                        <label>Instagram</label>
+                        <label><a href="https://instagram.com/volder.php">Instagram</a></label>
                     </div>
                     <div class="row">
                         <img src="img/google-plus.png">
@@ -199,18 +199,18 @@ if( $_SESSION["u"]['sesion'] == "s.p"){
 
                     <div class="row2">
                         <img src="img/house.png">
-                        <label> Bariloche 6615, González Catán, Buenos Aires, Argentina.
+                        <label> González Catán, Buenos Aires, Argentina.
                         </label>
                     </div>
 
                     <div class="row2">
                         <img src="img/smartphone.png">
-                        <label>+02202 428307</label>
+                        <label>#</label>
                     </div>
 
                     <div class="row2">
                         <img src="img/contact.png">
-                         <label>mt69014@yahoo.com.ar</label>
+                         <label>volder.php@gmail.com</label>
                     </div>
 
                 </div>
