@@ -31,7 +31,7 @@ if( $_SESSION["u"]['sesion'] != "s.p"){
 			<nav>
 				<a href="lista_de_alumnos.php">alumnos</a>
 				<a href="clases.php">clases</a>
-				<a href="#">indifinido</a>
+				<a href="vista_profesor_inicio.php">inicio</a>
 				<a href="../cerrar_sesion.php">cerrar sesion</a>
 			</nav>
 		</div>
