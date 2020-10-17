@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+}
+.cuerpo{
+   text-align: center;
+}
+/*ESTILO TABLA*/
+
+.table{
+    font-size:200%;
+    border-collapse: separate;
+    border-spacing: 1vw 0.5vh;
+    font-weight: bold;
+}
+tr, td{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;;
+}
+.tabla_arriba{
+    border: 1px solid;
+    background-color: #084568;
+    color: white;
+  
+}
+.tabla_abajo{
+    background-color: #0E89D0;
+    color: white;
+}
+.button{
+    background-color: white;
+    border: 0px solid;
+}
