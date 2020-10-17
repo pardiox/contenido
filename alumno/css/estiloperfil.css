@@ -259,7 +259,7 @@ body {
 /*  Perfil  */
 
 .perfil{
-    height: 80vh;
+    height: 90vh;
     margin-right: 0;
     background-color: transparent;
     margin-top:1rem;
@@ -312,7 +312,7 @@ body {
      
 }
 .contenedor_biografia{
-    height: 33%;
+    height: 37%;
     margin: 10px;
     background-color: transparent;
     margin-top:1rem;
