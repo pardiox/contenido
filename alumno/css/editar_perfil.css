@@ -1,0 +1,89 @@
+/*  Perfil  */
+*{
+    margin: 0;
+}
+.perfil{
+    height: 100%;
+    margin-right: 0;
+    background-color: transparent;
+    margin-top:1rem;
+    border: 1px solid;
+    border-color:#C0C0C0;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+a{
+    text-decoration: none;
+    color: ;
+}
+.foto{
+   
+    height: 100px;
+    width: 100%; 
+}
+
+.nombre{
+    height: 50px;
+    width: 100%; 
+}
+.nombre_p{
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    color: 000000;
+    display: inline;
+}
+.nombre_editar{
+    display: inline;
+}
+.email, .curso{
+    height: 40px;
+    width: 100%;
+    padding-left: 15px;
+    text-align: left;
+}
+.email_tex1, .curso_tex1 {
+    color: #637CAE;
+    display: inline;
+    font-size: 20px;
+}
+.email_tex2, .curso_tex2{
+    color: #000000;
+    display: inline;
+    font-size: 20px;
+}
+.contenedor_tex1{
+    text-align: center;
+    font-size: 25px;
+    border: 10px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-radius: 30px;
+    border-color: gray
+     
+}
+.contenedor_text1_p{
+    color: blue;
+    margin: 15px;
+}
+.contenedor_biografia{
+    height: 40%;
+    margin: 10px;
+    background-color: transparent;
+    margin-top:1rem;
+    border: 1px solid;
+    border-color:#C0C0C0;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.contenedor_biografia_parrafo{
+    padding: 10px;
+    text-align: left;
+    color: gray;
+
+}
+
+button{
+    font-size: 15px;
+}
