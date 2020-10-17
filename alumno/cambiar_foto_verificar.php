@@ -2,11 +2,8 @@
         session_start();
         include "../conexion.php";
        
-            echo $_FILES['imagen1']['name'];
-            echo $_FILES['imagen1']['tmp_name'];
-            echo $_FILES['imagen1']['type'];
-            echo $_FILES['imagen1']['size'];
-            echo $_FILES['imagen1']['error'];
+            $foto = $_FILES['imagen1']['name'];
+        
             $Email= $_SESSION["u"]['Email'];
             $extensiones = array(0=>'image/jpg',1=>'image/jpeg',2=>'image/png');
             $max_tamanyo = 1024 * 1024 * 8;
