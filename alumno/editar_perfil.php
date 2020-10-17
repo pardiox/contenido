@@ -65,7 +65,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
                 <a href="configuracion_biografia.php"><p class="contenedor_text1_p">editar biografia</p></a>
             </div>
             <div class="contenedor_biografia">
-            <p class="contenedor_biografia_parrafo"><?php echo $biografia;?></p>
+            <p class="contenedor_biografia_parrafo"><?php echo nl2br($biografia);?></p>
             </div>
         </div>
     </div>
