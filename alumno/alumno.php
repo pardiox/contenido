@@ -8,6 +8,13 @@ $nombre = $_SESSION["u"]['nombre'];
 $apellido = $_SESSION["u"]['apellido'];
 $curso = $_SESSION["u"]['curso'];
 $Email = $_SESSION["u"]['Email'];
+
+if (empty($_SESSION["u"]['foto'])){
+    $foto="foto_perfil";
+}
+else{
+    $foto = $_SESSION["u"]['foto'];
+}
 $verifiado =$_SESSION["u"]['verificado'];
 $biografia = $_SESSION["u"]['biografia'];
 
@@ -59,7 +66,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
        
         <div clas="foto">
            
-            <img src="../img/foto_perfil.png" width="100" height="100">
+            <img src="img/<?php echo $foto;?>" width="100" height="100">
         </div>
         <div class="nombre"> 
         <p><?php echo $apellido . " " . $nombre?></p>
