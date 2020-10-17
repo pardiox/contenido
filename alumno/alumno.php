@@ -7,6 +7,7 @@ session_start();
 $nombre = $_SESSION["u"]['nombre'];
 $apellido = $_SESSION["u"]['apellido'];
 $curso = $_SESSION["u"]['curso'];
+$Email = $_SESSION["u"]['Email'];
 $verifiado =$_SESSION["u"]['verificado'];
 if( $_SESSION["u"]['sesion'] != "s.a"){
   header ("location: ../index.php");
@@ -31,6 +32,8 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
                <button>
                 <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()" >&#9776; open</span>
                 </button>
+                     <h2>Carpeta virtual</h2>
+               
             </div>
             
         </div>
@@ -46,8 +49,36 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
     <a href="../cerrar_sesion.php">cerrar sesion</a>
 </div>
 <div class="contenedor-principal row center-xs around-md">
+   
     <div class="perfil col-xs-11 col-md-4" id="perfil">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea, quae suscipit quis sit obcaecati quaerat distinctio omnis est nam et inventore, maxime debitis, beatae ipsam repellendus error esse soluta.</p>
+       
+        <div clas="foto">
+           
+            <img src="../img/foto_perfil.png" width="100" height="100">
+        </div>
+        <div class="nombre"> 
+        <p><?php echo $apellido . " " . $nombre?></p>
+        </div>
+        <div class="email">
+            <p class="email_tex1"> Email de contacto:</p> 
+            <p class="email_tex2"><?php echo $Email ?></p>
+        </div>
+        <div class="curso">
+           <p class="curso_tex1"> Curso:</p> 
+           <p class="curso_tex2"> <?php echo $curso;?></p> 
+        </div>
+        <div class="contendor">
+            <div class="contenedor_tex1">
+                <p>biografia</p>
+
+            </div>
+            <div class="contenedor_biografia">
+            <p class="contenedor_biografia_parrafo">fulanito de tal siempre tal y nunca deja de tal le encatna tal y muere poe tal</p>
+            </div>
+        </div>
+        <a href='#'>
+                <button> Editar perfil</button>
+        </a>
     </div>
 
 
