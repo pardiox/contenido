@@ -65,17 +65,11 @@
                <div class="barra-h2 row center-xs">
                     <h2>Clases</h2>
                 </div>
-                <div class="row center-xs">
-                   <div class="formulario">
-                    <form action="">
-                       
-                        <input type="text" placeholder="Año" class="col-xs-3" id="caja_busqueda">
-                      
-
-                        <input type="text" placeholder="Materia" class="col-xs-8">
-                    
-                    </form>
-                    </div>
+                <div class="select row center-xs">
+                   <select name="" id="" class="col-xs-6">
+                       <option value="">Cursos</option>
+                       <option value=""></option>
+                   </select>
                 </div>
             </div>
             <div class="medio row center-xs middle-md">
@@ -108,7 +102,7 @@
         </div>
         
         <div class="contenido col-xs-12 col-md-9">
-           <div class="row lista-trabajos-arriba center-xs">
+           <div class="lista-trabajos-arriba " id="lista-trab">    
                     <div class="row center-xs middle-xs top-lista">
                         <h2>Trabajos</h2>
                     </div>
@@ -119,14 +113,14 @@
                         </div>
                     </div>
             </div>   
-            <div class="row center-xs between-md contenido-arriba">
-                <div class="fecha col-xs-2">
+            <div class="row center-xs  between-xs contenido-arriba" id="contenido-arriba">
+                <div class="fecha col-xs-3">
                     <p><?php echo "Fecha: ", $fecha_de_subida;?><p>
                 </div>
-                <div class="titulo col-xs-4">
+                <div class="titulo col-xs-5">
                     <p><?php echo $titulo; ?></p>
                 </div>
-                <div class="fecha_entrega col-xs-2">
+                <div class="fecha_entrega col-xs-4">
                     <p><?php echo "Fecha de Entrega: ", $fecha_de_entrega; ?></p>
                 </div>
             </div>
@@ -134,7 +128,7 @@
                 <div class="consigna col-xs-12 col-md-9">
                     <p> <?php echo nl2br($contenido);?></p>
                 </div>
-                <div class="lista-trabajos">
+                <div class="lista-trabajos" id="lista-trabajos">
                     <div class="row center-xs middle-xs top-lista">
                         <h2>Trabajos</h2>
                     </div>

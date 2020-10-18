@@ -45,7 +45,7 @@ header{margin-bottom: 0px !important;}
     background-color: ;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    background-color: #EEEEEE;
+    background-color:white;
 }
 
 .barra_lateral{
@@ -71,20 +71,39 @@ header{margin-bottom: 0px !important;}
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.barra_lateral .arriba form input{
-    height: 25px;
-    text-align: center;
-    border: 0px;
-    border-bottom: 3px solid;
-    border-bottom-color:#5A687C;
-    
+.barra_lateral .arriba .select{
+    width: 100vw;
+    height: 1.5rem;
 }
 
-.barra_lateral .arriba form input:focus{
-    outline: none; 
-    border-bottom-color:#705A7C;
+.barra_lateral .arriba .select select{
+    height: 1.5rem;
+    font-size: 1.2rem;
     
+    color:white;
+    background: transparent;
+    border:0;
+    border-bottom: 3px solid;
+    border-color: var(--azul1);
+    border-radius:2px;
+    outline: none;
+    cursor: pointer;
 }
+.barra_lateral .arriba .select select:active{
+    background-color: rgba(0,0,0,.3);
+}
+.barra_lateral .arriba select:focus{
+    background-color: rgba(0,0,0,.2);
+}
+
+.barra_lateral .arriba .select option{
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: auto;
+}
+
+
 
 
 .medio .cursos {
@@ -141,8 +160,7 @@ header{margin-bottom: 0px !important;}
     height: 700px;
     overflow: auto;
     font-family: 'Hammersmith One', sans-serif;
-    
-    background-color: yellow;
+
 }
 .contenedor_principal .contenido::-webkit-scrollbar{
     width: 10px;
@@ -162,32 +180,60 @@ header{margin-bottom: 0px !important;}
 }
 
 .contenido .lista-trabajos-arriba{
-    width:74vw;
+    width:74.2vw;
     height:10vh;
+    opacity: 0%;
+    position: fixed;
+    margin:0;
     
-    background-color: red;
+    
 }
 
-@media screen (max-width:768px){
-    .lista-trabajos-arriba{
-        background-color: blue;
+@media screen and (max-width:768px){
+    #lista-trab{
+        width: 40%;
+        
+        position: static;
+        opacity: 100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        
+        border:1px solid;
+        border-radius: 5px;
+        border-color: ;   
     }
+}
+
+.contenido .lista-trabajos-arriba .contenedor-lista{
+    height: 10rem;
 }
 
 .contenido .contenido-arriba{
     height: 15vh;
     margin-bottom: 1rem;
-    background-color: blue;
+    margin-top: 0.5rem;
+    
+    border-bottom: 1px solid;
+    border-color:#ADADAD;
+}
+
+@media screen (max-width:768px){
+    #contenido-arriba{
+        border-top: 1px solid;
+        border-color:#ADADAD;
+        margin-top: 1rem;
+        background-color: aqua;
+    }
 }
 
 .contenido .fecha_entrega{
     height: 1.5rem;
-    padding-top: 5px;
-
 }
 .contenido .fecha{
     height: 1.5rem;
-    padding-top: 5px;
+    
 }
 .contenido .fecha p{
     font-size:1.2rem;
@@ -195,12 +241,15 @@ header{margin-bottom: 0px !important;}
 
 .contenido .titulo{
     height:1.7rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    
 }
 .contenido .titulo p{
     font-size:1.5rem;
-
+    margin-top: 1rem;
 }
+
+
 
 .contenido .fecha_entrega p{
     font-size:1.2rem;
@@ -214,33 +263,42 @@ header{margin-bottom: 0px !important;}
     padding-right:25px; 
     padding-bottom: 15px;
     
-    background-color: green;
 }
 .contenido .lista-trabajos{
-    width: 7vw;
+    width: 9vw;
     height:30vh;
     margin-left: 1rem;
     margin-right: 1rem;
     padding-left:.3rem;
     padding-right:.3rem; 
+    position: static;
+    opacity: 100%;
     
     overflow-y: auto;
     overflow-x: hidden;
     
     border:1px solid;
     border-radius: 5px;
-    background-color: gray;
-    border-color: ;
+    
+    border-color:#ADADAD;
 }
 
-
+@media screen and (max-width:768px){
+    #lista-trabajos{
+        position: fixed;
+        opacity:0%;
+        visibility: hidden;
+    }
+}
 
 
 
 
 .contenido .top-lista{
     font-size:.7rem;
-    
+    background-color: #D6D6D6;
+    border-bottom: 1px solid;
+    border-color:#ADADAD;
 }
 
 .contenido .fech-trabajos{
@@ -269,7 +327,7 @@ header{margin-bottom: 0px !important;}
 }
 
 .contenid .tabla-fecha{
-    background-color: red;
+    background-color:;
     font-size:0.3rem;
 }
 
@@ -284,7 +342,7 @@ header{margin-bottom: 0px !important;}
     margin-top:20px;
     margin-bottom: 20px;
     
-    background-color: gray;
+   
 }
 
 .contenido .biliografia p{
