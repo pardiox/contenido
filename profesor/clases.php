@@ -23,7 +23,7 @@
                          $titulo =$fila["titulo"];
                          $contenido =$fila["contenido"];
                          $bibiografia=$fila["bibiografia"];
-                         $fecha_de_subida = date('d/m/a');
+                         $fecha_de_subida = date('Y/m/d');
             
                         }
                      }}
@@ -103,7 +103,7 @@
         
         <div class="contenido col-xs-12 col-md-9">
            <div class="lista-trabajos-arriba " id="lista-trab">    
-                    <div class="row center-xs middle-xs top-lista">
+                    <div class="row center-xs middle-xs top-lista" id="top-lista">
                         <h2>Trabajos</h2>
                     </div>
                     
@@ -126,14 +126,16 @@
             </div>
             <div class="row center-xs end-md middle-xs contenido-medio">
                 <div class="consigna col-xs-12 col-md-9">
+                   <div class="row texto-consigna middle-xs">
                     <p> <?php echo nl2br($contenido);?></p>
+                    </div>
                 </div>
                 <div class="lista-trabajos" id="lista-trabajos">
                     <div class="row center-xs middle-xs top-lista">
                         <h2>Trabajos</h2>
                     </div>
                     <div class="row center-xs middle-md fech-trabajos">
-                       <div class="-tabla-fecha col-xs-12">
+                       <div class="tabla-fecha col-xs-12">
                         <p><?php echo $fecha_de_subida;?></p>
                         </div>
                     </div>
@@ -141,6 +143,7 @@
             </div>
             <div class="row center-xs contenido-abajo ">
                 <div class="biliografia col-xs-7">
+                   <h3>Bibliografía</h3>
                     <p><?php echo $bibiografia; ?></p>
                 </div>
             </div>
