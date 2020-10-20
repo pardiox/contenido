@@ -65,6 +65,7 @@ p{
   border-radius: 5px;
   outline: none;
   transform: all 0.5s ease;
+  resize:none;
 }
 
 .login .input{
