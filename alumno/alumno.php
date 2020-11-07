@@ -42,11 +42,13 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
      <header>
         <div class="header ">
             <div id="main">
-               <button>
-                <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()" >&#9776; open</span>
-                </button>
+              <center>
                      <h2>Carpeta virtual</h2>
-               
+               </center>
+               <button>
+                <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()" >&#9776; Menu</span>
+                </button>
+                    
             </div>
             
         </div>
@@ -64,7 +66,7 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
        
         <div clas="foto">
            
-            <img src="img/<?php echo $foto;?>" width="100" height="100">
+            <img src="img/<?php echo $foto;?>"  class="img">
         </div>
         <div class="nombre"> 
         <p><?php echo $apellido . " " . $nombre?></p>
@@ -118,17 +120,19 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
                         $apellido="en esta materia";
                     }
                 }
-                $sq =  "SELECT * from contenido where Email='$Email' and materia='$materia'";
+                $sq =  "SELECT * from contenido where Email='$Email' and materia='$materia'and curso='$curso'";
                 if ($resultado = $con->query($sq)){
                     if ($resultado->num_rows > 0){
                         $fila=$resultado->fetch_assoc();
                         $fecha_de_subida=$fila["fecha_de_subida"];
                         $fecha_e="fecha de entrega: ";
                         $fecha_de_entrega=$fila["fecha_de_entrega"];
+                        $boton="activo";
                     }else{
                         $fecha_de_subida="No hay ningun trabajos disponible";
                         $fecha_e="";
                         $fecha_de_entrega="No hay trabajos disponibles";
+                        $boton="desactivo";
                     }
                 }
 ?>
@@ -143,11 +147,16 @@ if( $_SESSION["u"]['sesion'] != "s.a"){
             <p><?php echo $fecha_e, " ", $fecha_de_entrega; ?></p>
         </div>
         <div class="ir-materia row center-xs middle-xs">
+           <?php
+           if($boton=="activo"){ ?>
            <div class="btn-ir col-xs-3">
+          
             <a href="ver_contenido.php? Email=<?php echo $Email;?> & materia=<?php echo $materia;?>">
                 Ir a la carpeta
             </a>
+           
             </div>
+             <?php } ?>
         </div>
         <div class="materia-bottom col-xs-12">
             
