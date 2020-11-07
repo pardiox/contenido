@@ -4,6 +4,7 @@ session_start();
 $Email_profe=$_REQUEST["Email"];
 $materia=$_REQUEST["materia"];
 $curso=$_SESSION["u"]['curso'];
+
 if(empty($Email_profe) || empty($materia)){
     header("Location: alumno.php");
 }
@@ -40,6 +41,7 @@ if(empty($Email_profe) || empty($materia)){
        
        <div class="cuerpo">
        <center>
+       <h2 class="titulo"> Lista de trabajos subidos</h2>
        <table class="table">
            <tr class="tabla_arriba">
                <td>titulo</td>
@@ -47,7 +49,7 @@ if(empty($Email_profe) || empty($materia)){
                <td>fecha de subida</td>
            </tr>
         <?php
-        $sql =  "SELECT * FROM contenido where curso='$curso' and Email='$Email_profe'";    
+        $sql =  "SELECT * FROM contenido where curso='$curso' and Email='$Email_profe' and materia='$materia'";    
         if ($resultad = $con->query($sql)){
             while ($fila = mysqli_fetch_array($resultad)){
                 $titulo=$fila["titulo"];
@@ -66,9 +68,16 @@ if(empty($Email_profe) || empty($materia)){
                     <td>
                         <?php echo $fecha_de_subida;?>
                     </td>
-                    <td class="button">
-                      <a href="ver_contenido_subido.php"> <button>ver</button></a> 
-                    </td>
+                   
+                    
+                     <td class="button">
+                      <a href="ver_contenido_subido.php">
+                     <p> ver</p>
+                      <button>  </button>
+                    </a> 
+                     </td>
+                    
+          
                 </tr>
                 
                 <?php
