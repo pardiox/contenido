@@ -1,5 +1,5 @@
 <?php 
-include "conexion.php";
+include "../conexion.php";
 $Email=$_REQUEST['Email'];
 $materia=$_REQUEST['materia'];
 $sql="SELECT * FROM alumno where Email='$Email'";
