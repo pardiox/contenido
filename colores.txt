@@ -1,8 +1,0 @@
-
-barras laterales con transparencia
-
-		colores
-
-celeste grisaceo: rgb (196, 213, 237)
-verde pastel: rgb (144, 238, 144)
-azul: rgb (112, 128, 144)
