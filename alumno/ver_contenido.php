@@ -71,7 +71,11 @@ if(empty($Email_profe) || empty($materia)){
                    
                     
                      <td class="button">
-                      <a href="ver_contenido_subido.php">
+                     <?php
+                     /*originalmente la linea de abajo tiene que redirigir a "ver_contenido_subido.php" pero como Lu necesita probar algo enviando un par de variables necesita cambiar la direccion. en fin avisen si van a cambiar, aunque esto es un recordatorio mas para LU*/
+                     ?>
+                    
+                      <a href='chat_del_trabajo.php?cod_trabajo=<?php echo $cod_trabajo;?>'>
                      <p> ver</p>
                       <button>  </button>
                     </a> 
